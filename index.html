@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Essora Linux — Lightweight, Fast, Minimalist</title>
+  <meta name="description" content="Essora Linux: lightweight distribution based on Devuan (without systemd), focused on performance, simplicity and customization." />
+  <meta name="theme-color" content="#6E9B08" />
+
+  <style>
+    :root{
+      --bg:#0b0f14; --card:#111824; --text:#e6edf3; --muted:#9fb0c0;
+      --accent:#6E9B08; --line:#1d2a3a; --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, rgba(110,155,8,.18), transparent 60%),
+        radial-gradient(900px 500px at 90% 0%, rgba(110,155,8,.10), transparent 55%),
+        linear-gradient(180deg,#06080b, var(--bg));
+      color:var(--text);
+    }
+    a{color:var(--text); text-decoration:none}
+    a:hover{opacity:.95; text-decoration:underline}
+    .wrap{max-width:1020px; margin:0 auto; padding:22px}
+    .top{display:flex; align-items:center; justify-content:space-between; gap:18px; flex-wrap:wrap}
+    .brand{display:flex; gap:14px; align-items:center}
+    .logo{
+      width:46px; height:46px; border-radius:14px; display:grid; place-items:center;
+      background:rgba(110,155,8,.14);
+      border:1px solid rgba(110,155,8,.35);
+      color:var(--accent);
+      font-weight:900; letter-spacing:.5px;
+    }
+    .brandName{font-size:18px; font-weight:800; line-height:1.1}
+    .brandTag{font-size:13px; color:var(--muted); margin-top:2px}
+    .nav{display:flex; gap:10px; flex-wrap:wrap}
+    .nav a{
+      padding:8px 10px; border:1px solid var(--line); border-radius:12px;
+      background:rgba(255,255,255,.02);
+      text-decoration:none;
+    }
+    .hero{padding:18px 0 10px}
+    .hero h1{margin:0 0 10px; font-size:34px; line-height:1.1}
+    .hero p{margin:0; color:var(--muted); line-height:1.55; max-width:78ch}
+    .cta{display:flex; gap:10px; margin-top:14px; flex-wrap:wrap}
+    .btn{
+      display:inline-block; padding:10px 14px; border-radius:14px;
+      background:var(--accent); color:#0b0f14; font-weight:800;
+      border:1px solid rgba(0,0,0,.25);
+      box-shadow:var(--shadow);
+      text-decoration:none;
+    }
+    .btn.ghost{
+      background:transparent; color:var(--text);
+      border:1px solid rgba(110,155,8,.45);
+      box-shadow:none;
+    }
+    .stats{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px}
+    .stat{
+      padding:10px 12px; border-radius:14px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+    }
+    .k{font-size:12px; color:var(--muted)}
+    .v{font-size:14px; font-weight:800; margin-top:2px}
+    .card{
+      margin-top:14px; padding:16px;
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:rgba(255,255,255,.03);
+    }
+    .card h2{margin:0 0 10px; font-size:20px}
+    .muted{color:var(--muted)}
+    .grid2{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:14px}
+    .grid3{display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:10px}
+    .tile{
+      padding:14px; border-radius:16px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(0,0,0,.12);
+    }
+    .tile h3{margin:0 0 6px; font-size:16px}
+    .tile p{margin:0; color:var(--muted); line-height:1.5}
+    .tile.link:hover{border-color: rgba(110,155,8,.45)}
+    .dl{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .note{
+      margin-top:12px; padding:12px; border-radius:16px;
+      border:1px solid rgba(110,155,8,.25);
+      background:rgba(110,155,8,.08);
+    }
+    footer{margin-top:18px; padding-top:14px; border-top:1px solid var(--line)}
+    .small{font-size:12px}
+    @media (max-width:860px){
+      .grid2{grid-template-columns:1fr}
+      .grid3{grid-template-columns:1fr}
+      .hero h1{font-size:28px}
+    }
+  </style>
+</head>
+
+<body>
+  <header class="wrap top">
+    <a class="brand" href="#home" aria-label="Essora Linux">
+      <div class="logo" aria-hidden="true">E</div>
+      <div>
+        <div class="brandName">Essora Linux</div>
+        <div class="brandTag">Lightweight · Fast · Minimalist</div>
+      </div>
+    </a>
+
+    <nav class="nav">
+      <a href="#downloads">Downloads</a>
+      <a href="#editions">Editions</a>
+      <a href="#docs">Docs</a>
+      <a href="#community">Community</a>
+    </nav>
+  </header>
+
+  <main id="home" class="wrap">
+    <section class="hero">
+      <h1>A system built for performance and simplicity</h1>
+      <p>
+        Essora Linux is a distribution focused on being lightweight and practical,
+        ideal for modest hardware and for those who enjoy customization.
+        Based on Devuan, without systemd.
+      </p>
+
+      <div class="cta">
+        <a class="btn" href="#downloads">Download</a>
+        <a class="btn ghost" href="#docs">View documentation</a>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><div class="k">Base</div><div class="v">Devuan</div></div>
+        <div class="stat"><div class="k">Focus</div><div class="v">Performance</div></div>
+        <div class="stat"><div class="k">Init</div><div class="v">No systemd</div></div>
+      </div>
+    </section>
+
+    <section class="grid2">
+      <article class="card">
+        <h2>Philosophy</h2>
+        <ul class="muted">
+          <li>Fast boot and low resource usage.</li>
+          <li>Tools ready for daily use.</li>
+          <li>Friendly remastering and customization.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Approach</h2>
+        <ul class="muted">
+          <li>Lightweight edition (Openbox / JWM / Fluxbox).</li>
+          <li>Full edition (depending on release).</li>
+          <li>Community and support via Telegram.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="downloads" class="card">
+      <h2>Downloads</h2>
+      <p class="muted">
+        ISOs and updates are hosted on SourceForge. This is the official link:
+      </p>
+
+      <div class="dl">
+        <a class="btn" target="_blank" rel="noreferrer" href="https://sourceforge.net/projects/essora/">Download from SourceForge</a>
+        <a class="btn ghost" target="_blank" rel="noreferrer" href="https://t.me/essoralinux">Telegram</a>
+      </div>
+
+      <div class="note">
+        <strong>Tip:</strong> publish SHA256 checksums per version (builds trust and looks professional).
+      </div>
+    </section>
+
+    <section id="editions" class="card">
+      <h2>Editions</h2>
+      <div class="grid3">
+        <div class="tile">
+          <h3>Openbox (lightweight)</h3>
+          <p>Ideal for low consumption and modest machines.</p>
+        </div>
+        <div class="tile">
+          <h3>KDE (full)</h3>
+          <p>Modern experience with integrated tools.</p>
+        </div>
+        <div class="tile">
+          <h3>Minimal</h3>
+          <p>Solid base for remastering and your own respin.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="docs" class="card">
+      <h2>Documentation</h2>
+      <div class="grid2">
+        <div class="tile">
+          <h3>Installation</h3>
+          <p>Basic guide, VM setup and post-install tips.</p>
+        </div>
+        <div class="tile">
+          <h3>Remaster</h3>
+          <p>How to generate your own ISO and customize your environment.</p>
+        </div>
+      </div>
+      <p class="muted small">(We'll create these pages as real sections later.)</p>
+    </section>
+
+    <section id="community" class="card">
+      <h2>Community</h2>
+      <div class="grid2">
+        <a class="tile link" target="_blank" rel="noreferrer" href="https://t.me/essoralinux">
+          <h3>Telegram</h3><p>News, support and testers.</p>
+        </a>
+        <a class="tile link" target="_blank" rel="noreferrer" href="https://github.com/josejp2424">
+          <h3>GitHub</h3><p>Code, issues and contributions.</p>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="muted small">© <span id="y"></span> Essora Linux · maintained by josejp2424</div>
+    </footer>
+  </main>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
