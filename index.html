@@ -4,18 +4,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Essora Linux — Lightweight, Fast, Minimalist</title>
-  <meta name="description" content="Essora Linux: lightweight distribution based on Devuan (without systemd), focused on performance, simplicity and customization." />
+  
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+<meta name="description" content="Essora Linux: lightweight distribution based on Devuan (without systemd), focused on performance, simplicity and customization." />
   <meta name="theme-color" content="#6E9B08" />
 
-  
-<!-- Favicon / Icons -->
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="manifest" href="/site.webmanifest">
-
-<style>
+  <style>
     :root{
       --bg:#0b0f14; --card:#111824; --text:#e6edf3; --muted:#9fb0c0;
       --accent:#6E9B08; --line:#1d2a3a; --shadow:0 10px 30px rgba(0,0,0,.35);
@@ -106,13 +105,21 @@
       .grid3{grid-template-columns:1fr}
       .hero h1{font-size:28px}
     }
-  </style>
+  
+    .logo img{
+      width: 28px;
+      height: 28px;
+      display: block;
+      filter: drop-shadow(0 0 10px rgba(150, 255, 70, .25));
+    }
+
+</style>
 </head>
 
 <body>
   <header class="wrap top">
     <a class="brand" href="#home" aria-label="Essora Linux">
-      <div class="logo" aria-hidden="true">E</div>
+      <div class="logo" aria-hidden="true"><img src="essora-logo.png" alt="" /></div>
       <div>
         <div class="brandName">Essora Linux</div>
         <div class="brandTag">Lightweight · Fast · Minimalist</div>
@@ -204,11 +211,11 @@
       <div class="grid2">
         <div class="tile">
           <h3>Installation</h3>
-          <p>Basic guide, VM setup and post-install tips.</p>
+          <p>Guided setup using <b>Calamares</b> — simple and friendly for new users (PC or VM).</p>
         </div>
         <div class="tile">
           <h3>Remaster</h3>
-          <p>How to generate your own ISO and customize your environment.</p>
+          <p>Create your own spin with <b>Essora Remaster</b>. Intended to be used from the <b>live ISO</b> (not the installed system).</p>
         </div>
       </div>
       <p class="muted small"></p>
@@ -230,6 +237,10 @@
       <div class="muted small">© <span id="y"></span> Essora Linux · maintained by josejp2424</div>
     </footer>
   </main>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
 
   <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </body>
