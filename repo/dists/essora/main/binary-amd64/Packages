@@ -1,35 +1,3 @@
-Package: EssoraKB
-Version: 0.1.2
-Architecture: amd64
-Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
-Installed-Size: 1289
-Depends: yad, xterm, xdotool
-Provides: Development
-Filename: pool/main/essorakb_0.1.2_amd64.deb
-Size: 211408
-MD5sum: b9b5fb7734adce62a1aa6c773bd82369
-SHA1: 657944aa5fc3691c4a52ef9463eb4ea3e882fc6e
-SHA256: 37458abdbb9f628a1baac425bc6e0f566b912570a364c571fe1b0e858bbff3e6
-Section: Development
-Priority: optional
-Homepage: https://sourceforge.net/projects/essora/
-Description: EssoraKB — Graphical Kernel Builder for Essora Linux
- EssoraKB is a graphical frontend for compiling custom Linux kernels
- and generating Debian-compatible .deb packages, designed specifically
- for Essora Linux (Devuan/OpenRC based).
- .
- Features:
-  - Install all kernel build dependencies in one click
-  - Check missing dependencies without installing
-  - Download kernel sources and compile with make bindeb-pkg
-  - Generates linux-image, linux-headers, linux-kbuild and
-    linux-libc-dev .deb packages ready to install
-  - Pre-configured DOTconfig profiles for x86_64
-  - ccache support for faster recompilation
-  - Multilingual interface: en, es, fr, de, it, pt, ar, ca, hu, ru, ja, zh
-  - Embedded YAD authentication dialog (no external gksu required)
-  - Integrated xterm terminal with Catppuccin Mocha theme||
-
 Package: Lumivio
 Version: 1.2.0-1
 Architecture: amd64
@@ -53,6 +21,42 @@ Description: Screenshot, GIF and screen recording tool for Essora Linux
  .
  The application includes an integrated screen recorder, output folder
  selection, multilingual interface, and preview/open actions after recording.|
+
+Package: Lxpanel
+Version: 0.12-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 3349
+Depends: libfm-modules, libasound2t64, libc6, libcairo2, libcurl3t64-gnutls, libfm-gtk3-4t64, libfm4t64, libgdk-pixbuf-2.0-0, libglib2.0-0t64, libgtk-3-0t64, libiw30t64, libkeybinder-3.0-0, libpango-1.0-0, libwnck-3-0, libx11-6, libxml2
+Provides: x11
+Filename: pool/main/lxpanel_0.12-essora_amd64.deb
+Size: 1135052
+MD5sum: 66fdb230ed33d355f130e851bf64ccda
+SHA1: 6823a09363146d7555125f79ef4d83443cd28f94
+SHA256: 66e58bd065d641d9db93b2bcdea1f14051e6bb16cc4c9d527486aa50b8d5972c
+Section: x11
+Priority: optional
+Homepage: https://github.com/lxde/lxpanel
+Description: LXPanel is a GUI application for the Lightweight X11 Desktop Environment
+ (LXDE).
+ .
+ It is derived from fbpanel and includes the following features:
+ .
+  * User-friendly application menu automatically generated from .desktop
+    files on the system
+  * Launcher bar (small icons clicked to launch apps)
+  * Task bar supporting ICCCM/EWMH `urgency' hint (Pidgin IM windows
+    can flash on new incoming messages)
+  * Run dialog (type a command to run, without opening a terminal)
+  * Net status icon plug-in (optional).
+  * Volume control plug-in (optional).
+  * Notification area (system tray).
+  * Digital clock.
+  * Keyboard LEDs plug-in (display caps/num locks).
+  * lxpanelctl: control lxpanel from other programs.
+    For example, "lxpanelctl run" will show the Run dialog in lxpanel,
+    and "lxpanelctl menu" will show the application menu. This is
+    useful in combination with window manager key bindings.||
 
 Package: Oply-player
 Version: 2.2-1
@@ -88,28 +92,6 @@ Description: Oply Audio & Video Player (with Radio + IPTV)
   - Multi-language UI
  Created by josejp2424||
 
-Package: Telegram
-Version: 6.7.5
-Architecture: amd64
-Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
-Installed-Size: 207443
-Provides: www-browser
-Filename: pool/main/telegram_6.7.5_amd64.deb
-Size: 67291256
-MD5sum: 59671992a052236fc2acb9d9bda98552
-SHA1: f056ea425dff0406cff494e8b96b7cd8571229b2
-SHA256: b3997aab734435ed880bcc920d6128680cf971106f80c4ed92ffc7817ad94eed
-Section: www-browser
-Priority: optional
-Homepage: https://telegram.org
-Description: Fast and secure messaging application
- Telegram is a messaging app with a focus on speed and security. It's super fast,
- simple and free. With Telegram, you can send messages, photos, videos and files
- of any type (doc, zip, mp3, etc), as well as create groups for up to 200,000
- people or channels for broadcasting to unlimited audiences.
- .
- This package contains the official desktop client for Telegram.|
-
 Package: alias-creator
 Version: 02
 Architecture: amd64
@@ -132,6 +114,24 @@ Description: The alias-creator-02:
  Spanish, Russian, Italian, French, Catalan, Hungarian) and system theme integration.
  The tool requires sudo authentication to modify the user's .bashrc file.
  alias-creator-01 by josejp2424.
+
+Package: aria2
+Version: 1.37.0-1
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 7498
+Filename: pool/main/aria2_1.37.0-1_amd64.deb
+Size: 1301840
+MD5sum: 080d4c4696823e3b5489e4c3f29ceb18
+SHA1: a5275c8981d408b01486c5a1625aec8abba5c798
+SHA256: 07f9052ee35b7e2a906621dcd83e847aaf8285d433114ca3582941adef2f82ce
+Section: net
+Priority: optional
+Homepage: https://aria2.github.io/
+Description: lightweight multi-protocol & multi-source download utility
+ Aria2 is a utility for downloading files via HTTP/HTTPS, FTP, SFTP, BitTorrent,
+ and Metalink. It supports concurrent downloads, resuming broken downloads,
+ and segmented downloading for accelerated speeds.
 
 Package: backlight-keys
 Version: 1.0
@@ -173,6 +173,49 @@ Description: Screen brightness control for Essora Linux
   * Multi-language support (11 languages)
   * Modern GNOME-style dark theme interface
   * Integration with system autostart||||||
+
+Package: debcreator
+Version: 2.3-1
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 27
+Depends: dpkg-dev, fakeroot, yad, coreutils, sed, gawk
+Provides: Utility
+Filename: pool/main/debcreator_2.3-1_amd64.deb
+Size: 1482904
+MD5sum: aaeeceecb67906f3c42dea40aebb7e1d
+SHA1: 2dcdfe3b6f9b78d78f9607e757616cc10f2a09e2
+SHA256: b487e005bc15ee28857fc8c08c2262231623a4ff0d1a076166af8fa03c052423
+Section: Utility
+Priority: optional
+Homepage: https://sourceforge.net/p/debcreator
+Description: The debcreator:
+ Make .deb Package from Directory (YAD version).
+ Licencia: MIT.
+ Uso: sudo make-deb [directorio_a_empaquetar]||
+
+Package: desktop-drive-icons
+Version: 0.0.6-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 122
+Depends: libc6
+Provides: Utility
+Filename: pool/main/desktop-drive-icons_0.0.6-essora_amd64.deb
+Size: 36948
+MD5sum: a9f73560aee7f29b5d306a8bd6a09ee3
+SHA1: f8a2a38336483f2d5b4819cf35252509d4b61448
+SHA256: 8c5b5d62688b8b370b21299f47f0232766fee709c55b51c0c19b7e8844762fdb
+Section: Utility
+Priority: optional
+Homepage: https://github.com/01micko/desktop-drive-icons
+Description: Lightweight desktop drive icons utility
+ desktop-drive-icons is a lightweight utility that places drive icons on
+ the desktop for easy access to mounted disks and partitions.
+ .
+ It provides a simple integration for users who prefer direct desktop
+ access to storage devices in lightweight Linux environments such as
+ Essora.|
 
 Package: essdeb
 Version: 0.3.2-essora
@@ -274,6 +317,42 @@ Description: Graphical live system installer for Essora Linux
   - GParted integration for partition management
  .
  Copyright (C) 2026 josejp2424 — GPL-3.0-or-later||
+
+Package: essora-remaster
+Version: 2.6-1
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 349
+Depends: refractasnapshot-base
+Provides: Utility
+Filename: pool/main/essora-remaster_2.6-1_amd64.deb
+Size: 275688
+MD5sum: 650f0e18f7f3b1abe196278b33c95653
+SHA1: 655803dce444ccf64bc840863bbd6e06eec321de
+SHA256: 1d28b90f3452edea0876ae3b5992e5ef467577bcf1aacf8114bc7cd0e12c182e
+Section: Utility
+Priority: optional
+Homepage: https://sourceforge.net/projects/essora/
+Description: Create a live ISO of your system with RefractaSnapshot by josejp2424.|
+
+Package: essora-repo
+Version: 0.1-eos
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 3
+Depends: apt, wget
+Filename: pool/main/essora-repo_0.1-eos_amd64.deb
+Size: 3876
+MD5sum: 49388f24e634f2ce6538daa20f88ee84
+SHA1: e571bc46d41390ac17a08f2d368d31353a47a53f
+SHA256: dee1e53b212b019d2284305d175672767ca7909538d76c84f4a1bbdc4bc69965
+Section: misc
+Priority: optional
+Homepage: https://essora.org
+Description: Essora Linux official APT repository
+ Adds the official Essora Linux package repository to APT sources.
+ Installs the GPG signing key and the sources.list entry for
+ https://essora.org/repo.|
 
 Package: essora-store
 Version: 3.6-1
@@ -403,6 +482,57 @@ Priority: optional
 Homepage: https://sourceforge.net/projects/essora
 Description: TWelcome screen for Essora Eos||
 
+Package: essora-zramswap-ai
+Version: 1.0
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 4
+Depends: systemd, zram-tools
+Provides: Utility
+Filename: pool/main/essora-zramswap-ai_1.0_amd64.deb
+Size: 2512
+MD5sum: 1f48154f5cdaa71bde666bbdef9e9786
+SHA1: 87da7478f0eaf458c8e4df929f89308577d8ca16
+SHA256: 645fb5a3303aa4fecd81a3b3e64c225affda353d12ce8c37c35d12be915db90c
+Section: Utility
+Priority: optional
+Homepage: https://sourceforge.net/projects/essora/
+Description: ZRAM auto-config for zram-tools (Essora)
+ Auto-configuration of zram-tools. Tunes /etc/default/zramswap by
+ detecting RAM/CPU/SSD and applies safe sysctl values.
+
+Package: essorakb
+Version: 0.1.2
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 1289
+Depends: yad, xterm, xdotool
+Provides: Development
+Filename: pool/main/essorakb_0.1.2_amd64.deb
+Size: 211456
+MD5sum: cb492df30ac854060e3e16f80068cb4a
+SHA1: f5ba2530d04eeff97c5e413579e26d3ba0041c9f
+SHA256: a3637864222233c8bbc6c2f1db1b7e7e8df86c5a4be60f4249068838d5ea0b08
+Section: Development
+Priority: optional
+Homepage: https://sourceforge.net/projects/essora/
+Description: EssoraKB — Graphical Kernel Builder for Essora Linux
+ EssoraKB is a graphical frontend for compiling custom Linux kernels
+ and generating Debian-compatible .deb packages, designed specifically
+ for Essora Linux (Devuan/OpenRC based).
+ .
+ Features:
+  - Install all kernel build dependencies in one click
+  - Check missing dependencies without installing
+  - Download kernel sources and compile with make bindeb-pkg
+  - Generates linux-image, linux-headers, linux-kbuild and
+    linux-libc-dev .deb packages ready to install
+  - Pre-configured DOTconfig profiles for x86_64
+  - ccache support for faster recompilation
+  - Multilingual interface: en, es, fr, de, it, pt, ar, ca, hu, ru, ja, zh
+  - Embedded YAD authentication dialog (no external gksu required)
+  - Integrated xterm terminal with Catppuccin Mocha theme|
+
 Package: findnrun
 Version: 1.10.6-1
 Architecture: all
@@ -461,6 +591,29 @@ Description: Flitz Toolkit - Extractor y Compresor universal de archivos con GUI
  Soporta múltiples formatos como zip, tar, 7z, rar, deb, rpm, iso, zst y más. Incluye Flitz-Extractor y Flitz-Compressor.
  Posee soporte multilenguaje, arrastrar y soltar, y funciona tanto en modo gráfico como por consola.
  .Incluye soporte avanzado para squashfs, filtros XZ, progresos en tiempo real y extracción recursiva.
+
+Package: fluxbox
+Version: 1.3.8-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 4096
+Depends: menu, libc6, libfontconfig1, libfribidi0, libgcc-s1, libimlib2t64, libstdc++6, libx11-6, libxext6, libxft2, libxinerama1, libxpm4, libxrandr2, libxrender1
+Provides: x-window-manager
+Filename: pool/main/fluxbox_1.3.8-essora_amd64.deb
+Size: 2593624
+MD5sum: 08a94329b1f0f2839ccd494801caf13f
+SHA1: 3cde0e895b594ac2fef4958c341bcd189d2fc1d4
+SHA256: 1617bbff2bf6e18527ac596775f71441acdcb5caba045d5af4ea6c73486db19b
+Section: x11
+Priority: optional
+Homepage: https://fluxbox.org
+Description: Highly configurable and low resource X11 Window manager
+ Fairly similar to blackbox, from which it is derived, but has been
+ extended with features such as pwm-style window tabs, configurable
+ key bindings, toolbar, and an iconbar. It also includes some cosmetic
+ fixes over blackbox.
+ .
+ This package contains support for GNOME and KDE.||||
 
 Package: fonts-cantarell
 Version: 0.303.1-4
@@ -560,6 +713,22 @@ Priority: optional
 Homepage: https://sourceforge.net/projects/essora/
 Description: graphical frontend to sudo. by josejp2424.|
 
+Package: gnome-menus
+Version: 2.14.3-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 641
+Provides: lib
+Filename: pool/main/gnome-menus_2.14.3-essora_amd64.deb
+Size: 121336
+MD5sum: e921805c720d0fa1bc606d433b278a32
+SHA1: 4c228ef48d38467f0c8fce268c9304434da267c8
+SHA256: 7a49bd0a7da39d11440159c7a6fb8dda2269abb2f991a524be83d59ee61d2e9a
+Section: lib
+Priority: optional
+Homepage: https://gitlab.gnome.org/GNOME/gnome-menus
+Description: GNOME Menu support|
+
 Package: gtkdialog
 Version: 0.8.9-essora
 Architecture: amd64
@@ -592,6 +761,27 @@ MD5sum: 0786b18c3e1b54ff78408ac41ff8ae50
 SHA1: 91b0c3c9901b02d5e8a2789ea38f2347078d6d52
 SHA256: 8298a9d4151ddf46cc23406aa03ff3ad6353c31b8f4309719b59e3870246f58f
 Description: File system type CLI tool from Puppy linux.
+
+Package: hardinfo
+Version: 0.6-1
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 657
+Provides: hardinfo, system-information-tool
+Filename: pool/main/hardinfo_0.6-1_amd64.deb
+Size: 279428
+MD5sum: f9db3ca75dd8c2afc076fb05b77ea5de
+SHA1: a8eab6f99a78dd9b58d75a24eb2b89e37162ae6e
+SHA256: c4935c1b8abb44d090a678a4cc44ddc8aa752b4759a6c4ac0d05d3ead4ed1c97
+Section: utils
+Priority: optional
+Homepage: https://github.com/lpereira/hardinfo
+Description: System information and benchmark tool
+ HardInfo is a system information and benchmark tool for Linux systems.
+ It gathers information about the computer's hardware and operating system,
+ performs benchmarks, and generates detailed reports. The tool provides
+ a graphical interface to display information about CPU, memory, storage,
+ network, and other system components.
 
 Package: isomaster
 Version: 1.3.16-1
@@ -685,6 +875,22 @@ Description: standards-compliant, fast, light-weight and extensible window manag
   * Window resistance
   * Multi-head Xinerama support!
   * Pipe menus
+
+Package: pa-applet
+Version: 01-essora
+Architecture: amd64
+Maintainer: josejp2424<puppylinuxjosejp2424@gmail.com>
+Installed-Size: 36
+Provides: Utility
+Filename: pool/main/pa-applet_01-essora_amd64.deb
+Size: 11100
+MD5sum: 933f20d5dc23f2efaa9b950573e74760
+SHA1: 1666a8aeecbcc10dd87e36605fc3ee16f1da08fb
+SHA256: 474b8067526d80bb6b22669a0e97dad547a16a448188065ebeb3c12248f1b2fb
+Section: Utility
+Priority: optional
+Homepage: https://sourceforge.net/projects/essora/
+Description: pa-applet permite controlar varias configuraciones del servidor PulseAudio desde la bandeja del sistema de X11.
 
 Package: pburn
 Version: 4.3.3-2
@@ -860,26 +1066,6 @@ Description: Native drag and drop support for Tkinter (Python 3)
  tkinterdnd2 brings native drag-and-drop (DnD) capabilities to Tkinter.
  This package provides the Python 3 module.
 
-Package: riseupvpn
-Version: 1.2.0-1
-Architecture: amd64
-Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
-Installed-Size: 44
-Depends: openvpn, openvpn-systemd-resolved, curl, yad, ca-certificates
-Provides: net
-Filename: pool/main/riseupvpn_1.2.0-1_amd64.deb
-Size: 28320
-MD5sum: 630930e63886ee53126cbe138649e7ad
-SHA1: ae8e505575c5f1de599f546aac07653554f73e54
-SHA256: e083ffe1eeaa7718010ac1c82ec6e939793fbc832a25a63b20215211c0eecc6a
-Section: net
-Priority: optional
-Homepage: https://riseup.net/vpn
-Description: RiseupVPN wrapper (Essora version)
- Provides scripts and configuration for RiseupVPN with
- auto credential management, tray icon (Yad), and
- integration for Essora/Debian systems. by tenoch, nilsonmorales, josejp2424 .
-
 Package: roxfiler
 Version: 2.11.17w
 Architecture: amd64
@@ -917,6 +1103,38 @@ Description: Herramienta gráfica para controlar el comportamiento de la pantall
  interfaz simple con soporte multilenguaje, y guarda la configuración de forma persistente.
  Diseñado para distribuciones ligeras como Essora.
 
+Package: shc
+Version: 4.0.3
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 113
+Depends: libc6
+Provides: devel
+Filename: pool/main/shc_4.0.3_amd64.deb
+Size: 34476
+MD5sum: 91117f4da8a3e4456287bde5f8de21bf
+SHA1: 3bd416519f4f463ffbf9f77036b845ab1921ffd0
+SHA256: 9383114afcb7aafecb25120942ed5514dbedae401dab3a392e3fd3569fb3ad10
+Section: devel
+Priority: optional
+Homepage: https://neurobin.org/projects/softwares/unix/shc/
+Description: Shell script compiler
+ SHC is a generic shell script compiler.
+ It takes a script, which is specified on the command line and produces
+ C source code. The generated source code is then compiled and linked to
+ produce a stripped binary.
+ .
+ The compiled binary will still be dependent on the shell specified in
+ the first line of the shell code, thus shc does not create completely
+ independent binaries.
+ .
+ shc itself is not a compiler such as cc,
+ it rather encodes and encrypts a shell script and generates C source
+ code with the added expiration capability. It then uses the system
+ compiler to compile a stripped binary which behaves exactly like the
+ original script. Upon execution, the compiled binary will decrypt and
+ execute the code with the shells' -c option.|
+
 Package: skippy-xd-v0.7.0-amd64
 Version: 0.7.0-1
 Architecture: amd64
@@ -936,6 +1154,28 @@ Description: skippy-xd window exposé tool for X11
  Skippy-XD es un visor de ventanas similar a "Exposé" de macOS, para sistemas X11.
  Permite previsualizar todas las ventanas abiertas en pantalla, facilitando el cambio rápido entre ellas.
  Este paquete contiene la versión 0.7.0 compilada para sistemas amd64.
+
+Package: telegram
+Version: 6.7.5
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 207443
+Provides: www-browser
+Filename: pool/main/telegram_6.7.5_amd64.deb
+Size: 67290532
+MD5sum: 4d6018ca3b39cabbf3a06a699b4ccdee
+SHA1: 4cde6f7fdb0d75839fcd20b36577e43a26b6cca1
+SHA256: cea0fef80a9580a66d539b1c6bcf5c3e716b07584a2abf7d5240ccab6e331a9d
+Section: www-browser
+Priority: optional
+Homepage: https://telegram.org
+Description: Fast and secure messaging application
+ Telegram is a messaging app with a focus on speed and security. It's super fast,
+ simple and free. With Telegram, you can send messages, photos, videos and files
+ of any type (doc, zip, mp3, etc), as well as create groups for up to 200,000
+ people or channels for broadcasting to unlimited audiences.
+ .
+ This package contains the official desktop client for Telegram.||
 
 Package: tkterminal
 Version: 0.1.0-1
@@ -1733,6 +1973,41 @@ Priority: optional
 Homepage: https://github.com/X11Libre
 Description: XLibre video driver — xf86-video-xgi
  XLibre fork of xf86-video-xgi version 25.0.0-essora built for Essora Linux.
+
+Package: xrandr-essora
+Version: 2.1-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 91
+Depends: python3, python3-gi, gir1.2-gtk-3.0, x11-xserver-utils, gir1.2-gdkpixbuf-2.0
+Provides: display-manager, resolution-manager, xrandr-gui
+Filename: pool/main/xrandr-essora_2.1-essora_amd64.deb
+Size: 17404
+MD5sum: 5f2317f2f6b6cafe942d4f599d367b5a
+SHA1: cdc3d752ace1339da114fa63c9dd7a5bbfa1c34c
+SHA256: fcad284d9fe0fdfbe32a052bd104771c6e189f1962bb158fb4c01de34794e36f
+Section: utils
+Priority: optional
+Homepage: https://sourceforge.net/projects/essora/
+Description: Multi-monitor resolution manager for Essora Linux
+ Essora Resolution Manager is a comprehensive display configuration tool
+ for managing multiple monitors with advanced features.
+ .
+ Features:
+  * Multi-monitor support with tabbed interface
+  * Individual resolution and refresh rate configuration
+  * Monitor positioning (left, right, above, below, mirror)
+  * Display rotation and reflection controls
+  * Scaling support for HiDPI displays
+  * Primary monitor selection
+  * Enable/disable monitors on-the-fly
+  * Mirror and extend modes
+  * Auto-revert with 10-second confirmation timer
+  * Dark theme optimized for Essora Linux
+  * Multi-language support (12 languages)
+ .
+ Designed for Essora Linux with OpenRC and Xlibre display server.
+ Compatible with any X11-based system using xrandr.|
 
 Package: xrandr-essora-multi
 Version: 1.1
