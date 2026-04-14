@@ -6,13 +6,13 @@ Version: 1.0
 Architectures: amd64
 Components: main
 Description: Official Essora Linux package repository
-Date: Tue, 14 Apr 2026 21:13:40 +0000
+Date: Tue, 14 Apr 2026 23:08:28 +0000
 MD5Sum:
- ce4b857896fe443303bf0fa3ad92032e 80156 main/binary-amd64/Packages
- 8af5bb389ff770bd74c8eaf24c55b1f6 25176 main/binary-amd64/Packages.gz
+ a3181d7bb97196420dab9657b1375e79 82420 main/binary-amd64/Packages
+ 12ecefda9153b0b0b3dae7d0614444cd 25909 main/binary-amd64/Packages.gz
 SHA256:
- 214ae6963519ce0d7873177f1e598541caa673f809cb7ebd4b1d6670840b00aa 80156 main/binary-amd64/Packages
- 2161f4b87ab9c618a13df6b430a33f6b768438d02d9b44b6140ebd5c8770915d 25176 main/binary-amd64/Packages.gz
+ 447735a2074e1b66d1abdc0daff462a35420df03a316d4c410ad2ca1fde4e534 82420 main/binary-amd64/Packages
+ 4e2b8d2abd0f15eb96d3448bc637764996dd863943622897d99245c246f6d49c 25909 main/binary-amd64/Packages.gz
 SHA512:
- 4a154b2e57655c2e6f1abb986230ef7762af588cb6a6ecffd484abcf3e7095fa7323b1ecba1f1b543955179e2f005a27ecbd7affe7f2adb7ba258e3b8516abec 80156 main/binary-amd64/Packages
- 67a7f56a745589fd759ab41357f5607727abbd246f3054af948cba86057538a845a095097c4586d7cb6eb371b6f2572aa494c88a816702fe4273f280c16ffc84 25176 main/binary-amd64/Packages.gz
+ 697c165715cc5c3aa84881a413131fb75e52bd9899d0db257d776ee34c573af6aad17ab8fcd69438b1a37c3bfe8c4ad8edbba5dd83f3f835b0227461dc211949 82420 main/binary-amd64/Packages
+ a920329a84c7bcf0b027913bed5b6f4305dbdbce2150b96b2f3438998563dfae2dcbba419cf70a92dd34cbabf5e2c019bb0d0174b026c2b0ba92bb722baa5a41 25909 main/binary-amd64/Packages.gz

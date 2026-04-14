@@ -820,6 +820,72 @@ Description: Create iso, edit iso, burn iso or write (hybrid) iso to usb. Change
   - Display progress bar for writing ISO to USB
   - Changed entry box for to enter usb drive, to: display a list of available drives to choose from.
 
+Package: linux-headers-7.0.0-rc7-essora
+Source: linux-upstream
+Version: 7.0.0~rc7-1
+Architecture: amd64
+Maintainer: root <root@fran>
+Installed-Size: 58210
+Filename: pool/main/linux-headers-7.0.0-rc7-essora_amd64.deb
+Size: 9987532
+MD5sum: 174b375cc1128ab030ac7c608e8a8b15
+SHA1: 159f71af409df0dbedccb3e71d78db332b581e5c
+SHA256: 1942015a3a81e41f73122db8932661f543a84ad3ac9276d9ac361af248bbc543
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux kernel headers for 7.0.0-rc7-essora on amd64
+ This package provides kernel header files for 7.0.0-rc7-essora on amd64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-image-7.0.0-rc7-essora
+Source: linux-upstream
+Version: 7.0.0~rc7-1
+Architecture: amd64
+Maintainer: root <root@fran>
+Installed-Size: 418167
+Filename: pool/main/linux-image-7.0.0-rc7-essora_amd64.deb
+Size: 72355288
+MD5sum: ccf99ea1846f48b08b5d9274ccf3e35f
+SHA1: bf6d85a9f1d64079d2e6205a181f08b9a8e45c13
+SHA256: 97feb9742d9873e6e61bb09ae72deed85d79e4196117efdb3a91c32e1712ce98
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux kernel, version 7.0.0-rc7-essora
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 7.0.0-rc7-essora.
+
+Package: linux-kbuild-7.0-rc7-essora
+Version: 7.0-rc7-essora
+Architecture: amd64
+Maintainer: josejp2424
+Provides: linux-kbuild-7.0-rc7
+Filename: pool/main/linux-kbuild-7.0-rc7-essora_amd64.deb
+Size: 1547700
+MD5sum: 2d4c0133d2e8225a929b2207c139785c
+SHA1: a5bd5d816e885adc0e1f130c0bcb08fedc266221
+SHA256: 80b6632b1df1083b9ffe00c07ee7b364621b345f5cd5dbabfc7ad651b6523414
+Section: kernel
+Priority: optional
+Description: Kbuild infrastructure for Linux 7.0-rc7-essora
+ Scripts and tools needed to build out-of-tree kernel modules
+ against the 7.0-rc7-essora kernel.
+
+Package: linux-libc-dev
+Version: 7.0-rc7-essora
+Architecture: amd64
+Maintainer: josejp2424
+Filename: pool/main/linux-libc-dev_amd64.deb
+Size: 1463584
+MD5sum: b878a6ab497ca382707c04a72e713899
+SHA1: e919e7443699d12d3bf5e2c9f75ea09a56be0f42
+SHA256: 3a30cff855da28762ff9d7ab30d4a52657349bdd258333df0ca1e50f4a6c6cfd
+Section: devel
+Priority: optional
+Description: Linux kernel UAPI headers for userspace development (essora)
+
 Package: obkey
 Version: 22.10.16-1
 Architecture: amd64
