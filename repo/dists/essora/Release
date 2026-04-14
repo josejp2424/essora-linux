@@ -1,0 +1,18 @@
+Origin: Essora Linux
+Label: Essora
+Suite: essora
+Codename: essora
+Version: 1.0
+Architectures: amd64
+Components: main
+Description: Official Essora Linux package repository
+Date: mar, 14 abr 2026 18:33:08 UTC
+MD5Sum:
+ 338cb66c0d7ae3516891f132d29c24c2 42819 main/binary-amd64/Packages
+ fd112b52da31cfdbffe4b900c08f8895 15984 main/binary-amd64/Packages.gz
+SHA256:
+ 5e6c18321d025b808b83971fb817a4b945f1f3959c6632ada281fd68eb429135 42819 main/binary-amd64/Packages
+ 8e88e616e3af4df46b85f9c7dcba068e224b3998bb956fffa7182ae4b58f85bb 15984 main/binary-amd64/Packages.gz
+SHA512:
+ b36e155aefadc89dc209923f3b157cca6b7e56e3710b5e04c8e5ba3cb9f6e7af96b074b8895ec4fc5210c8fa39ca9378c55ea10ec147aee9416ea9da961c92a1 42819 main/binary-amd64/Packages
+ afb4f94c487ea35ceba7edcabd540d2792e5e94498d38d41070efb3bfa46a31c85f6f63965a922ec7cbe8c0e8a8d6a7af594de3e78cbc9bd352c76e4f006642c 15984 main/binary-amd64/Packages.gz

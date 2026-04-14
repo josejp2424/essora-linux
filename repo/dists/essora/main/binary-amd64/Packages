@@ -1,0 +1,1051 @@
+Package: EssoraKB
+Version: 0.1.2
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 1289
+Depends: yad, xterm, xdotool
+Provides: Development
+Filename: pool/main/essorakb_0.1.2_amd64.deb
+Size: 211408
+MD5sum: b9b5fb7734adce62a1aa6c773bd82369
+SHA1: 657944aa5fc3691c4a52ef9463eb4ea3e882fc6e
+SHA256: 37458abdbb9f628a1baac425bc6e0f566b912570a364c571fe1b0e858bbff3e6
+Section: Development
+Priority: optional
+Homepage: https://sourceforge.net/projects/essora/
+Description: EssoraKB — Graphical Kernel Builder for Essora Linux
+ EssoraKB is a graphical frontend for compiling custom Linux kernels
+ and generating Debian-compatible .deb packages, designed specifically
+ for Essora Linux (Devuan/OpenRC based).
+ .
+ Features:
+  - Install all kernel build dependencies in one click
+  - Check missing dependencies without installing
+  - Download kernel sources and compile with make bindeb-pkg
+  - Generates linux-image, linux-headers, linux-kbuild and
+    linux-libc-dev .deb packages ready to install
+  - Pre-configured DOTconfig profiles for x86_64
+  - ccache support for faster recompilation
+  - Multilingual interface: en, es, fr, de, it, pt, ar, ca, hu, ru, ja, zh
+  - Embedded YAD authentication dialog (no external gksu required)
+  - Integrated xterm terminal with Catppuccin Mocha theme||
+
+Package: Lumivio
+Version: 1.2.0-1
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 1011
+Depends: python3, python3-gi, gir1.2-gtk-3.0, gir1.2-gdkpixbuf-2.0, ffmpeg, scrot, slop, x11-xserver-utils, pulseaudio-utils, alsa-utils, xdg-utils
+Provides: Utility
+Filename: pool/main/lumivio_1.2.0-1_amd64.deb
+Size: 580760
+MD5sum: f124492197615d38b5a9397ce3787ed6
+SHA1: 5920a8d1403f806c4b117f671052f8da434e212f
+SHA256: 73181c12ec9cbc92e757067f19a85223d7d75d5dc8d9e6accc7e7d2c3e00ce12
+Section: Utility
+Priority: optional
+Homepage: https://github.com/josejp2424/Lumivio
+Description: Screenshot, GIF and screen recording tool for Essora Linux
+ Lumivio is a GTK3 screen capture and recording utility for Essora Linux.
+ .
+ It supports full-screen, active-window and region screenshots, animated GIF
+ creation, and desktop video recording with optional audio.
+ .
+ The application includes an integrated screen recorder, output folder
+ selection, multilingual interface, and preview/open actions after recording.|
+
+Package: Oply-player
+Version: 2.2-1
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 14201
+Depends: python3, python3-gi, python3-gi-cairo, python3-pillow, python3-mutagen, python3-matplotlib, python3-mpv, gir1.2-gtk-3.0, gir1.2-ayatanaappindicator3-0.1, mpv, ffmpeg, socat, pulseaudio-utils
+Provides: audio-player
+Filename: pool/main/oply-player_2.2-1_amd64.deb
+Size: 11078824
+MD5sum: 0d779a9c7a30f8862fbab3ae2fb4bbcf
+SHA1: 651aca667dd46245aeeba53e1237ace7d0706da1
+SHA256: ab7c0b31f8429be8d1de94b796b4d61425507134e34e04dc788fb495ff1522ba
+Section: sound
+Priority: optional
+Homepage: https://github.com/josejp2424/oply-player
+Description: Oply Audio & Video Player (with Radio + IPTV)
+ A modern and lightweight audio/video player written in Python 3.
+ Includes Oply Radio and Oply Video (IPTV/TV News), and integrates with
+ Oply-Convert for YouTube downloading and conversion.
+ .
+ Features:
+  - Audio playback: MP3, OGG, FLAC, AAC, MP4/M4A, WEBM
+  - Video playback: MP4, MKV, AVI, MOV, FLV, WMV, TS, MPEG, M4V
+  - IPTV/TV News: country/locale indexed channel lists (per-user config)
+  - Internet Radio: country/locale lists + favorites + tray minimize
+  - Playlist saving/loading
+  - Interactive progress bar
+  - System tray integration (Ayatana AppIndicator)
+  - Light/dark themes
+  - MPV + FFmpeg backend
+  - YouTube downloader (Oply-Convert integration)
+  - Multi-language UI
+ Created by josejp2424||
+
+Package: Telegram
+Version: 6.0.2
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 188200
+Provides: www-browser
+Filename: pool/main/telegram_6.0.2_amd64.deb
+Size: 62278584
+MD5sum: 5c5e22a77d878b5c9550b91f076aa1f1
+SHA1: 2f0a5b31fe57c388f82b2d34ca4cfd7d6cb3ba06
+SHA256: ee19b983428635dd03e701670f0e9b27fe3276783098272523c7340ab10e5364
+Section: www-browser
+Priority: optional
+Homepage: https://telegram.org
+Description: Fast and secure messaging application
+ Telegram is a messaging app with a focus on speed and security. It's super fast,
+ simple and free. With Telegram, you can send messages, photos, videos and files
+ of any type (doc, zip, mp3, etc), as well as create groups for up to 200,000
+ people or channels for broadcasting to unlimited audiences.
+ .
+ This package contains the official desktop client for Telegram.
+
+Package: alias-creator
+Version: 02
+Architecture: amd64
+Maintainer: josejp2424<puppylinuxjosejp2424>
+Installed-Size: 36
+Depends: yad
+Provides: Utility
+Filename: pool/main/alias-creator_02_amd64.deb
+Size: 14672
+MD5sum: 71474091e751f44d062884ee22cc341b
+SHA1: 32e00ea59d5be2eba5c7c29af40c4173d19676f2
+SHA256: da7d45471d791592eb825efb62ecf1f90bb1bc255c225ea66fd5f0099e8481b7
+Section: Utility
+Priority: optional
+Homepage: https://sourceforge.net/projects/kla-manjaro/files/packages/
+Description: The alias-creator-02:
+ The GNU alias-creator-01 Program is
+ a graphical tool for creating and managing command aliases in Linux systems.
+ It provides an intuitive GUI interface with multi-language support (English,
+ Spanish, Russian, Italian, French, Catalan, Hungarian) and system theme integration.
+ The tool requires sudo authentication to modify the user's .bashrc file.
+ alias-creator-01 by josejp2424.
+
+Package: backlight-keys
+Version: 1.0
+Architecture: all
+Maintainer: rcrsn51
+Filename: pool/main/backlight-keys_1.0_all.deb
+Size: 1252
+MD5sum: be178e2b6a0fc8e9c6daa1811d235150
+SHA1: 9bf1cafed937149081c17065bb08645d2002fdc2
+SHA256: b130d722854b591351e2883d2fa4e381b64851be288d952fa60d398abda7b89b
+Section: base
+Priority: optional
+Description: controls laptop backlight with keyboard brightness keys
+
+Package: brightness-control
+Version: 1.1-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 34
+Depends: python3, python3-gi, gir1.2-gtk-3.0, gir1.2-gdkpixbuf-2.0, x11-xserver-utils
+Provides: brightness-control
+Filename: pool/main/brightness-control_1.1-essora_amd64.deb
+Size: 828460
+MD5sum: f0d299ed6e576232670ae74c45d8e98b
+SHA1: 66f5549b04c3f20c5f2c6834438159cbeee0ec22
+SHA256: db17661a04af1dd12580df5aa33de3cec4f30417fd75347258a310c6b479c8e5
+Section: utils
+Priority: optional
+Homepage: https://sourceforge.net/projects/essora/
+Description: Screen brightness control for Essora Linux
+ Lumessora is a graphical brightness control utility for Essora Linux.
+ It provides an intuitive GNOME-style interface to adjust screen brightness
+ using xrandr, with support for saving settings to be applied automatically
+ at system startup.
+ .
+ Features:
+  * Real-time brightness adjustment with visual feedback
+  * Automatic brightness restoration on system boot
+  * Multi-language support (11 languages)
+  * Modern GNOME-style dark theme interface
+  * Integration with system autostart||||||
+
+Package: essdeb
+Version: 0.3.2-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 347
+Depends: python3, python3-gi, gir1.2-gtk-3.0
+Provides: utility
+Filename: pool/main/essdeb_0.3.2-essora_amd64.deb
+Size: 215400
+MD5sum: d1dcb11984d4a61b33e64b38d2aae79e
+SHA1: 01b2aca5e5efa268ca639042ea0ac6fb87148844
+SHA256: 3dc2393058bb727b6aca372554fe20e305ac472157d2bbf0e43b7022653d3777
+Section: utils
+Priority: optional
+Homepage: https://sourceforge.net/projects/essora
+Description: EssDeb - DEB installer for Essora (GTK3)
+ EssDeb is a lightweight graphical installer for local .deb packages on Essora.
+ It installs and removes .deb packages using APT dpkg and can refresh menus
+ automatically after changes.
+ License: GPL-3.0-or-later|
+
+Package: essora-cleaner
+Version: 2.1-1
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 32818
+Depends: python3, python3-gi, gir1.2-gtk-3.0
+Provides: Utility
+Filename: pool/main/essora-cleaner_2.1-1_amd64.deb
+Size: 8869852
+MD5sum: 703082b84e399fe147b9336fc2cd429c
+SHA1: da08ba3c1f142015386e180b40b27516c87e5ba8
+SHA256: d4ecff693305654125bcc12a9f7bd8ed9e32f0f35b79cc5d1daa7c57b9a378e9
+Section: Utility
+Priority: optional
+Homepage: https://sourceforge.net/projects/essora/
+Description: System cleaner for Essora (cache, APT & Flatpak leftovers)
+ Essora Sweeper is a GTK3 system cleaner for Essora Linux.
+ It can remove browser caches, Flatpak orphan data, APT package cache,
+ thumbnails, temporary files and system logs, with advanced cleanup options.
+ It scans all users (including /root) when run with sufficient privileges.||
+
+Package: essora-firewall
+Version: 2.1.6-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 2177
+Depends: python3, python3-gi, gir1.2-gtk-3.0, gir1.2-notify-0.7, iptables, pkexec, conntrack, iproute2
+Provides: system
+Filename: pool/main/essora-firewall_2.1.6-essora_amd64.deb
+Size: 1587948
+MD5sum: 3e00ff600824e0ca6d5aea552c2750f4
+SHA1: 05a05428b313947a9a583d4b41690bf166b21649
+SHA256: 2d3de55f2bd52b413cb943fa49587eaeddaa42b3fefd3445bb337425a3a451ca
+Section: net
+Priority: optional
+Homepage: https://sourceforge.net/projects/essora
+Description: Cortafuego por proceso para Essora Linux v2
+ Arquitectura inspirada en firewalld:
+  - Cadenas propias ESSORA_OUT/ESSORA_IN (no toca reglas del sistema)
+  - iptables-restore para aplicación atómica de reglas
+  - Detección via ss -tupn (detecta mpv, Telegram, Electron, etc.)
+  - Bloqueo real: conntrack + ss --kill + REJECT tcp-reset
+  - Procesos media (mpv) heredan reglas del proceso padre
+  - Systray, minimize-to-tray, close dialog
+  - Config en home del usuario real aunque se ejecute como root||||
+
+Package: essora-installer
+Version: 1.6-1
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 1297
+Depends: python3, python3-gi, python3-gi-cairo, gir1.2-gtk-3.0, gir1.2-gdkpixbuf-2.0, gparted
+Provides: system
+Filename: pool/main/essora-installer_1.6-1_amd64.deb
+Size: 1078904
+MD5sum: ec43146515cc44a27c9277c7827a13a4
+SHA1: f3b6d1d63a944db12334c695dda0435012689797
+SHA256: 25652e4baf71cbe35e3566431316e5a0a741a25689afa52c9bae6d7b27157f77
+Section: system
+Priority: optional
+Homepage: https://sourceforge.net/projects/essora/
+Description: Graphical live system installer for Essora Linux
+ Essora Installer is a GTK3 graphical installer for Essora Linux,
+ based on Devuan GNU/Linux with OpenRC. It copies the running live
+ system to disk and configures the user account, hostname, time zone,
+ keyboard layout and the GRUB bootloader.
+ .
+ Features:
+  - Wizard-style interface inspired by Calamares
+  - UEFI and BIOS/Legacy support
+  - Optional separate /home partition
+  - ext4/ext3 filesystem support with custom label
+  - Multilingual: English, Spanish, French, Italian, Portuguese,
+    Catalan, Hungarian, Russian, Japanese, Chinese, Arabic
+  - Disables live autologin on installed system
+  - Regenerates machine-id after installation
+  - GParted integration for partition management
+ .
+ Copyright (C) 2026 josejp2424 — GPL-3.0-or-later||
+
+Package: essora-store
+Version: 3.6-1
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 117624
+Depends: python3, python3-gi, gir1.2-gtk-3.0, flatpak, apt, wget, gir1.2-gdkpixbuf-2.0, gir1.2-pango-1.0
+Provides: package-manager
+Filename: pool/main/essora-store_3.6-1_amd64.deb
+Size: 49945892
+MD5sum: 9134351e02f2b0deb4f4aebce53e3167
+SHA1: 7758e885778e25f0b541f0fec3f18485f2136828
+SHA256: 1d8d08d2fe29e236b835416681d698808acc3401f7beba980576a2dd3f923acf
+Section: utils
+Priority: optional
+Homepage: https://sourceforge.net/projects/essora/
+Description: Comprehensive multi-format package manager for Essora Linux
+ Essora Store is a unified package management application that provides
+ a modern GTK3 interface for installing, updating, and managing software
+ packages across multiple formats including Flatpak, DEB, and AppImage.
+ .
+ Key Features:
+  * Flatpak package support with automatic repository management
+  * DEB package management with APT integration
+  * AppImage application integration and management
+  * Unified search across all package types
+  * Individual and batch package updates
+  * Multi-language support (English, Spanish, Portuguese, French, etc.)
+  * Modern, intuitive user interface with progress tracking
+  * Automatic catalog refresh after operations
+ .
+ Essora Store simplifies software management on Essora Linux by providing
+ a single application to handle all your package management needs, whether
+ you're installing system packages, Flatpak applications, or portable
+ AppImages.|||||
+
+Package: essora-system-center
+Version: 4.2-1
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 614
+Depends: python3, python3-gi, python3-psutil, gir1.2-gtk-3.0, gir1.2-gdkpixbuf-2.0, procps, util-linux, iproute2, wmctrl, mesa-utils
+Provides: Utility
+Filename: pool/main/essora-system-center_4.2-1_amd64.deb
+Size: 153280
+MD5sum: 1d98a3b8d1eef4d1c87c253edf621d53
+SHA1: 3a5fe56ebf57fd100f20e427cee269675ff8193e
+SHA256: 75c9c2bc9ea1dbfd21fb1838a72a707b504e84d781a3240ac88014f12febc9b2
+Section: Utility
+Priority: optional
+Homepage: https://sourceforge.net/projects/essora/
+Description: Essora System Center: system information, monitoring and tools for Essora Linux
+ The Essora System Center provides a GTK-based interface to view system, hardware, software,
+ network and disk information, with quick benchmarks and essential tools for Essora Linux.|
+
+Package: essora-vm
+Version: 1.3-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 131
+Depends: qemu-system, qemu-system-x86, qemu-utils, qemu-system-common, grub-firmware-qemu, qemu-efi-riscv64, u-boot-qemu, u-boot-tools, libvirt-daemon-system, libvirt-daemon-system-sysv, python3, python3-gi, python3-gi-cairo, gir1.2-gtk-3.0, gir1.2-gdkpixbuf-2.0, xdotool
+Provides: Utility
+Filename: pool/main/essora-vm_1.3-essora_amd64.deb
+Size: 76220
+MD5sum: d357032ca44bed239d3afa08cc45938d
+SHA1: ef0d56e6c1757f681fceab1db0c55c11e6eae970
+SHA256: 39e76f5d895832fdf9af7ef977ebd0654b3ccb09eb2085e8888271b4de76dc53
+Section: Utility
+Priority: optional
+Homepage: https://github.com/josejp2424/essora-vm
+Description: Essora VM - QEMU Virtual Machine Manager for Essora Linux
+ Essora VM is a lightweight graphical frontend for QEMU built with
+ Python 3 and GTK3, designed specifically for Essora Linux (Devuan base).
+ .
+ It allows users to create, configure and run virtual machines without
+ using the command line. Each VM is stored as a simple JSON profile and
+ disk images are created automatically in qcow2 format using qemu-img.
+ .
+ Features:
+  - Create and manage multiple virtual machines
+  - KVM acceleration support with one-click toggle
+  - Live screen preview via QEMU monitor socket (screendump)
+  - ISO image selection for installation
+  - CPU and RAM sliders with real-time values
+  - Multilingual interface: English, Spanish, Arabic, Catalan,
+    German, French, Italian, Portuguese, Japanese, Hungarian,
+    Russian and Chinese
+  - Essora branding with custom logo and banner support
+  - No system titlebar, centered window, clean dark GTK3 theme
+ .
+ Author: josejp2424 — Essora Developer
+ License: GPL-3.0||
+
+Package: essora-vpn
+Version: 1.2.1-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 44
+Depends: openvpn, curl, yad, ca-certificates, iproute2
+Provides: net
+Filename: pool/main/essora-vpn_1.2.1-essora_amd64.deb
+Size: 1504540
+MD5sum: 97d8676ca49d8a5155b1c3d8ddf62b2d
+SHA1: c4bf71e93770b1c8ebe263fb39d14a7ec1ce2f43
+SHA256: 82c32926f6a8df889001440e3e40b152defe77898085e961c018bf1a570651db
+Section: net
+Priority: optional
+Homepage: https://riseup.net/vpn
+Description: RiseupVPN wrapper (Essora version)
+ Provides scripts and configuration for RiseupVPN with
+ auto credential management, tray icon (Yad), and
+ integration for Essora/Debian systems. by tenoch, nilsonmorales, josejp2424 .|
+
+Package: essora-wlcome
+Version: 1.1-essora
+Architecture: amd64
+Maintainer: josejp2424<puppylinuxjosejp2424@gmail.com>
+Installed-Size: 401
+Provides: Utility
+Filename: pool/main/essora-wlcome_1.1-essora_amd64.deb
+Size: 390880
+MD5sum: c9501a79f7cd796a6a477ba795d9b93d
+SHA1: 2cf1aba8d305e923cc6eb7b190821262facdc030
+SHA256: ac475da89272bc1398b27152d51be8d31235db0b6edd1f1cef3c3b61456478fd
+Section: Utility
+Priority: optional
+Homepage: https://sourceforge.net/projects/essora
+Description: TWelcome screen for Essora Eos||
+
+Package: findnrun
+Version: 1.10.6-1
+Architecture: all
+Maintainer: name <name@email>
+Installed-Size: 277
+Depends: libc6, gtkdialog (>= 0.8.3), gawk, gettext-base
+Suggests: findnrun-doc (= 1.10.6-1), findnrun-nls (= 1.10.6-1)
+Filename: pool/main/findnrun_1.10.6-1_all.deb
+Size: 112628
+MD5sum: 1c350d0c12b684479ee9f8a94ada34d6
+SHA1: 520c957ffa904bcae85cf6afd73024ce5c9cf2ec
+SHA256: b4c29581c5cace4961a58a47df62c4db6f6dc5cfabf338a62bed4adee42db137
+Priority: optional
+Description: findnrun 1.10.6 (utility)
+  Findnrun is a gtk-dialog based application finder and starter
+  for freedesktop.org desktop application files.
+  Files in this base package: executable script, desktop and
+  icons, smaller English help (markdown), NLS .pot.
+  https://github.com/step-/find-n-run/
+
+Package: findnrun-nls
+Version: 1.10.6-1
+Architecture: all
+Maintainer: name <name@email>
+Installed-Size: 110
+Depends: libc6, findnrun
+Filename: pool/main/findnrun-nls_1.10.6-1_all.deb
+Size: 7036
+MD5sum: 1609fbdaff94b14c6cd777a48c2b6d77
+SHA1: 919a22dfca3d7559a4a3ede984d7742d2fb90de4
+SHA256: f6bcbf1185b4d7efba9879d04ab81d5748b3105fb96b21d8021f71159bdb2e04
+Priority: optional
+Description: findnrun 1.10.6 (i18n)
+  Findnrun is a gtk-dialog based application finder and starter
+  for freedesktop.org desktop application files.
+  Files in this add-on package: localized runtime messages.
+  https://github.com/step-/find-n-run/
+
+Package: flitz-Toolkit
+Version: 5.1
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 97
+Depends: python3, python3-py7zr, python3-pyzstd, python3-bcj, python3-brotli, python3-bs4, python3-pil, python3-tk, p7zip-full, unrar-free, unar, cabextract, rpm2cpio, cpio, binutils, dmg2img, innoextract, msitools, squashfs-tools, zstd, zip
+Provides: Utility
+Filename: pool/main/flitz-toolkit_5.1_amd64.deb
+Size: 22596
+MD5sum: c911274e0c0a8e8c93f993773a4dbf7b
+SHA1: 2f5fabf55389ebcf86fa8ad1b34d87f9808f36aa
+SHA256: 44872026deef12d45a0b58d9b80ee654cd3ce27a7c73466d5c071056537024f6
+Section: Utility
+Priority: optional
+Homepage: https://github.com/josejp2424
+Description: Flitz Toolkit - Extractor y Compresor universal de archivos con GUI
+ Flitz es una suite de utilidades gráficas desarrolladas en Python para comprimir y descomprimir archivos.
+ Soporta múltiples formatos como zip, tar, 7z, rar, deb, rpm, iso, zst y más. Incluye Flitz-Extractor y Flitz-Compressor.
+ Posee soporte multilenguaje, arrastrar y soltar, y funciona tanto en modo gráfico como por consola.
+ .Incluye soporte avanzado para squashfs, filtros XZ, progresos en tiempo real y extracción recursiva.
+
+Package: fonts-cantarell
+Version: 0.303.1-4
+Architecture: all
+Maintainer: Debian Fonts Task Force <debian-fonts@lists.debian.org>
+Installed-Size: 213
+Depends: fontconfig
+Filename: pool/main/fonts-cantarell_0.303.1-4_all.deb
+Size: 113824
+MD5sum: f5a5dc3c8c91c330fae16559dd7a6f9b
+SHA1: bfafc7565439c807b976439e6d16c37934efe73d
+SHA256: 21f8160696cd2b51ac104e735fd63d0e2245cd84cf75f17919f1425dce4ea258
+Section: fonts
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://cantarell.gnome.org/
+Description: sans serif font family designed for on-screen readability
+ The Cantarell font family is designed as a contemporary Humanist sans serif
+ and is particularly designed for on-screen reading on mobile devices at small
+ sizes, such as phones and tablets.
+ .
+ This is the open font officially chosen by default for the GNOME 3 desktop and
+ for Fedora branding materials.
+ .
+ This package contains the variable font.
+
+Package: geany
+Version: 2.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinujosejp2424@gmail.com>
+Installed-Size: 17107
+Depends: libatk1.0-0t64, libc6, libcairo2, libgcc-s1, libgdk-pixbuf-2.0-0, libglib2.0-0t64, libgtk-3-0t64, libpango-1.0-0, libpangocairo-1.0-0, libstdc++6
+Provides: devel
+Filename: pool/main/geany_2.0-essora_amd64.deb
+Size: 4000696
+MD5sum: 36b87641e94889a3edb491e7a376fcd2
+SHA1: 3ee1ecf48ccb5911a62d14f0de8c5ca8dbeec48e
+SHA256: a2de1f1657e2bc321dd0c3fc4d0211da6da03ae0f5e2d633a100c866b99f2096
+Section: devel
+Priority: optional
+Homepage: http://www.geany.org
+Description: fast and lightweight IDE
+ Geany is a small and lightweight integrated development environment.
+ It was developed to provide a small and fast IDE, which has only a
+ few dependencies from other packages. It is using only the GTK3 toolkit
+ and therefore you need only the GTK3 runtime libraries to run Geany.
+ .
+ The basic features of Geany are:
+  - syntax highlighting
+  - code completion
+  - auto completion of constructs like if, for and while, XML and HTML
+  - call tips
+  - folding
+  - many supported filetypes like C, Java, PHP, HTML, Python, Perl, Pascal
+  - symbol lists
+  - embedded terminal emulation
+
+Package: gitgui
+Version: 2.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 2367
+Depends: git-all, openssh-client, python3, python3-gi, gir1.2-gtk-3.0, gir1.2-gdkpixbuf-2.0, python3-requests
+Provides: utility
+Filename: pool/main/gitgui_2.0-essora_amd64.deb
+Size: 1674256
+MD5sum: 5bdd90a87f82b3b7232a6382b0cc42e7
+SHA1: ae4276c977c6fae193a1b10af002c0cb2605344c
+SHA256: 8f8cd28562563387ff9edeb8518f0128968fe1559960392d59015d3c310b6a69
+Section: utils
+Priority: optional
+Homepage: https://sourceforge.net/projects/essora/
+Description: GTK3 graphical client for Git
+ GitGUI is a lightweight GTK3 front-end for Git that helps you manage
+ repositories with a simple GNOME-style interface. It supports cloning
+ repositories, staging files, creating commits, viewing status and history,
+ and pushing/pulling to remotes using SSH keys or HTTPS tokens.
+ .
+ The original Bash script was written by nilsonmorales and is licensed under
+ GPL-3.0. This version is a GTK3/Python port with additional modifications
+ made by josejp2424, maintaining the same GPL-3.0 license.||
+
+Package: gksu
+Version: 1.0.7-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 185
+Depends: python3, python3-gi, gir1.2-gtk-3.0, sudo
+Provides: admin
+Filename: pool/main/gksu_1.0.7-essora_amd64.deb
+Size: 133740
+MD5sum: e70181c5224eed512a6b006f73e3e9fc
+SHA1: 269544fe8340df685f9f44df7c8ceda33a0657ec
+SHA256: b6eefc84617ac617c1418e729602069a04ec6a5d482bfe000b996ad01900e622
+Section: system
+Priority: optional
+Homepage: https://sourceforge.net/projects/essora/
+Description: graphical frontend to sudo. by josejp2424.|
+
+Package: gtkdialog
+Version: 0.8.9-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 663
+Depends: libc6, libgtk2.0-0, procps
+Conflicts: gtkwialog
+Replaces: gtkwialog
+Filename: pool/main/gtkdialog_0.8.9-essora_amd64.deb
+Size: 150888
+MD5sum: 18994bcc2144fe1cad69e14abd40d7d7
+SHA1: 8dfa4b9cd66f358691f7490c9ba18001099db744
+SHA256: f60491c64836a458b4600750ccf51e320f890b4f9552accfbbada55b376ace28
+Priority: extra
+Description:
+ Gtkwialog is a fork of Pere László's Gtkdialog, a small utility for
+ fast and easy GUI building
+ Gtkwialog uses various, more secure and flexible, glib calls than
+ legacy Gtkdialog to effect its action and input tag command spawning.
+
+Package: guessfstype
+Version: 1.0.0
+Architecture: amd64
+Maintainer: root
+Installed-Size: 40
+Depends: libc6
+Filename: pool/main/guessfstype_1.0.0_amd64.deb
+Size: 5378
+MD5sum: 0786b18c3e1b54ff78408ac41ff8ae50
+SHA1: 91b0c3c9901b02d5e8a2789ea38f2347078d6d52
+SHA256: 8298a9d4151ddf46cc23406aa03ff3ad6353c31b8f4309719b59e3870246f58f
+Description: File system type CLI tool from Puppy linux.
+
+Package: isomaster
+Version: 1.3.16-1
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 734
+Depends: libgtk2.0-0
+Provides: utility
+Filename: pool/main/isomaster_1.3.16-1_amd64.deb
+Size: 181468
+MD5sum: 27750fd2594f8af6efefb8da40e22cf2
+SHA1: 03e30ef3ae08c4dfa08aa10233d49ce3f3659192
+SHA256: 316c8a52f7a40eec409623d1c25279838264bd747015ebdeab5e3e1d506896d8
+Section: utils
+Priority: optional
+Homepage: http://littlesvr.ca/isomaster/
+Description: ISO image editor for Linux
+ ISO Master es una herramienta gráfica que permite extraer, editar y crear archivos ISO.
+ Puede ser utilizada para agregar o eliminar archivos de una imagen ISO existente, o para
+ crear nuevas imágenes ISO desde cero. Es útil para personalizar distribuciones Linux
+ y preparar medios booteables. Su interfaz es simple y está basada en GTK2.
+
+Package: isotools
+Version: 1.0.2
+Architecture: all
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 73
+Depends: libc6, yad, pburn, xorriso, isolinux, x11-utils, mount, procps, coreutils
+Filename: pool/main/isotools_1.0.2_all.deb
+Size: 28424
+MD5sum: 3e1a4162a167deb4deff5ddce1127646
+SHA1: aa40f6352b37a353b75fb8719cea1359d239b130
+SHA256: b16e2ac850bd969ea5f32a97b8e9112d132585a92308ccf3aec6b480ebdfb9e3
+Description: Create iso, edit iso, burn iso or write (hybrid) iso to usb. Changes from version 1.0.0: added 'export LC_ALL=C' on top of script, which makes sure it works also when locale is set to other language than english. And added to entry box for to enter usb drive (for writing iso to USB) a list of available drives.
+  Changes in this version 1.0.2
+  - Display progress bar for writing ISO to USB
+  - Changed entry box for to enter usb drive, to: display a list of available drives to choose from.
+
+Package: obkey
+Version: 22.10.16-1
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 379
+Depends: openbox
+Provides: Utility
+Filename: pool/main/obkey_22.10.16-1_amd64.deb
+Size: 60656
+MD5sum: 8525ed2fc8dba3505aea8ff944fdb96a
+SHA1: b21779975f3a9675f91f5a8350709538fef2b6d2
+SHA256: 21e8ea79146916b428da45e2bd8a3cc826b94821cb164cfa1bdc9b95854f843c
+Section: Utility
+Priority: optional
+Homepage: https://github.com/luffah/obkey?tab=readme-ov-file
+Description: Tobkey - openbox key editor - undead
+
+Package: openbox
+Source: openbox (3.6.1-12)
+Version: 3.6.1-12+b2
+Architecture: amd64
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Installed-Size: 1254
+Recommends: obconf, scrot
+Filename: pool/main/openbox_3.6.1-12+b2_amd64.deb
+Size: 333416
+MD5sum: 78efe3ad82088d827e9643a40f922a23
+SHA1: a64be668fea083a6b9a883d8c2d93e17ab3fa664
+SHA256: 8342ba87fbaaaf72f7888975f57aba263eff380f1853bf527b25746b4f85dbec
+Priority: optional
+Homepage: http://www.openbox.org
+Description: standards-compliant, fast, light-weight and extensible window manager
+ Openbox works with your applications, and makes your desktop easier to manage.
+ This is because the approach to its development was the opposite of what seems
+ to be the general case for window managers. Openbox was written first to
+ comply with standards and to work properly. Only when that was in place did
+ the team turn to the visual interface.
+ .
+ Openbox is fully functional as a stand-alone working environment, or can be
+ used as a drop-in replacement for the default window manager in the GNOME or
+ KDE desktop environments.
+ .
+ Openbox 3 is a completely new breed of window manager. It is not based upon
+ any existing code base, although the visual appearance has been based upon
+ that of Blackbox. Openbox 2 was based on the Blackbox 0.65.0 codebase.
+ .
+ Some of the things to look for in Openbox are:
+ .
+  * ICCCM and EWMH compliance!
+  * Very fast
+  * Chainable key bindings
+  * Customizable mouse actions
+  * Window resistance
+  * Multi-head Xinerama support!
+  * Pipe menus
+
+Package: pburn
+Version: 4.3.3-2
+Architecture: amd64
+Maintainer: root@wheezy
+Installed-Size: 754
+Depends: libc6, libgtk2.0-0, gtkdialog, dvd+rw-tools, vamps
+Filename: pool/main/pburn_4.3.3-2_amd64.deb
+Size: 247180
+MD5sum: 95ff9253c31397f2b23950480e8bc87f
+SHA1: ff656ee06eb61bc56322f854de64a41574d77f47
+SHA256: 27ddd715a82f8f710562056e7cd935818ffc9ace70d63ee6bed7b8688def6b3a
+Section: system
+Priority: extra
+Description: pBurn - Burning gui
+
+Package: pfind
+Version: 6.5
+Architecture: all
+Maintainer: zigbert
+Installed-Size: 100
+Depends: gtkdialog, findutils
+Replaces: spacefm-common
+Filename: pool/main/pfind_6.5_all.deb
+Size: 29212
+MD5sum: 310deb8481f11b3b980670cb469d9421
+SHA1: f122debb695e324763adbd465c6f71280885763b
+SHA256: 170b84c8e17713b3b66609c4509297eef6b7b1c4da5eda0d03b40737e7d25960
+Section: utilities
+Priority: optional
+Description: pfind-converted-pet-to-deb by zigbert
+
+Package: picom
+Version: 12.5-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 943
+Depends: python3, libc6, libconfig11, libdbus-1-3, libepoxy0, libev4t64, libpcre2-8-0, libpixman-1-0, libx11-6, libx11-xcb1, libxcb-composite0, libxcb-damage0, libxcb-glx0, libxcb-image0, libxcb-present0, libxcb-randr0, libxcb-render-util0, libxcb-render0, libxcb-shape0, libxcb-sync1, libxcb-util1, libxcb-xfixes0, libxcb1
+Provides: Utility
+Filename: pool/main/picom_12.5-essora_amd64.deb
+Size: 287692
+MD5sum: 8ee108d00c984cc8bb4b51734f7b72a6
+SHA1: 966bfad938de013cbcbf545b7d21cc28a37dcb4c
+SHA256: b8f83f7e41f3bdb202f603a122c4fd01aa4e20b877771b69053e087e0b09eef9
+Section: x11
+Priority: optional
+Homepage: https://github.com/yshui/picom
+Description: lightweight compositor for X11
+ picom is a compositor for X11, based on xcompmgr. In addition to shadows,
+ fading and translucency, picom implements window frame opacity control,
+ inactive window transparency, and shadows on argb windows.
+ .
+ picom is a fork of compton as it seems to have become unmaintained.|||
+
+Package: python3-appdirs
+Version: 1.4.4-1
+Architecture: all
+Maintainer: josejp2424 <you@example.com>
+Installed-Size: 53
+Depends: python3:any
+Filename: pool/main/python3-appdirs_1.4.4-1_all.deb
+Size: 11300
+MD5sum: fd194877693f598985297f642ff243db
+SHA1: 95b6e569c7223da6be66176af41ff61050685e7c
+SHA256: c39c9048e5c6b1ac2ef8a7d63abe1e19d6868fcbbc1116d492219a802d241929
+Section: python
+Priority: optional
+Homepage: https://github.com/ActiveState/appdirs
+Description: Small Python module for platform-specific dirs (Python 3)
+ appdirs helps to determine appropriate platform-specific directories such as
+ a "user data dir". This package provides the Python 3 module.
+
+Package: python3-deep-translator
+Version: 1.11.4-1
+Architecture: all
+Maintainer: josejp2424 <you@example.com>
+Installed-Size: 141
+Depends: python3-bs4 (>= 4.9.1), python3-bs4 (<< 5.0.0), python3-requests, python3:any
+Recommends: python3-openai, python3-docx2txt, python3-pypdf
+Filename: pool/main/python3-deep-translator_1.11.4-1_all.deb
+Size: 25400
+MD5sum: f37490ea77a2f2e3117f70743c073996
+SHA1: 35c28a0f3b69636c1f9601c7997810ef3e1e3aa3
+SHA256: e4ccea9aee56ba3cdd2633ea7a7b6a9ba136da49e07e20477e8c9d54de5d986a
+Section: python
+Priority: optional
+Homepage: https://github.com/nidhaloff/deep-translator
+Description: Flexible tool to translate between languages using multiple providers (Python 3)
+ deep-translator provides a unified API to translate text across multiple services,
+ with a simple interface in Python. This package ships the Python 3 module.
+
+Package: python3-google-trans-new
+Version: 1.1.9-1
+Architecture: all
+Maintainer: josejp2424 <you@example.com>
+Installed-Size: 48
+Depends: python3:any
+Filename: pool/main/python3-google-trans-new_1.1.9-1_all.deb
+Size: 10376
+MD5sum: f64ac077237a5023b84a26bd6e58895d
+SHA1: 3b2794933edf444bc9aa3405ea444d9a4558d174
+SHA256: 6f251ba37d73020f3846122ff380a8c8803ef646ff617a45b38864620a8b422d
+Section: python
+Priority: optional
+Homepage: https://pypi.org/project/google-trans-new
+Description: Free and unlimited Python tools for Google Translate API (Python 3)
+ google-trans-new provides access to Google Translate from Python without API keys.
+ This package provides the Python 3 module.
+
+Package: python3-libretranslate
+Version: 1.7.3-1
+Architecture: all
+Maintainer: josejp2424 <you@example.com>
+Installed-Size: 3423
+Depends: python3-apscheduler, python3-expiringdict, python3-flask, python3-flask-babel, python3-flask-limiter, python3-flask-session, python3-itsdangerous, python3-langdetect, python3-morfessor, python3-numpy, python3-packaging, python3-polib, python3-prometheus-client, python3-redis, python3-requests, python3-torch
+Filename: pool/main/python3-libretranslate_1.7.3-1_all.deb
+Size: 499940
+MD5sum: c5fd51696bc8d2ed04814e87216886b2
+SHA1: 918340322d1b4dbbcd9b834be6291058075bc763
+SHA256: ce659abf8fb9d0bc26bdfd69009d938d45d24931434724aa501ba6aa8824e644
+
+Package: python3-pdf2docx
+Version: 0.5.8-1
+Architecture: all
+Maintainer: josejp2424 <you@example.com>
+Installed-Size: 407
+Depends: python3-docx, python3-fire, python3-fonttools, python3-numpy, python3-pymupdf, python3:any, python3-opencv
+Filename: pool/main/python3-pdf2docx_0.5.8-1_all.deb
+Size: 81404
+MD5sum: 22f6daef6524b2ac060586ae3dd3c205
+SHA1: fc9e2702e6c9c0a2f0939dd12dc17d86e6833795
+SHA256: 530c9668a3d8fe2091acd9d3ab4b9c9b4a67e80c50540fdf2597984194484f85
+Section: python
+Priority: optional
+Homepage: https://github.com/artifexsoftware/pdf2docx
+Description: A Python library for converting PDF to DOCX (Python 3)
+ pdf2docx is a Python library that converts PDF files into Microsoft Word
+ (.docx) format. This package provides the Python 3 module.
+
+Package: python3-sv-ttk
+Source: sv-ttk
+Version: 2.6.1-1
+Architecture: all
+Maintainer: josejp2424 <josejp2424@localhost>
+Installed-Size: 105
+Depends: python3:any
+Filename: pool/main/python3-sv-ttk_2.6.1-1_all.deb
+Size: 45972
+MD5sum: 90e64bce73954ed01d3c29d46c79c34c
+SHA1: c9b31d91e91f8ebdaaccd0757c32314b96f474b1
+SHA256: 17de0b6df3b38115aabdc754d1616895c656cd037a53f0e48b98c66fd43a4c4b
+Section: python
+Priority: optional
+Homepage: https://github.com/rdbende/Sun-Valley-ttk-theme
+Description: A gorgeous theme for ttk, based on Microsoft's Sun Valley visual styles
+ sv_ttk proporciona un tema moderno tipo 'Sun Valley' para widgets ttk de Tkinter. Paquete puro de Python, solo tema.
+
+Package: python3-tkinterdnd2
+Version: 0.4.3-1
+Architecture: all
+Maintainer: josejp2424 <you@example.com>
+Installed-Size: 1512
+Depends: python3 (<< 3.14), python3 (>= 3.13~), python3:any, python3-tk
+Filename: pool/main/python3-tkinterdnd2_0.4.3-1_all.deb
+Size: 253260
+MD5sum: 63402883290007f375f5a79f994e4134
+SHA1: e6d63a35b120fd3b29b68e3a94728566b19b1adf
+SHA256: 5a852ce4ab471e89490bfc3c1f2dd88772c75c7eb466fff6f7a4da2f8f60aff2
+Section: python
+Priority: optional
+Homepage: https://github.com/Eliav2/tkinterdnd2
+Description: Native drag and drop support for Tkinter (Python 3)
+ tkinterdnd2 brings native drag-and-drop (DnD) capabilities to Tkinter.
+ This package provides the Python 3 module.
+
+Package: riseupvpn
+Version: 1.2.0-1
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 44
+Depends: openvpn, openvpn-systemd-resolved, curl, yad, ca-certificates
+Provides: net
+Filename: pool/main/riseupvpn_1.2.0-1_amd64.deb
+Size: 28320
+MD5sum: 630930e63886ee53126cbe138649e7ad
+SHA1: ae8e505575c5f1de599f546aac07653554f73e54
+SHA256: e083ffe1eeaa7718010ac1c82ec6e939793fbc832a25a63b20215211c0eecc6a
+Section: net
+Priority: optional
+Homepage: https://riseup.net/vpn
+Description: RiseupVPN wrapper (Essora version)
+ Provides scripts and configuration for RiseupVPN with
+ auto credential management, tray icon (Yad), and
+ integration for Essora/Debian systems. by tenoch, nilsonmorales, josejp2424 .
+
+Package: roxfiler
+Version: 2.11.17w
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 4933
+Provides: Utility
+Filename: pool/main/roxfiler_2.11.17w_amd64.deb
+Size: 1867796
+MD5sum: 7aa5e60344947e640a0d8907a0700fd8
+SHA1: 9813807727d30aed1bfc36b056261c75e5c4ad64
+SHA256: 0c69a5ab56743d49f9a8f0383a0d1bd49e562e3b03807bfa40d328f8a177911d
+Section: Utility
+Priority: optional
+Homepage: https://rox.sourceforge.net/desktop/home.html
+Description: ROX is a fast, user friendly desktop which makes extensive use of drag-and-drop. The interface revolves around the file manager, or filer, following the traditional Unix view that `everything is a file' rather than trying to hide the filesystem beneath start menus, wizards, or druids. The aim is to make a system that is well designed and clearly presented. The ROX style favours using several small programs together instead of creating all-in-one mega-applications. by Thomas Leonard .|||
+
+Package: screen-control
+Version: 2.4-1
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 29
+Depends: python3, python3-pil, x11-utils, libnotify-bin
+Provides: screen-control
+Filename: pool/main/screen-control_2.4-1_amd64.deb
+Size: 19096
+MD5sum: e26cc05906e4243d5b26e3f0a78d4470
+SHA1: e5e8197b3eb845796918666ab5d80282f01f0ec2
+SHA256: 411a001afda394ffc39814518d426f83b623fc071af5ef7d3ee6c38db5086748
+Section: utils
+Priority: optional
+Homepage: https://sourceforge.net/projects/essora/
+Description: Herramienta gráfica para controlar el comportamiento de la pantalla
+ Screen Control permite configurar de forma gráfica si la pantalla debe permanecer encendida
+ siempre (desactivando DPMS) o apagarse luego de cierta inactividad. Incluye notificaciones,
+ interfaz simple con soporte multilenguaje, y guarda la configuración de forma persistente.
+ Diseñado para distribuciones ligeras como Essora.
+
+Package: skippy-xd-v0.7.0-amd64
+Version: 0.7.0-1
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 195
+Depends: libx11-6, libxext6, libxfixes3, libxrender1, libxcomposite1
+Provides: skippy-xd
+Filename: pool/main/skippy-xd-v0.7.0-amd64_0.7.0-1_amd64.deb
+Size: 69560
+MD5sum: 6fdea93eff906fd5cc60f0431f78a5b6
+SHA1: 6f882c12ac953b16667b4921f604f6a46ff1ecfd
+SHA256: 1c2a6c0e488d1b03cde1205dc0eff8c9a052bcda9f91af6f1f1ce32e8985841c
+Section: x11
+Priority: optional
+Homepage: https://github.com/richardgv/skippy-xd
+Description: skippy-xd window exposé tool for X11
+ Skippy-XD es un visor de ventanas similar a "Exposé" de macOS, para sistemas X11.
+ Permite previsualizar todas las ventanas abiertas en pantalla, facilitando el cambio rápido entre ellas.
+ Este paquete contiene la versión 0.7.0 compilada para sistemas amd64.
+
+Package: tkterminal
+Version: 0.1.0-1
+Architecture: all
+Maintainer: josejp2424 <josejp2424@example.com>
+Installed-Size: 60
+Depends: python3:any, python3-tk
+Filename: pool/main/tkterminal_0.1.0-1_all.deb
+Size: 11356
+MD5sum: c846cc53d9069a40f46e3e27187e66bc
+SHA1: cd3f21c99a1197d58fbdc054a303059b02b9d59a
+SHA256: 61104885a124371dfd49ce5662bbcf88eec5398778c9dfe9b2b1538ff7cc863b
+Section: python
+Priority: optional
+Homepage: https://example.com
+Description: Tk terminal widget/app
+ Tk terminal packaged for Debian-based systems.
+
+Package: uextract-4.15
+Version: 4.15-1
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 405
+Depends: bash, xdg-utils, p7zip-full, unrar-free, unzip, xz-utils, squashfs-tools, tar
+Provides: uextract
+Filename: pool/main/uextract-4.15_4.15-1_amd64.deb
+Size: 92680
+MD5sum: 40a1904494bcc2be3c24c1e976c998ee
+SHA1: 0ad7beb05eb69dd06cd3d0445d0b89fa7bf28369
+SHA256: fe516ebfeabc7737e2327a040f0ca5dc1d10ae06abb00f6476ed3c347dfb1f42
+Section: utils
+Priority: optional
+Homepage: https://forum.puppylinux.com/viewtopic.php?t=594
+Description: uExtract 4.15 - extractor universal para múltiples formatos
+ uExtract es una herramienta creada por JakeSFR, escrita en bash y GTKDialog,
+ diseñada para extraer fácilmente una gran variedad de formatos de archivo,
+ incluyendo .zip, .tar, .deb, .rpm, .sfs, .pet, .iso, .7z, entre otros.
+ Esta versión 4.15 ha sido adaptada para Debian y derivados, conservando
+ su enfoque minimalista y su facilidad de uso inspirada en Puppy Linux.
+
+Package: win12-fantasy-theme
+Version: 2025-07-10
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 27673
+Provides: Utility
+Filename: pool/main/win12-fantasy-theme_2025-07-10_amd64.deb
+Size: 523936
+MD5sum: e431344bb80f0ac77450d98a2160d68a
+SHA1: 301555657b2ee36376f2ad364f62d366fe91fa16
+SHA256: b63cddcb80f27fae5f8016fc8d66172bd77e7d7de2bd0a31e4b6846f5e755684
+Section: Utility
+Priority: optional
+Homepage: https://www.gnome-look.org/p/2301510
+Description: Win12X-Fantasy like theme for all GTK desktops by  yeyushengfan258.
+
+Package: wine-stable-appimage
+Version: 11.0-1
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 90959
+Provides: wine
+Filename: pool/main/wine-stable-appimage_11.0-1_amd64.deb
+Size: 83989344
+MD5sum: d5923f83126684c86b234a85c93b373c
+SHA1: 9140d483c4b398fdaf5dbb81e1ff96a20e9156a1
+SHA256: bdbbed27edddb09b21352ac72d52f18b7b00361fdf344660e01048f78d779e77
+Section: otherosfs
+Priority: optional
+Homepage: https://github.com/mmtrt/WINE_AppImage
+Description: WINE AppImage (unofficial) AppImages by GitHub Actions Continuous Integration ||
+
+Package: wmswitcher
+Version: 0.22
+Architecture: amd64
+Maintainer: josejp2424 <josejp2424@users.sourceforge.net>
+Depends: python3, python3-tk
+Filename: pool/main/wmswitcher_0.22_amd64.deb
+Size: 149552
+MD5sum: 9197c42e33df36e6686b28075a636efa
+SHA1: 88f969bd1b20b0669ba583a7f5e7e36e00430a6f
+SHA256: 472decbc2be03b31f99d542c3f2e8631441fbbd0d65eda158c8d75bd0c18a3a7
+Section: utils
+Priority: optional
+Homepage: https://sourceforge.net/projects/essora/
+Description: Window Manager Switcher for SLiM
+ WM Switcher is a graphical tool that allows users to easily switch between
+ different window managers when using the SLiM display manager. It provides
+ a simple interface to select and configure your preferred window manager.
+ .
+ Features:
+  - Supports multiple window managers (Openbox, Fluxbox, Xfce, etc.)
+  - Simple graphical interface
+  - Internationalization support
+  - Option to update .dmrc file
+
+Package: xrandr-essora-multi
+Version: 1.1
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 181
+Depends: python3-gi, python3-gi-cairo, gir1.2-gtk-3.0
+Provides: Utility
+Filename: pool/main/xrandr-essora-multi_1.1_amd64.deb
+Size: 19272
+MD5sum: 2bd4db54656f470a8217c607a6f2fc95
+SHA1: 8e1fd1d0b1c25056d06fdfc1d6bbdffd52ac03ad
+SHA256: 225337d3bb13655cdb4fff159e7e6c7ff4c2bf2f917145265aac9acf86e0d5a5
+Section: Utility
+Priority: optional
+Homepage: https://sourceforge.net/projects/essora/
+Description: Multi-monitor resolution and display configuration manager for Essora Linux. Allows you to configure resolution, refresh rate, position and primary monitor for each connected display. by josejp2424.
+
