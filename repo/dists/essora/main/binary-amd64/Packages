@@ -89,16 +89,16 @@ Description: Oply Audio & Video Player (with Radio + IPTV)
  Created by josejp2424||
 
 Package: Telegram
-Version: 6.0.2
+Version: 6.7.5
 Architecture: amd64
 Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
-Installed-Size: 188200
+Installed-Size: 207443
 Provides: www-browser
-Filename: pool/main/telegram_6.0.2_amd64.deb
-Size: 62278584
-MD5sum: 5c5e22a77d878b5c9550b91f076aa1f1
-SHA1: 2f0a5b31fe57c388f82b2d34ca4cfd7d6cb3ba06
-SHA256: ee19b983428635dd03e701670f0e9b27fe3276783098272523c7340ab10e5364
+Filename: pool/main/telegram_6.7.5_amd64.deb
+Size: 67291256
+MD5sum: 59671992a052236fc2acb9d9bda98552
+SHA1: f056ea425dff0406cff494e8b96b7cd8571229b2
+SHA256: b3997aab734435ed880bcc920d6128680cf971106f80c4ed92ffc7817ad94eed
 Section: www-browser
 Priority: optional
 Homepage: https://telegram.org
@@ -108,7 +108,7 @@ Description: Fast and secure messaging application
  of any type (doc, zip, mp3, etc), as well as create groups for up to 200,000
  people or channels for broadcasting to unlimited audiences.
  .
- This package contains the official desktop client for Telegram.
+ This package contains the official desktop client for Telegram.|
 
 Package: alias-creator
 Version: 02
@@ -311,17 +311,17 @@ Description: Comprehensive multi-format package manager for Essora Linux
  AppImages.|||||
 
 Package: essora-system-center
-Version: 4.2-1
+Version: 4.3-1
 Architecture: amd64
 Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
-Installed-Size: 614
+Installed-Size: 615
 Depends: python3, python3-gi, python3-psutil, gir1.2-gtk-3.0, gir1.2-gdkpixbuf-2.0, procps, util-linux, iproute2, wmctrl, mesa-utils
 Provides: Utility
-Filename: pool/main/essora-system-center_4.2-1_amd64.deb
-Size: 153280
-MD5sum: 1d98a3b8d1eef4d1c87c253edf621d53
-SHA1: 3a5fe56ebf57fd100f20e427cee269675ff8193e
-SHA256: 75c9c2bc9ea1dbfd21fb1838a72a707b504e84d781a3240ac88014f12febc9b2
+Filename: pool/main/essora-system-center_4.3-1_amd64.deb
+Size: 153416
+MD5sum: fbac3ce4e1198b7db73352de68a2dac2
+SHA1: e947cb0b36e36b5aa89722c76e08f30179ae2f71
+SHA256: c7d4f4c665952c8179f38a0feca862ffbe9c10ba70a5d866edfa884a8f583320
 Section: Utility
 Priority: optional
 Homepage: https://sourceforge.net/projects/essora/
@@ -1032,6 +1032,708 @@ Description: Window Manager Switcher for SLiM
   - Internationalization support
   - Option to update .dmrc file
 
+Package: xf86-input-elographics
+Version: 25.0.1-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 112
+Depends: xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-input
+Filename: pool/main/xf86-input-elographics_25.0.1-essora_amd64.deb
+Size: 28584
+MD5sum: 7635527510a01bbf2e59c9d0b7b5eac8
+SHA1: c06e062f843218b235d31da68486e67b3f85fac7
+SHA256: c85afe8826a2fdc01693321af04cd390997dfa8c0a10fcc80c7bb77c74782d8a
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre input driver — xf86-input-elographics
+ XLibre fork of xf86-input-elographics version 25.0.1-essora built for Essora Linux.
+
+Package: xf86-input-evdev
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 392
+Depends: libevdev2, libudev1, xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-input
+Filename: pool/main/xf86-input-evdev_25.0.0-essora_amd64.deb
+Size: 109816
+MD5sum: 81e8e9d45c69a56382f5cbbe0b53156f
+SHA1: 11c2beebb2e2f11ec4fd9e64200e147b99abb451
+SHA256: 4580bc00696cb76345dad79f7e588388e635da7d2da562fe1eb4baf3a91ac0b1
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre input driver — xf86-input-evdev
+ XLibre fork of xf86-input-evdev version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-input-joystick
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 304
+Depends: xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-input
+Filename: pool/main/xf86-input-joystick_25.0.0-essora_amd64.deb
+Size: 81108
+MD5sum: 78dd28f7f68e2a8dc21ee7cfef4ff3ee
+SHA1: 7f840ce1d0f0e34c61b2d24b21bf34d3c23bfaa3
+SHA256: de0316faba5be726d2a7bb1dd6ac08df9095e8b5a78685b8eb65aab653468dfe
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre input driver — xf86-input-joystick
+ XLibre fork of xf86-input-joystick version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-input-keyboard
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 184
+Depends: xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-input
+Filename: pool/main/xf86-input-keyboard_25.0.0-essora_amd64.deb
+Size: 47028
+MD5sum: 7979c3fbe16c49f625da526893d8a022
+SHA1: 6ca95081e57712116d353fc3b6b6a36a1bf84c71
+SHA256: 02ed240d371c8ffd1b3f7a548deaa64820d66b39bc6ed55670895fe0f55be5ac
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre input driver — xf86-input-keyboard
+ XLibre fork of xf86-input-keyboard version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-input-libinput
+Version: 25.0.1-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 236
+Depends: libinput10, libudev1, xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-input
+Filename: pool/main/xf86-input-libinput_25.0.1-essora_amd64.deb
+Size: 47668
+MD5sum: ae2bd0473f3f37d18ab9dec3213ff826
+SHA1: 25b1047da77e058f19b3f31f094eb04b8a8a9d46
+SHA256: cc8022aefedadca1208018e86a8b524d36afe0a3fdac78225cef890b6fbf5f38
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre input driver — xf86-input-libinput
+ XLibre fork of xf86-input-libinput version 25.0.1-essora built for Essora Linux.
+
+Package: xf86-input-mouse
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 264
+Depends: xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-input
+Filename: pool/main/xf86-input-mouse_25.0.0-essora_amd64.deb
+Size: 82672
+MD5sum: 10ed378907e3eb907ccc16268ef4b94d
+SHA1: d96dc83a0617e02544a6e9efb34ddc0147aa2919
+SHA256: e754d1c2e81aac6c2204d9d8a1e14bf075df73754b6abe57bd03a28674e8bc49
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre input driver — xf86-input-mouse
+ XLibre fork of xf86-input-mouse version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-input-synaptics
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 616
+Depends: libevdev2, libudev1, xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-input
+Filename: pool/main/xf86-input-synaptics_25.0.0-essora_amd64.deb
+Size: 174616
+MD5sum: 3cc4582245575da2e41e13476bb9d3ef
+SHA1: 108d9cd01d90fe904bfc769cd60311fd18586606
+SHA256: 0bbe3692319d28ac1accedf837d01a56f6ae7b23733300b90a7bb19fe6ec12e7
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre input driver — xf86-input-synaptics
+ XLibre fork of xf86-input-synaptics version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-input-vmmouse
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 216
+Depends: xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-input
+Filename: pool/main/xf86-input-vmmouse_25.0.0-essora_amd64.deb
+Size: 37940
+MD5sum: 6f484d1fff7fd8cd035cb97386a3f8a5
+SHA1: 8190f6f960e59a2db5107d9cac7dc33b216e5a70
+SHA256: 563532906de04fa6caa5c1651d393266f0783c453dc7d0506806507605472058
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre input driver — xf86-input-vmmouse
+ XLibre fork of xf86-input-vmmouse version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-input-void
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 92
+Depends: xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-input
+Filename: pool/main/xf86-input-void_25.0.0-essora_amd64.deb
+Size: 18360
+MD5sum: 7c1897035f9295d705b4775f404e9310
+SHA1: 28a027adcd477b115d40bbfd6fb5b64a0c28a0a9
+SHA256: b7021db81d23c2c67fd46b2040311bcbe9488ea4869ba09966cbe4cb0723ed41
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre input driver — xf86-input-void
+ XLibre fork of xf86-input-void version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-video-amdgpu
+Version: 25.0.3-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 272
+Depends: libdrm-amdgpu1, libdrm2, libgbm1, xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-amdgpu_25.0.3-essora_amd64.deb
+Size: 77208
+MD5sum: 62902a3721c36c20249ff506662152df
+SHA1: b0755ac247c9c195e407a76053b1634bb51e245e
+SHA256: 732cba82f0ccbdf422e546c8ed5406c3c1213fce60ae54ac9d42fcd46316d584
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-amdgpu
+ XLibre fork of xf86-video-amdgpu version 25.0.3-essora built for Essora Linux.
+
+Package: xf86-video-ast
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 556
+Depends: libdrm2, xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-ast_25.0.0-essora_amd64.deb
+Size: 162800
+MD5sum: 78104c5598d803665460608b0f4d670e
+SHA1: 610fb9c7a662e958a530cf0304aa043423ce5adc
+SHA256: b9486a7d74d7747643ae7e8977c38e54b6d2a7980d9255f47828f05c58588bb6
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-ast
+ XLibre fork of xf86-video-ast version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-video-ati
+Version: 25.0.1-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 3332
+Depends: libdrm-radeon1, libdrm2, xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-ati_25.0.1-essora_amd64.deb
+Size: 827416
+MD5sum: d8877aaefd95e7413660fa806df32df6
+SHA1: b793fea4f057493ffbd2767be32d46054ffc57a4
+SHA256: c7661c146bb720b51cc10a6f69bfa1558cc1fc978e9c1743308ef5f3de9339fd
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-ati
+ XLibre fork of xf86-video-ati version 25.0.1-essora built for Essora Linux.
+
+Package: xf86-video-chips
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 700
+Depends: xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-chips_25.0.0-essora_amd64.deb
+Size: 184480
+MD5sum: 736e696b562b6c4266465897ca60c998
+SHA1: 24f7262b0a39669a31b0d54760c7c3a8cbfae7ca
+SHA256: cb1a192ee9bd75e69e1f3e27372f44e5ce056c2d605e69beddcbc7ae098ec8a0
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-chips
+ XLibre fork of xf86-video-chips version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-video-cirrus
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 408
+Depends: xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-cirrus_25.0.0-essora_amd64.deb
+Size: 112148
+MD5sum: 5ab3194e0d3efe4a7c1ae9fc84e721bb
+SHA1: 6c675703210174d59cf01152be70801ea46922f9
+SHA256: 084f4230f019c43490abcd16c65587799d38039a980307250747b817bcc7f35b
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-cirrus
+ XLibre fork of xf86-video-cirrus version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-video-dummy
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 140
+Depends: xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-dummy_25.0.0-essora_amd64.deb
+Size: 42644
+MD5sum: 70029f02ee84108bf9838e8a364ae321
+SHA1: d0d27b6c0c7284f13414f8587964359af036f02d
+SHA256: 6dfd8c54b2f76af81b49cffb64b825c17e257c3375635376f08a2e5e6598033e
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-dummy
+ XLibre fork of xf86-video-dummy version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-video-fbdev
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 140
+Depends: xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-fbdev_25.0.0-essora_amd64.deb
+Size: 36264
+MD5sum: 3e932e564dd22b24c5769c6c9d44ed56
+SHA1: 46d0f26843c63eeb61eb19ef344f88dac8d94d04
+SHA256: 43123bf3596e9630ce7ccd8de168f04782c593b3d12047549eb6b13f737834dc
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-fbdev
+ XLibre fork of xf86-video-fbdev version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-video-geode
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 1584
+Depends: xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-geode_25.0.0-essora_amd64.deb
+Size: 488108
+MD5sum: a02279d71b5e081d55766ec9f4366954
+SHA1: 879906d37cee62516165614f7e98e115b5dcaedb
+SHA256: f390a5a3da08149b0b267d1ce5615f1b5e2aa9ad2be0fbf695c304c04e4559e3
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-geode
+ XLibre fork of xf86-video-geode version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-video-i128
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 324
+Depends: xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-i128_25.0.0-essora_amd64.deb
+Size: 89560
+MD5sum: b07747d7df272835efde9f7db894f47f
+SHA1: 0af310f4e8182fdd4557b80f5de9086c4c064291
+SHA256: d969fed32d33f5bc343ec88b2793ed204388c7958ece9a8b2e2d1a29ec284075
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-i128
+ XLibre fork of xf86-video-i128 version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-video-intel
+Version: 25.0.1-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 3352
+Depends: libdrm-intel1, libdrm2, libx11-6, libxv1, xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-intel_25.0.1-essora_amd64.deb
+Size: 1041588
+MD5sum: 31772e15c25f41782ccb61698a6d226a
+SHA1: 57922b20571f9b47867add7e27f6950f61fffc17
+SHA256: e5f704c90a6ac5f84eab8821304f62760ab7b8c2c1cd6a9a4a4a22e6470d58a2
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-intel
+ XLibre fork of xf86-video-intel version 25.0.1-essora built for Essora Linux.
+
+Package: xf86-video-mach64
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 1628
+Depends: libdrm2, xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-mach64_25.0.0-essora_amd64.deb
+Size: 352548
+MD5sum: e8aebd44174a79093ed429cd1859673b
+SHA1: 9ad586145c852926860a888f692fe39ed1cc7ed2
+SHA256: 61f29bae7636291e4f3170a79d71b3b5e2594dd50047523b567b2f0c473460f3
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-mach64
+ XLibre fork of xf86-video-mach64 version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-video-neomagic
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 380
+Depends: xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-neomagic_25.0.0-essora_amd64.deb
+Size: 110780
+MD5sum: e3e27eeb393c3b5c87040da9d263aa66
+SHA1: c647b3f82597ef20276e2180296f29e9a5218309
+SHA256: 3e10b436687686c66c85b74fbf4b2bff885bedd407f08e1666e4c945f6e01d6f
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-neomagic
+ XLibre fork of xf86-video-neomagic version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-video-nested
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 208
+Depends: xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-nested_25.0.0-essora_amd64.deb
+Size: 65464
+MD5sum: b51d517025856f27f726ce2ab1286f42
+SHA1: 8e71de5bc30814f9eb3db4a7edf4183ef0d33f61
+SHA256: 1e87aea7349fca964e3734dde6464cbe1f053fe52e188951b69f9ec485cf1c0a
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-nested
+ XLibre fork of xf86-video-nested version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-video-nouveau
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 2052
+Depends: libdrm-nouveau2, libdrm2, xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-nouveau_25.0.0-essora_amd64.deb
+Size: 537920
+MD5sum: 9062693dcb8c4377bf857839a70fa867
+SHA1: 65d658b3ee3fa462180acb03576b353f6ef45448
+SHA256: bed18745c7f666b2bd2f90cfc22de6e038fe96c87145fbfcace5e44943ae1f6d
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-nouveau
+ XLibre fork of xf86-video-nouveau version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-video-nv
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 1228
+Depends: xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-nv_25.0.0-essora_amd64.deb
+Size: 324500
+MD5sum: 626692de71685cf0c0f42f887ab30a85
+SHA1: b443cdc6eaf4fe99423c398319c4743141d763f3
+SHA256: 1a60d04ef679c0e88deb834a1cf7a24d4ea3c88c66f7475dab7ea22efefee0d3
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-nv
+ XLibre fork of xf86-video-nv version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-video-qxl
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 1376
+Depends: libdrm2, xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-qxl_25.0.0-essora_amd64.deb
+Size: 428620
+MD5sum: 87e8c33dc2df94c27309a1fdaa3598a2
+SHA1: 007af9f679250c4ce3791b3715b912970329d8db
+SHA256: 1f4a63614b993914f817a858e30afd31b3e4cbcc64f9beb02be3a25559a0c77b
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-qxl
+ XLibre fork of xf86-video-qxl version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-video-r128
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 740
+Depends: libdrm2, xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-r128_25.0.0-essora_amd64.deb
+Size: 217516
+MD5sum: 335e51a19c908be7e4a8944282212408
+SHA1: 226f96b1031eb41d877d53cec9130201518ccdae
+SHA256: b972c6e1f099d1b5be621bdcecb8fa521646c0cdb68dee00d91b9c866d9ef77d
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-r128
+ XLibre fork of xf86-video-r128 version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-video-savage
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 824
+Depends: libdrm2, xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-savage_25.0.0-essora_amd64.deb
+Size: 236164
+MD5sum: 3cb8a3f906636dcb10190c96044ae9b9
+SHA1: 6af7ab06eb910bd968a642fd0c01774ad104b5bb
+SHA256: d725025917bad5fd8f8777636c0100e9817f4298b2edfdf91028ae945ccb4ac7
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-savage
+ XLibre fork of xf86-video-savage version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-video-siliconmotion
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 944
+Depends: xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-siliconmotion_25.0.0-essora_amd64.deb
+Size: 261516
+MD5sum: f406b071fd6986002de848ba5a75fb0f
+SHA1: 4384d70f7ce19c8a7647a65afa4a7d3877436b3b
+SHA256: a1c0ea81f09bdc0c6d1e7a2040873f36ea18d2c90f422945dce3a13ca669c0c2
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-siliconmotion
+ XLibre fork of xf86-video-siliconmotion version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-video-sis
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 3124
+Depends: xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-sis_25.0.0-essora_amd64.deb
+Size: 943676
+MD5sum: 5ebd02654796e8f8aed4de616fb0bfe9
+SHA1: 6c02c81cbf57c36028a47d3efce1126abd614576
+SHA256: fc825accb3d28c860db459c6a6011e7c8712871244c68060c2ca88d0a273ffe3
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-sis
+ XLibre fork of xf86-video-sis version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-video-sisusb
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 592
+Depends: xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-sisusb_25.0.0-essora_amd64.deb
+Size: 161644
+MD5sum: 986fe1bf778c861e23fdf15c0d227ade
+SHA1: 1991302df7c495bc17e187a8de799e8e57feecf7
+SHA256: 7d0be0687e6530de383dac0674a1218f161ee529a0fd4f095459443c22058efc
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-sisusb
+ XLibre fork of xf86-video-sisusb version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-video-sunffb
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 272
+Depends: libdrm2, xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-sunffb_25.0.0-essora_amd64.deb
+Size: 55436
+MD5sum: 4786b19de9f81d03553968a0bf72e786
+SHA1: 85309ebea77729a6dcc9f4f3d978a94a5a69ed6d
+SHA256: 01d2aa49ad9c2e6c829b3d10e41b5b14cdf4fb472322a06c833c400ea89573b5
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-sunffb
+ XLibre fork of xf86-video-sunffb version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-video-sunleo
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 160
+Depends: xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-sunleo_25.0.0-essora_amd64.deb
+Size: 38272
+MD5sum: b9639ac241b42563a3ae15f9b3fae4f7
+SHA1: 1086998ddd3f82591c7ad835eb1003cdd5d7cce9
+SHA256: 68eec68ddec2fea2621ff68f72b0b7dc9dd25c851dd69e66473305b2d65ead4b
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-sunleo
+ XLibre fork of xf86-video-sunleo version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-video-tdfx
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 444
+Depends: libdrm2, xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-tdfx_25.0.0-essora_amd64.deb
+Size: 123280
+MD5sum: ac0c8038b660d8733d155edc46788ca3
+SHA1: ce839cde23fca4a60a0dd2c97731fd8ed36b9663
+SHA256: da9f000e342a4298bccd927d263fad0ab3ca66b8d510d39bf25b9996a226418d
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-tdfx
+ XLibre fork of xf86-video-tdfx version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-video-trident
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 848
+Depends: xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-trident_25.0.0-essora_amd64.deb
+Size: 224544
+MD5sum: 3046ec6ce928f43a756e603a3d001b8e
+SHA1: 2caf8c3e6cf4c2475cf34c86300849bca7e0c532
+SHA256: 10605d2d0eb2e0da60f4ff6f192caceba25e507f4ed222a0cb84fc751e5185dd
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-trident
+ XLibre fork of xf86-video-trident version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-video-v4l
+Version: 25.0.1-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 120
+Depends: xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-v4l_25.0.1-essora_amd64.deb
+Size: 37200
+MD5sum: 18542ce17c6301665ff5ce469297f894
+SHA1: 87a2162b0d6b2e0e02ad609deb07283957898431
+SHA256: bfa3d48c2564c8b5a625bbf63807da60c5c5870691ffc235b0e45f1a5385a1fe
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-v4l
+ XLibre fork of xf86-video-v4l version 25.0.1-essora built for Essora Linux.
+
+Package: xf86-video-vbox
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 324
+Depends: xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-vbox_25.0.0-essora_amd64.deb
+Size: 96556
+MD5sum: 2c201bf4bbfc0823c142fd7e0c64ae07
+SHA1: f63d77701415f4bea4eddfc82efde8ff7c358dd4
+SHA256: 085590144aa3be88ac31bbb3e89a37b400c2826e5a6c3a84cbb08b5e14e05c28
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-vbox
+ XLibre fork of xf86-video-vbox version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-video-vesa
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 88
+Depends: xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-vesa_25.0.0-essora_amd64.deb
+Size: 13328
+MD5sum: 5f5a4e17963c0f8414103c7720bbfd69
+SHA1: 0b5af6034142d02eabc4266d7bcf5fb83c80ff21
+SHA256: f43f112c7db3d66533afe6308bbe552ee0cd31d37d31eab3d9fec9b57a9d2e79
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-vesa
+ XLibre fork of xf86-video-vesa version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-video-vmware
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 460
+Depends: libdrm2, xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-vmware_25.0.0-essora_amd64.deb
+Size: 134508
+MD5sum: 07c282d452f990279d1768e9cf95c2aa
+SHA1: 94b9296803219ad02ecc898692f85d9b8ccd83b0
+SHA256: a8b9177505eaad536891335d6f1da39caa9f50ca67923e7dfbc6439c937815fd
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-vmware
+ XLibre fork of xf86-video-vmware version 25.0.0-essora built for Essora Linux.
+
+Package: xf86-video-xgi
+Version: 25.0.0-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 1532
+Depends: xserver-xorg-core | xlibre-xserver
+Provides: xorg-driver-video
+Filename: pool/main/xf86-video-xgi_25.0.0-essora_amd64.deb
+Size: 468008
+MD5sum: acb122507e679ef1e6068630abe06864
+SHA1: b4a7d15e2b6ab014172f7e396fb0f9bfaace6765
+SHA256: a05732294dace3292c9d399832d811c3bc54da736eb59c60ec432f4a839ff9d2
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre video driver — xf86-video-xgi
+ XLibre fork of xf86-video-xgi version 25.0.0-essora built for Essora Linux.
+
 Package: xrandr-essora-multi
 Version: 1.1
 Architecture: amd64
@@ -1048,4 +1750,22 @@ Section: Utility
 Priority: optional
 Homepage: https://sourceforge.net/projects/essora/
 Description: Multi-monitor resolution and display configuration manager for Essora Linux. Allows you to configure resolution, refresh rate, position and primary monitor for each connected display. by josejp2424.
+
+Package: xserver
+Version: 25.1.3-essora
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 13960
+Depends: libaudit1, libbsd0, libdrm2, libepoxy0, libgbm1, libgcrypt20, libgl1, libpixman-1-0, libselinux1, libudev1, libunwind8, libx11-6, libxau6, libxcvt0, libxdmcp6, libxext6, libxfont2, libxkbfile1, libxshmfence1, x11-xkb-utils, xkb-data
+Provides: xserver, x-display-manager
+Filename: pool/main/xserver_25.1.3-essora_amd64.deb
+Size: 2584352
+MD5sum: 323a028e5f0af1ed6be8444f44d7783c
+SHA1: f3bb59bfd9edce6de1328f4d75f626694be429c9
+SHA256: 794b82b97eace0b765c0930fac72428bbcd0c3469e62cc96d2073955fd1adeaf
+Section: x11
+Priority: optional
+Homepage: https://github.com/X11Libre
+Description: XLibre X Server — fork activamente mantenido de Xorg
+ XLibre fork of xserver version 25.1.3-essora built for Essora Linux.
 
