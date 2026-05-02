@@ -849,19 +849,6 @@ Description: Kbuild infrastructure for Linux 7.0-rc7-essora
  Scripts and tools needed to build out-of-tree kernel modules
  against the 7.0-rc7-essora kernel.
 
-Package: linux-libc-dev
-Version: 7.0-rc7-essora
-Architecture: amd64
-Maintainer: josejp2424
-Filename: pool/main/linux-libc-dev_amd64.deb
-Size: 1463584
-MD5sum: b878a6ab497ca382707c04a72e713899
-SHA1: e919e7443699d12d3bf5e2c9f75ea09a56be0f42
-SHA256: 3a30cff855da28762ff9d7ab30d4a52657349bdd258333df0ca1e50f4a6c6cfd
-Section: devel
-Priority: optional
-Description: Linux kernel UAPI headers for userspace development (essora)
-
 Package: lumivio
 Version: 1.2.1-1
 Architecture: amd64
