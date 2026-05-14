@@ -458,24 +458,49 @@ Priority: optional
 Homepage: https://sourceforge.net/projects/essora
 Description: TWelcome screen for Essora Eos||
 
-Package: essora-zramswap-ai
-Version: 1.0
+Package: essorafm
+Version: 0.4.26-1
 Architecture: amd64
 Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
-Installed-Size: 4
-Depends: systemd, zram-tools
-Provides: Utility
-Filename: pool/main/essora-zramswap-ai_1.0_amd64.deb
-Size: 2512
-MD5sum: 1f48154f5cdaa71bde666bbdef9e9786
-SHA1: 87da7478f0eaf458c8e4df929f89308577d8ca16
-SHA256: 645fb5a3303aa4fecd81a3b3e64c225affda353d12ce8c37c35d12be915db90c
-Section: Utility
+Installed-Size: 5520
+Depends: python3, python3-gi, python3-gi-cairo, gir1.2-gtk-3.0, gir1.2-gdkpixbuf-2.0, gir1.2-glib-2.0, gir1.2-pango-1.0, poppler-utils, samba, udisks2, rclone
+Recommends: git, openssh-client
+Provides: file-manager, system, Utility
+Filename: pool/main/essorafm_0.4.26-1_amd64.deb
+Size: 3747104
+MD5sum: b7ec3043413f1cf44cefddabc6b8b6e0
+SHA1: 052b900e83952569293c26d1627062bc6aee612c
+SHA256: 0f310cc31ea7bfeae4d40f9ac612454a973e1f77485e21f34299e55ae2bf6c54
+Section: utils
 Priority: optional
 Homepage: https://sourceforge.net/projects/essora/
-Description: ZRAM auto-config for zram-tools (Essora)
- Auto-configuration of zram-tools. Tunes /etc/default/zramswap by
- detecting RAM/CPU/SSD and applies safe sysctl values.
+Description: EssoraFM 0.4.26-1 - new context menu items: Cut (Ctrl+X), Duplicate (Ctrl+D) with editable destination dialog, Create link with relative/absolute option. New Paste button in the toolbar (always visible, lights up when something is in the clipboard) so you can paste in the current directory without right-clicking. Includes fixed gksu wrapper that no longer fails on systems with strict sudoers config.|
+
+Package: essorafm-picom
+Version: 1.2.0-1
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 1075
+Depends: libc6, libev4, libpcre2-8-0, libpixman-1-0, libx11-6, libx11-xcb1, libxcb1, libxcb-composite0, libxcb-damage0, libxcb-glx0, libxcb-image0, libxcb-present0, libxcb-randr0, libxcb-render0, libxcb-render-util0, libxcb-shape0, libxcb-sync1, libxcb-util1, libxcb-xfixes0, libepoxy0, libgl1, yad
+Provides: Utility
+Filename: pool/main/essorafm-picom_1.2.0-1_amd64.deb
+Size: 369616
+MD5sum: b04b908a5d6dfd0ae128830b49fac434
+SHA1: a281ad0297799e0f15e507341bdf8a6451880c9c
+SHA256: 6e5fedb72c4ee9967c243f2e9c04e6e4bc11c3c311e9c43f2cfad1957c32ccf8
+Section: x11
+Priority: optional
+Homepage: https://github.com/josejp2424/essorafm-picom
+Description: EssoraFM Picom compositor integration
+ EssoraFM Picom is a custom fork of picom adapted for EssoraFM desktop mode.
+ It provides an integrated X11 compositor with rounded corners, shadows,
+ optional transparency, optional blur, and a YAD-based graphical configuration
+ tool.
+ .
+ The package installs the compositor, GUI script, default configuration,
+ Essora icon and license files under /usr/local/essorafm, allowing EssoraFM
+ to manage the compositor directly without external picom.desktop or
+ compton.desktop autostart launchers.|
 
 Package: essorakb
 Version: 0.1.2
@@ -1209,16 +1234,16 @@ Description: skippy-xd window exposé tool for X11
  Este paquete contiene la versión 0.7.0 compilada para sistemas amd64.
 
 Package: telegram
-Version: 6.7.5
+Version: 6.8.2
 Architecture: amd64
 Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
-Installed-Size: 207443
+Installed-Size: 209481
 Provides: www-browser
-Filename: pool/main/telegram_6.7.5_amd64.deb
-Size: 67290532
-MD5sum: 4d6018ca3b39cabbf3a06a699b4ccdee
-SHA1: 4cde6f7fdb0d75839fcd20b36577e43a26b6cca1
-SHA256: cea0fef80a9580a66d539b1c6bcf5c3e716b07584a2abf7d5240ccab6e331a9d
+Filename: pool/main/telegram_6.8.2_amd64.deb
+Size: 67689180
+MD5sum: b3dd75b3755bf3dc87c8d3275f92c6ec
+SHA1: 58e990cb4f49cdb194e46ac335255247a203de23
+SHA256: 25000f173bfcc419609a4ba9bac98fd4e818334c61e1788612328bcebfa49244
 Section: www-browser
 Priority: optional
 Homepage: https://telegram.org
@@ -1228,7 +1253,7 @@ Description: Fast and secure messaging application
  of any type (doc, zip, mp3, etc), as well as create groups for up to 200,000
  people or channels for broadcasting to unlimited audiences.
  .
- This package contains the official desktop client for Telegram.||
+ This package contains the official desktop client for Telegram.|
 
 Package: tkterminal
 Version: 0.1.0-1
