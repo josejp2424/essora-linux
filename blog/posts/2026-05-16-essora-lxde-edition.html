@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Essora LXDE Edition — Essora Blog</title>
+<meta name="description" content="Essora LXDE Edition: lightweight, full control and a new integrated Essora Panel based on LXPanel.">
+
+<style>
+:root{
+  --bg:#0b0f14;
+  --card:#111824;
+  --text:#e6edf3;
+  --muted:#9fb0c0;
+  --accent:#6E9B08;
+  --line:#1d2a3a;
+  --shadow:0 10px 30px rgba(0,0,0,.35);
+}
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{
+  margin:0;
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(110,155,8,.18), transparent 60%),
+    radial-gradient(900px 500px at 90% 0%, rgba(110,155,8,.10), transparent 55%),
+    linear-gradient(180deg,#06080b,var(--bg));
+  color:var(--text);
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial;
+  line-height:1.7;
+}
+
+a{color:var(--text)}
+a:hover{opacity:.95}
+
+.wrap{
+  max-width:960px;
+  margin:auto;
+  padding:28px 20px;
+}
+
+.top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  flex-wrap:wrap;
+  margin-bottom:18px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+}
+
+.logo{
+  width:42px;
+  height:42px;
+  border-radius:14px;
+  display:grid;
+  place-items:center;
+  background:rgba(110,155,8,.14);
+  border:1px solid rgba(110,155,8,.35);
+}
+
+.logo img{
+  width:26px;
+  height:26px;
+  display:block;
+  filter:drop-shadow(0 0 10px rgba(150,255,70,.25));
+}
+
+.brandName{
+  font-size:17px;
+  font-weight:800;
+  line-height:1.1;
+}
+
+.brandTag{
+  font-size:13px;
+  color:var(--muted);
+  margin-top:2px;
+}
+
+.nav{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.nav a{
+  padding:8px 10px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:rgba(255,255,255,.02);
+  text-decoration:none;
+}
+
+.card{
+  background:rgba(255,255,255,.03);
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:28px;
+  box-shadow:var(--shadow);
+}
+
+h1{
+  font-size:42px;
+  margin:0 0 8px;
+  line-height:1.1;
+}
+
+.subtitle{
+  color:var(--muted);
+  font-size:18px;
+  margin:0 0 16px;
+}
+
+.meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:16px 0 20px;
+}
+
+.badge{
+  padding:7px 10px;
+  border-radius:999px;
+  color:var(--muted);
+  border:1px solid var(--line);
+  background:rgba(0,0,0,.14);
+  font-size:13px;
+}
+
+h2{
+  margin-top:45px;
+  margin-bottom:10px;
+  color:var(--accent);
+  font-size:25px;
+}
+
+h3{
+  margin-top:28px;
+  margin-bottom:8px;
+  font-size:19px;
+}
+
+p{margin:12px 0}
+
+.muted{color:var(--muted)}
+
+ul{
+  color:var(--muted);
+  padding-left:22px;
+}
+
+li{margin:5px 0}
+
+.hero-image,
+.post-image{
+  width:100%;
+  border-radius:18px;
+  margin:20px 0;
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
+  display:block;
+}
+
+.hero-image{
+  border-radius:22px;
+}
+
+pre{
+  overflow:auto;
+  padding:13px 14px;
+  border-radius:14px;
+  border:1px solid var(--line);
+  background:rgba(0,0,0,.22);
+  color:#dce8d1;
+}
+
+.download{
+  margin-top:40px;
+  padding:20px;
+  border-radius:18px;
+  background:rgba(110,155,8,.08);
+  border:1px solid rgba(110,155,8,.25);
+}
+
+.btn{
+  display:inline-block;
+  margin-top:10px;
+  padding:12px 18px;
+  border-radius:14px;
+  background:var(--accent);
+  color:#0b0f14;
+  font-weight:800;
+  text-decoration:none;
+  border:1px solid rgba(0,0,0,.25);
+}
+
+.hash{
+  margin-top:14px;
+  word-break:break-all;
+  color:var(--muted);
+  font-size:14px;
+}
+
+footer{
+  margin-top:30px;
+  padding-top:18px;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:13px;
+}
+
+@media (max-width:720px){
+  .card{padding:20px}
+  h1{font-size:32px}
+  h2{font-size:22px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrap">
+
+<header class="top">
+  <a class="brand" href="/" aria-label="Essora Linux">
+    <div class="logo" aria-hidden="true">
+      <img src="/essora-logo.png" alt="">
+    </div>
+    <div>
+      <div class="brandName">Essora Linux</div>
+      <div class="brandTag">The new dawn of essentials</div>
+    </div>
+  </a>
+
+  <nav class="nav">
+    <a href="/">Home</a>
+    <a href="/blog/">Blog</a>
+    <a href="/#downloads">Downloads</a>
+    <a href="/#community">Community</a>
+  </nav>
+</header>
+
+<article class="card">
+
+<h1>Essora LXDE Edition</h1>
+
+<p class="subtitle">
+Lightweight, full control and a new integrated panel
+</p>
+
+<div class="meta">
+  <span class="badge">LXDE Edition</span>
+  <span class="badge">Essora Panel 0.12-essora</span>
+  <span class="badge">Kernel 7.0.0-rc7</span>
+  <span class="badge">Devuan · No systemd</span>
+</div>
+
+<img class="hero-image" src="/blog/screenshots/lxde.jpg" alt="Essora LXDE Desktop">
+
+<p>
+Essora LXDE Edition represents an evolution of the classic desktop,
+combining the lightweight nature of LXDE with deep improvements in
+integration, performance, and system control.
+</p>
+
+<p>
+This release introduces a key change: a <b>new Essora Panel based on LXPanel</b>,
+along with native tools specifically designed for the Essora ecosystem.
+</p>
+
+<h2>New Essora Panel (0.12-essora)</h2>
+
+<img class="post-image" src="/blog/screenshots/lxpanel2.jpg" alt="Essora Panel based on LXPanel">
+
+<p>
+This edition includes a <b>fork of LXPanel</b>, fully adapted for Essora.
+</p>
+
+<h3>Main changes</h3>
+
+<ul>
+<li>Classic LXPanel menu removed</li>
+<li>Direct integration with:</li>
+</ul>
+
+<pre>/usr/local/essora-kit/Pymenu.py</pre>
+
+<ul>
+<li>New identity: <b>Essora Panel</b></li>
+<li>Version: <b>0.12-essora</b></li>
+<li>Full integration with the Essora system</li>
+</ul>
+
+<h3>Advantages</h3>
+
+<ul>
+<li>Faster and more dynamic menu</li>
+<li>Full control over categories and icons</li>
+<li>Independence from the traditional XDG menu system</li>
+<li>Foundation for future enhancements</li>
+</ul>
+
+<p>
+This change allows Essora to evolve without legacy limitations.
+</p>
+
+<img class="post-image" src="/blog/screenshots/menu.jpg" alt="Essora menu integration">
+
+<h2>Updated Kernel</h2>
+
+<p>
+This version includes:
+</p>
+
+<p>
+<b>Linux Kernel 7.0.0-rc7</b>
+</p>
+
+<p>
+Providing:
+</p>
+
+<ul>
+<li>Better support for modern hardware</li>
+<li>Performance improvements</li>
+<li>Enhancements in scheduling</li>
+<li>Updated drivers and power management</li>
+</ul>
+
+<h2>Essora Native Tools</h2>
+
+<p>
+Essora includes a set of applications specifically developed for the system:
+</p>
+
+<h3>Essora Store</h3>
+
+<p>
+Package manager with support for:
+</p>
+
+<ul>
+<li>DEB</li>
+<li>Flatpak</li>
+<li>AppImage</li>
+</ul>
+
+<p>
+Optimized for performance and simplicity.
+</p>
+
+<h3>Essora VPN</h3>
+
+<p>
+Integrated tool for quick connection to private networks.
+</p>
+
+<h3>Essora Firewall</h3>
+
+<p>
+Simple and functional network control.
+</p>
+
+<h3>Essora Install</h3>
+
+<p>
+Custom installer that replaces Calamares, offering:
+</p>
+
+<ul>
+<li>Better system integration</li>
+<li>Greater control during installation</li>
+<li>A more consistent user experience</li>
+</ul>
+
+<h3>Essora Remaster</h3>
+
+<p>
+Allows direct creation of a customized system ISO.
+</p>
+
+<h3>Essora CPUFreq</h3>
+
+<p>
+Advanced CPU management tool designed for Essora.
+</p>
+
+<p>
+Built with a modern GTK3 interface, it provides:
+</p>
+
+<ul>
+<li>Per-CPU frequency control</li>
+<li>Governor selection: performance, powersave, balanced</li>
+<li>Real-time monitoring</li>
+<li>CPU temperature display</li>
+<li>Apply settings globally or per core</li>
+</ul>
+
+<p>
+It also includes multi-language support and a clean, user-focused interface.
+</p>
+
+<h2>Multimedia Suite: Oply</h2>
+
+<p>
+Oply is Essora’s integrated multimedia solution.
+</p>
+
+<p>
+It includes:
+</p>
+
+<ul>
+<li>Music player</li>
+<li>Video player with MPV integration</li>
+<li>Audio and video download from YouTube</li>
+<li>Oply Radio with worldwide stations</li>
+<li>Built-in IPTV support</li>
+</ul>
+
+<p>
+All in a single application, maintaining a simple and functional interface.
+</p>
+
+<h2>Included Applications</h2>
+
+<p>
+The system includes a set of essential applications:
+</p>
+
+<ul>
+<li>Firefox as the web browser</li>
+<li>AbiWord for documents</li>
+<li>Gnumeric for spreadsheets</li>
+<li>Evince as PDF reader</li>
+<li>GIMP for image editing</li>
+<li>Viewnior as image viewer</li>
+<li>PCManFM as file manager</li>
+<li>Geany as code editor</li>
+</ul>
+
+<h2>Essora Philosophy</h2>
+
+<p>
+This release reflects the core philosophy of the project:
+</p>
+
+<ul>
+<li>Lightweight and fast system</li>
+<li>Full control over the environment</li>
+<li>Reduced unnecessary dependencies</li>
+<li>A consistent and self-contained ecosystem</li>
+<li>Deep integration between components</li>
+</ul>
+
+<h2>Conclusion</h2>
+
+<p>
+Essora LXDE Edition is not just a lightweight desktop.
+</p>
+
+<p>
+It is a reimagining of the classic environment, where every component is designed
+to work together, providing a cleaner, faster, and more controlled experience.
+</p>
+
+<p>
+<b>Essora continues moving forward with its vision:</b>
+</p>
+
+<h3>“The new dawn of essentials.”</h3>
+
+<div class="download">
+
+<h2>Download</h2>
+
+<a class="btn"
+target="_blank"
+rel="noreferrer"
+href="https://sourceforge.net/projects/essora/files/Excalibur/Essora_Eos_Lxde-1.3-k7-20260426.iso">
+Download Essora_Eos_Lxde-1.3-k7
+</a>
+
+<div class="hash">
+<b>MD5</b><br>
+5704991aa409ea00a6932ce1d67d9c33
+</div>
+
+<div class="hash">
+<b>SHA1</b><br>
+f5aa8ee7dbd0d2c808b19cbe935b22fc9d0534ef
+</div>
+
+</div>
+
+<footer>
+Essora Linux — LXDE Edition
+</footer>
+
+</article>
+</div>
+
+</body>
+</html>
