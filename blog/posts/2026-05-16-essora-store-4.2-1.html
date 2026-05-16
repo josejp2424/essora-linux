@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Essora Store 4.2-1 — Changelog</title>
+<meta name="description" content="Essora Store 4.2-1 changelog: AppImage catalog migration, per-app icons, daily update guard, improved metadata, translations and fixes.">
+<style>
+:root{--bg:#0b0f14;--card:#111824;--text:#e6edf3;--muted:#9fb0c0;--accent:#6E9B08;--line:#1d2a3a;--shadow:0 10px 30px rgba(0,0,0,.35)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(1200px 600px at 10% -10%,rgba(110,155,8,.18),transparent 60%),radial-gradient(900px 500px at 90% 0%,rgba(110,155,8,.10),transparent 55%),linear-gradient(180deg,#06080b,var(--bg));color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial;line-height:1.7}
+a{color:var(--text)}
+a:hover{opacity:.95}
+.wrap{max-width:960px;margin:auto;padding:28px 20px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:18px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:rgba(110,155,8,.14);border:1px solid rgba(110,155,8,.35)}
+.logo img{width:26px;height:26px;display:block;filter:drop-shadow(0 0 10px rgba(150,255,70,.25))}
+.brandName{font-size:17px;font-weight:800;line-height:1.1}
+.brandTag{font-size:13px;color:var(--muted);margin-top:2px}
+.nav{display:flex;gap:10px;flex-wrap:wrap}
+.nav a{padding:8px 10px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.02);text-decoration:none}
+.card{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:var(--shadow)}
+h1{font-size:42px;margin:0 0 8px;line-height:1.1}
+.subtitle{color:var(--muted);font-size:18px;margin:0 0 16px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 20px}
+.badge{padding:7px 10px;border-radius:999px;color:var(--muted);border:1px solid var(--line);background:rgba(0,0,0,.14);font-size:13px}
+h2{margin-top:45px;margin-bottom:10px;color:var(--accent);font-size:25px}
+h3{margin-top:28px;margin-bottom:8px;font-size:19px}
+p{margin:12px 0}
+ul{color:var(--muted);padding-left:22px}
+li{margin:5px 0}
+code{color:#dce8d1}
+.hero-image{width:100%;border-radius:22px;margin:20px 0;border:1px solid var(--line);box-shadow:var(--shadow);display:block}
+.screenshot-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:18px}
+.screenshot-grid figure{margin:0;padding:0;border-radius:18px;background:rgba(0,0,0,.14)}
+.screenshot-grid img{width:100%;height:auto;display:block;border-radius:18px;border:1px solid var(--line);box-shadow:var(--shadow)}
+.screenshot-grid figcaption{color:var(--muted);font-size:13px;padding:8px 4px 0}
+.download{margin-top:40px;padding:20px;border-radius:18px;background:rgba(110,155,8,.08);border:1px solid rgba(110,155,8,.25)}
+.btn{display:inline-block;margin-top:10px;padding:12px 18px;border-radius:14px;background:var(--accent);color:#0b0f14;font-weight:800;text-decoration:none;border:1px solid rgba(0,0,0,.25)}
+footer{margin-top:30px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+@media (max-width:720px){.card{padding:20px}h1{font-size:32px}h2{font-size:22px}.screenshot-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <a class="brand" href="/" aria-label="Essora Linux">
+    <div class="logo" aria-hidden="true"><img src="/essora-logo.png" alt=""></div>
+    <div><div class="brandName">Essora Linux</div><div class="brandTag">The new dawn of essentials</div></div>
+  </a>
+  <nav class="nav"><a href="/">Home</a><a href="/blog/">Blog</a><a href="/#downloads">Downloads</a><a href="/#community">Community</a></nav>
+</header>
+
+<article class="card">
+<h1>Essora Store 4.2-1</h1>
+<p class="subtitle">Changelog and official release notes</p>
+
+<div class="meta">
+  <span class="badge">Version 4.2-1</span>
+  <span class="badge">DEB</span>
+  <span class="badge">Flatpak</span>
+  <span class="badge">AppImage</span>
+  <span class="badge">GTK3</span>
+</div>
+
+<img class="hero-image" src="/blog/screenshots/essora-store.png" alt="Essora Store interface">
+
+<p>All notable changes to Essora Store are documented here. This release focuses on improving AppImage support, speeding up catalog generation, adding richer metadata and fixing issues that affected the AppImage tab.</p>
+
+<h2>Essora Store 4.2-1 — 2026-05-16</h2>
+
+<h3>Added</h3>
+<ul>
+<li><b>AppImage catalog migrated to <code>appimage.github.io/feed.json</code></b> — replaces the previous archive.org HTML scraper with the official curated feed, containing around 400 applications.</li>
+<li><b>Per-app icons for AppImage</b> — each application now displays its own icon, stored in <code>/usr/local/essora-store/icons/appimage/</code>; if an icon is not found, Essora Store falls back to the generic AppImage icon.</li>
+<li><b>Daily update guard</b> — <code>last-update.txt</code> prevents the catalog from being regenerated more than once per day, making subsequent launches near-instant.</li>
+<li><b><code>categoria</code> and <code>github</code> fields</b> added to <code>appimage-store.json</code> for richer metadata and future GitHub release integration.</li>
+<li><b>German (<code>de</code>) and Arabic (<code>ar</code>) translations</b> added to <code>essora-repo-update.py</code>.</li>
+</ul>
+
+<h3>Changed</h3>
+<ul>
+<li>AppImage icon resolution is now fully offline — icons are read from the local cache only, with no network requests during catalog generation.</li>
+<li><code>essora-repo-update.py</code> update logic moved to a background thread, preventing the GTK window from freezing while waiting for catalog scripts to finish.</li>
+<li>Increased AppImage script timeout from 30 seconds to 180 seconds to accommodate first-run icon population.</li>
+<li>The <code>appimage</code> script now strips tab and carriage-return characters from app descriptions, fixing a <code>JSONDecodeError</code> that prevented the AppImage tab from loading.</li>
+</ul>
+
+<h3>Fixed</h3>
+<ul>
+<li>AppImage tab showing no applications due to invalid control characters such as <code>\t</code> and <code>\r</code> in generated JSON.</li>
+<li><code>essora-repo-update.py</code> blocking the main GTK thread during <code>proc.wait()</code>, causing the spinner to freeze.</li>
+</ul>
+
+<h2>Essora Store 3.6 Series</h2>
+<ul>
+<li>Initial public release of the Essora Store 3.6 series</li>
+<li>Unified Flatpak, DEB and AppImage management in a single GTK3 interface</li>
+<li>Home screen with banner slideshow, category tiles and featured apps grid</li>
+<li>Global search across all three package types</li>
+<li>Repository manager for APT sources with enable and disable toggle</li>
+<li>Fix Broken Packages tool: <code>essora-fix-broken.py</code></li>
+<li>Multilingual support: <code>en</code>, <code>es</code>, <code>pt</code>, <code>fr</code>, <code>it</code>, <code>hu</code>, <code>ja</code>, <code>ru</code>, <code>ca</code>, <code>zh_CN</code></li>
+<li>Single-instance enforcement via Unix socket lock</li>
+</ul>
+
+<h2>Screenshots</h2>
+<div class="screenshot-grid">
+  <figure><img src="/blog/screenshots/store-appimage.png" alt="Essora Store AppImage tab"><figcaption>AppImage catalog</figcaption></figure>
+  <figure><img src="/blog/screenshots/store-deb.png" alt="Essora Store DEB tab"><figcaption>DEB packages</figcaption></figure>
+  <figure><img src="/blog/screenshots/store-flatpak.png" alt="Essora Store Flatpak tab"><figcaption>Flatpak support</figcaption></figure>
+  <figure><img src="/blog/screenshots/store-fixbroken.png" alt="Essora Store fix broken packages tool"><figcaption>Fix Broken Packages</figcaption></figure>
+</div>
+
+<div class="download">
+<h2>Download</h2>
+<p>The official package is available here:</p>
+<a class="btn" target="_blank" rel="noreferrer" href="https://sourceforge.net/projects/essora/files/Eos/packages/essora-store_4.2-1_amd64.deb">Download Essora Store 4.2-1</a>
+</div>
+
+<footer>Essora Linux — Essora Store</footer>
+</article>
+</div>
+</body>
+</html>
