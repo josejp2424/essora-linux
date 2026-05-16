@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EssoraKB — Graphical Kernel Builder for Essora Linux</title>
+<meta name="description" content="EssoraKB is a graphical kernel builder for Essora Linux, designed to compile custom Linux kernels and generate Debian-compatible packages through a clean YAD interface.">
+<style>
+:root{
+  --bg:#0b0f14; --card:#111824; --text:#e6edf3; --muted:#9fb0c0;
+  --accent:#6E9B08; --line:#1d2a3a; --shadow:0 10px 30px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(110,155,8,.18), transparent 60%),
+    radial-gradient(900px 500px at 90% 0%, rgba(110,155,8,.10), transparent 55%),
+    linear-gradient(180deg,#06080b,var(--bg));
+  color:var(--text);
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial;
+  line-height:1.7;
+}
+a{color:var(--text)}
+a:hover{opacity:.95}
+.wrap{max-width:960px;margin:auto;padding:28px 20px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:18px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:rgba(110,155,8,.14);border:1px solid rgba(110,155,8,.35)}
+.logo img{width:26px;height:26px;display:block;filter:drop-shadow(0 0 10px rgba(150,255,70,.25))}
+.brandName{font-size:17px;font-weight:800;line-height:1.1}
+.brandTag{font-size:13px;color:var(--muted);margin-top:2px}
+.nav{display:flex;gap:10px;flex-wrap:wrap}
+.nav a{padding:8px 10px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.02);text-decoration:none}
+.card{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:var(--shadow)}
+h1{font-size:42px;margin:0 0 8px;line-height:1.1}
+.subtitle{color:var(--muted);font-size:18px;margin:0 0 16px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 20px}
+.badge{padding:7px 10px;border-radius:999px;color:var(--muted);border:1px solid var(--line);background:rgba(0,0,0,.14);font-size:13px}
+h2{margin-top:45px;margin-bottom:10px;color:var(--accent);font-size:25px}
+h3{margin-top:28px;margin-bottom:8px;font-size:19px}
+p{margin:12px 0}
+.muted{color:var(--muted)}
+ul,ol{color:var(--muted);padding-left:22px}
+li{margin:5px 0}
+.hero-image,.post-image{width:100%;border-radius:18px;margin:20px 0;border:1px solid var(--line);box-shadow:var(--shadow);display:block}
+.hero-image{border-radius:22px}
+pre{overflow:auto;padding:13px 14px;border-radius:14px;border:1px solid var(--line);background:rgba(0,0,0,.24);color:#dce8d1;font-size:14px}
+code{color:#dce8d1}
+.download{margin-top:40px;padding:20px;border-radius:18px;background:rgba(110,155,8,.08);border:1px solid rgba(110,155,8,.25)}
+.btn{display:inline-block;margin-top:10px;padding:12px 18px;border-radius:14px;background:var(--accent);color:#0b0f14;font-weight:800;text-decoration:none;border:1px solid rgba(0,0,0,.25)}
+.info-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:18px 0}
+.info-box{padding:13px;border:1px solid var(--line);border-radius:15px;background:rgba(0,0,0,.14)}
+.info-box b{color:var(--text)}
+.info-box span,.info-box a{color:var(--muted)}
+footer{margin-top:30px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+@media (max-width:720px){
+  .card{padding:20px}
+  h1{font-size:32px}
+  h2{font-size:22px}
+  .info-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <a class="brand" href="/" aria-label="Essora Linux">
+    <div class="logo" aria-hidden="true"><img src="/essora-logo.png" alt=""></div>
+    <div>
+      <div class="brandName">Essora Linux</div>
+      <div class="brandTag">The new dawn of essentials</div>
+    </div>
+  </a>
+  <nav class="nav">
+    <a href="/">Home</a>
+    <a href="/blog/">Blog</a>
+    <a href="/#downloads">Downloads</a>
+    <a href="/#community">Community</a>
+  </nav>
+</header>
+
+<article class="card">
+<h1>EssoraKB</h1>
+<p class="subtitle">Graphical Kernel Builder for Essora Linux</p>
+
+<div class="meta">
+  <span class="badge">Version 0.1.2</span>
+  <span class="badge">GPL-3.0</span>
+  <span class="badge">YAD interface</span>
+  <span class="badge">Kernel builder</span>
+</div>
+
+<img class="hero-image" src="/blog/screenshots/essorakb.jpeg" alt="EssoraKB graphical kernel builder">
+
+<div class="info-grid">
+  <div class="info-box"><b>Author</b><br><span>josejp2424</span></div>
+  <div class="info-box"><b>Version</b><br><span>0.1.2</span></div>
+  <div class="info-box"><b>License</b><br><span>GPL-3.0</span></div>
+  <div class="info-box"><b>Download</b><br><a target="_blank" rel="noreferrer" href="https://sourceforge.net/projects/essora/files/Eos/packages/essorakb_0.1.2_amd64.deb">essorakb_0.1.2_amd64.deb</a></div>
+</div>
+
+<h2>What is EssoraKB?</h2>
+<p>EssoraKB is a graphical frontend for compiling custom Linux kernels on Essora Linux, a Devuan-based distribution using OpenRC.</p>
+<p>Instead of running dozens of commands manually, EssoraKB guides you through the entire process — from installing build dependencies to generating ready-to-install <code>.deb</code> packages — through a clean interface built with YAD.</p>
+<p>The program includes pre-configured kernel profiles for x86_64, supports ccache for faster recompilation, and generates all four packages that a Debian-compatible system needs: <code>linux-image</code>, <code>linux-headers</code>, <code>linux-kbuild</code> and <code>linux-libc-dev</code>.</p>
+
+<h2>How to use it</h2>
+<p>The workflow is linear. Follow these steps in order.</p>
+
+<h3>Step 1 — Install dependencies</h3>
+<p>Click <b>Install dependencies</b>. A terminal window opens and runs the <code>install-deps.sh</code> script as root.</p>
+<p>It installs all required packages across ten groups: kernel build tools, compilers, ccache, Python, GTK and Qt development libraries, and Debian packaging tools. This step only needs to be done once.</p>
+<p>If you want to check what is already installed without installing anything, click <b>Check dependencies</b> instead. It runs the same script in verification mode and shows which packages are present and which are missing.</p>
+
+<h3>Step 2 — Build kernel</h3>
+<p>Click <b>Build kernel</b>. A dialog opens with the following options:</p>
+<ul>
+<li><b>Kernel configuration</b> — a dropdown listing all available <code>DOTconfig</code> profiles shipped with EssoraKB, for example <code>DOTconfig-6.12.57-x86_64</code> or <code>DOTconfig-7.0-rc7-x86_64</code>. Select the version you want to compile.</li>
+<li><b>Parallel jobs</b> — number of CPU threads to use during compilation. Set to 0 to auto-detect via <code>nproc</code>.</li>
+<li><b>Automatic mode</b> — controls how the kernel is configured before compiling.</li>
+<li><b>Force re-download</b> — forces the kernel source tarball to be downloaded again even if it already exists locally.</li>
+</ul>
+
+<h3>Step 3 — Automatic mode vs interactive mode</h3>
+<p>This is the key choice before compilation starts.</p>
+<p><b>If Automatic mode is checked:</b><br>The build runs completely unattended. The script applies <code>make olddefconfig</code> to the selected DOTconfig and immediately starts compiling without asking any questions. Use this when you trust the configuration and just want the packages built.</p>
+<p><b>If Automatic mode is unchecked:</b><br>Before compiling, <code>make menuconfig</code> opens in the terminal. This is the standard Linux kernel configuration interface where you can browse and modify every option in the selected DOTconfig — enable or disable drivers, tweak the scheduler, add module support, change security settings, and so on.</p>
+<p>Once you save and exit menuconfig, compilation begins automatically. Use this when you want to customize the configuration before building.</p>
+
+<img class="post-image" src="/blog/screenshots/dotconfig.jpeg" alt="EssoraKB DOTconfig selection">
+<img class="post-image" src="/blog/screenshots/kernel-terminal.jpeg" alt="EssoraKB kernel build terminal">
+<img class="post-image" src="/blog/screenshots/config-build.png" alt="EssoraKB build configuration dialog">
+
+<h3>Step 4 — Collect the packages</h3>
+<p>When compilation finishes, all generated <code>.deb</code> packages are moved to:</p>
+<pre>/opt/EssoraKB/builds/out/&lt;version&gt;/</pre>
+<p>To install the new kernel:</p>
+<pre>sudo dpkg -i linux-image-*_amd64.deb linux-headers-*_amd64.deb linux-kbuild-*_amd64.deb linux-libc-dev_amd64.deb
+sudo update-grub</pre>
+
+<h3>Clean builds</h3>
+<p>The <b>Clean builds</b> option deletes the <code>/opt/EssoraKB/builds/</code> and <code>/opt/EssoraKB/builds/out/</code> directories along with the build log, freeing disk space after a successful installation.</p>
+
+<h2>Features</h2>
+<ul>
+<li>Installs all 60+ build dependencies in one click, organized in ten groups</li>
+<li>Pre-configured DOTconfig profiles for stable and RC kernel versions</li>
+<li>ccache integration — recompilation is significantly faster on unchanged source files</li>
+<li>Two compilation modes: fully automatic or interactive via menuconfig</li>
+<li>Multilingual interface with automatic language detection via <code>$LANG</code>: English, Spanish, French, German, Italian, Portuguese, Arabic, Catalan, Hungarian, Russian, Japanese and Chinese</li>
+<li>Built-in YAD authentication dialog — no external gksu required</li>
+<li>Themed xterm terminal with Catppuccin Mocha colors for all output</li>
+<li>One-click build cleanup</li>
+</ul>
+
+<h2>Requirements</h2>
+<ul>
+<li>Essora Linux, Devuan based</li>
+<li><code>yad</code></li>
+<li><code>xterm</code></li>
+<li><code>xdotool</code></li>
+</ul>
+<p>All kernel build dependencies are installed by the program itself.</p>
+
+<div class="download">
+<h2>Download</h2>
+<a class="btn" target="_blank" rel="noreferrer" href="https://sourceforge.net/projects/essora/files/Eos/packages/essorakb_0.1.2_amd64.deb">Download EssoraKB 0.1.2</a>
+</div>
+
+<h2>About</h2>
+<p>EssoraKB is part of the Essora Linux ecosystem, a collection of GTK3 and YAD-based tools built specifically for Essora Linux.</p>
+<p>Source code and packages are available at <a target="_blank" rel="noreferrer" href="https://sourceforge.net/projects/essora/">SourceForge</a> and <a target="_blank" rel="noreferrer" href="https://github.com/josejp2424">GitHub</a>.</p>
+
+<footer>Essora Linux — EssoraKB</footer>
+</article>
+</div>
+</body>
+</html>
