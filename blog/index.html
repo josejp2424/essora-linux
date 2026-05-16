@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Essora Linux Blog</title>
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <meta name="description" content="Essora Linux Blog: news, releases, development notes and updates from the Essora Linux project." />
+  <meta name="theme-color" content="#6E9B08" />
+
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --card:#111824;
+      --text:#e6edf3;
+      --muted:#9fb0c0;
+      --accent:#6E9B08;
+      --accent2:#7D9B37;
+      --line:#1d2a3a;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, rgba(110,155,8,.18), transparent 60%),
+        radial-gradient(900px 500px at 90% 0%, rgba(110,155,8,.10), transparent 55%),
+        linear-gradient(180deg,#06080b, var(--bg));
+      color:var(--text);
+    }
+    a{color:var(--text); text-decoration:none}
+    a:hover{opacity:.95; text-decoration:underline}
+    .wrap{max-width:1020px; margin:0 auto; padding:22px}
+    .top{display:flex; align-items:center; justify-content:space-between; gap:18px; flex-wrap:wrap}
+    .brand{display:flex; gap:14px; align-items:center}
+    .logo{
+      width:46px; height:46px; border-radius:14px; display:grid; place-items:center;
+      background:rgba(110,155,8,.14);
+      border:1px solid rgba(110,155,8,.35);
+    }
+    .logo img{
+      width:28px;
+      height:28px;
+      display:block;
+      filter:drop-shadow(0 0 10px rgba(150,255,70,.25));
+    }
+    .brandName{font-size:18px; font-weight:800; line-height:1.1}
+    .brandTag{font-size:13px; color:var(--muted); margin-top:2px}
+    .nav{display:flex; gap:10px; flex-wrap:wrap}
+    .nav a{
+      padding:8px 10px; border:1px solid var(--line); border-radius:12px;
+      background:rgba(255,255,255,.02);
+      text-decoration:none;
+    }
+    .hero{padding:18px 0 10px}
+    .blog-banner{
+      width:100%;
+      max-height:360px;
+      object-fit:cover;
+      border-radius:22px;
+      border:1px solid rgba(110,155,8,.30);
+      box-shadow:var(--shadow);
+      background:rgba(255,255,255,.03);
+      margin-bottom:18px;
+    }
+    .hero h1{margin:0 0 10px; font-size:34px; line-height:1.1}
+    .hero p{margin:0; color:var(--muted); line-height:1.55; max-width:78ch}
+    .cta{display:flex; gap:10px; margin-top:14px; flex-wrap:wrap}
+    .btn{
+      display:inline-block; padding:10px 14px; border-radius:14px;
+      background:var(--accent); color:#0b0f14; font-weight:800;
+      border:1px solid rgba(0,0,0,.25);
+      box-shadow:var(--shadow);
+      text-decoration:none;
+    }
+    .btn.ghost{
+      background:transparent; color:var(--text);
+      border:1px solid rgba(110,155,8,.45);
+      box-shadow:none;
+    }
+    .card{
+      margin-top:14px; padding:16px;
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:rgba(255,255,255,.03);
+    }
+    .card h2{margin:0 0 10px; font-size:20px}
+    .muted{color:var(--muted)}
+    .small{font-size:12px}
+    .posts{display:grid; grid-template-columns:1fr; gap:12px; margin-top:14px}
+    .post{
+      display:block;
+      padding:16px;
+      border-radius:18px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(0,0,0,.12);
+      text-decoration:none;
+    }
+    .post:hover{
+      border-color:rgba(110,155,8,.50);
+      text-decoration:none;
+    }
+    .post-date{
+      display:inline-block;
+      margin-bottom:8px;
+      padding:4px 8px;
+      border-radius:999px;
+      font-size:12px;
+      color:#d8f5b0;
+      background:rgba(110,155,8,.14);
+      border:1px solid rgba(110,155,8,.30);
+    }
+    .post h2{margin:0 0 8px; font-size:22px}
+    .post p{margin:0; color:var(--muted); line-height:1.55}
+    .empty-note{
+      margin-top:12px;
+      padding:12px;
+      border-radius:16px;
+      border:1px solid rgba(110,155,8,.25);
+      background:rgba(110,155,8,.08);
+      color:var(--muted);
+    }
+    footer{margin-top:18px; padding-top:14px; border-top:1px solid var(--line)}
+    @media (max-width:860px){
+      .hero h1{font-size:28px}
+      .blog-banner{max-height:260px}
+    }
+  </style>
+</head>
+
+<body>
+  <header class="wrap top">
+    <a class="brand" href="/" aria-label="Essora Linux">
+      <div class="logo" aria-hidden="true"><img src="/essora-logo.png" alt="" /></div>
+      <div>
+        <div class="brandName">Essora Linux</div>
+        <div class="brandTag">Blog · Releases · Development</div>
+      </div>
+    </a>
+
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/#downloads">Downloads</a>
+      <a href="/#editions">Editions</a>
+      <a href="/#docs">Docs</a>
+      <a href="/#community">Community</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <img class="blog-banner" src="Essorablog.png" alt="Essora Linux Blog" />
+
+      <h1>Essora Linux Blog</h1>
+      <p>
+        News, release notes, development updates and technical notes from the
+        Essora Linux project.
+      </p>
+
+      <div class="cta">
+        <a class="btn" href="/">Back to Essora Linux</a>
+        <a class="btn ghost" target="_blank" rel="noreferrer" href="https://sourceforge.net/projects/essora/">Download ISOs</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Latest posts</h2>
+
+      <div class="posts">
+        <a class="post" href="posts/2026-05-16-essora-eos-jwm-1.3-k7.html">
+          <span class="post-date">May 16, 2026</span>
+          <h2>Essora Eos JWM 1.3 K7</h2>
+          <p>
+            A lightweight Essora edition based on Devuan, OpenRC, XLibre and Kernel 7,
+            featuring EssoraFM and the native Essora toolset.
+          </p>
+        </a>
+
+        <a class="post" href="posts/2026-05-16-welcome-to-essora-blog.html">
+          <span class="post-date">May 16, 2026</span>
+          <h2>Welcome to the Essora Blog</h2>
+          <p>
+            A new place for publishing Essora Linux announcements, screenshots,
+            development notes and project updates.
+          </p>
+        </a>
+      </div>
+
+      <div class="empty-note">
+        To add a new post, create a new HTML file inside <b>blog/posts/</b>
+        and add a new card here in <b>blog/index.html</b>.
+      </div>
+    </section>
+
+    <footer>
+      <div class="muted small">© <span id="y"></span> Essora Linux · maintained by Essora Team</div>
+    </footer>
+  </main>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
