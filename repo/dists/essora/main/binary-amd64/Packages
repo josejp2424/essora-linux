@@ -338,10 +338,10 @@ Installed-Size: 116458
 Depends: python3, python3-gi, gir1.2-gtk-3.0, flatpak, apt, wget, gir1.2-gdkpixbuf-2.0, gir1.2-pango-1.0
 Provides: package-manager
 Filename: pool/main/essora-store_4.3-1_amd64.deb
-Size: 49632892
-MD5sum: c4c5bec7935b37664b2675c83852c581
-SHA1: 499f9a0167b5e4be70cfa8370ba01d07e94ea883
-SHA256: 7af86f45aa6356c67d67dde2feaff8717a82e7e6f0a2ba40725a5318f6cd646f
+Size: 50002188
+MD5sum: 2be632c7494f986068cea6fd8a284abb
+SHA1: cfbcc9c919e764a82c89069c2e923fda4d850717
+SHA256: 3cdcb978b66c1dc4e06691240a2b7cc1d638b11d3bca87a9065805bb5e1e5f5c
 Section: utils
 Priority: optional
 Homepage: https://sourceforge.net/projects/essora/
@@ -363,7 +363,7 @@ Description: Comprehensive multi-format package manager for Essora Linux
  Essora Store simplifies software management on Essora Linux by providing
  a single application to handle all your package management needs, whether
  you're installing system packages, Flatpak applications, or portable
- AppImages.|||
+ AppImages.|
 
 Package: essora-system-center
 Version: 4.3-1
