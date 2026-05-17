@@ -6,13 +6,13 @@ Version: 1.0
 Architectures: amd64
 Components: main
 Description: Official Essora Linux package repository
-Date: Sun, 17 May 2026 14:54:08 +0000
+Date: Sun, 17 May 2026 15:06:34 +0000
 MD5Sum:
  dedf86decb35e780b949568b91fb5ad6 57061 main/binary-amd64/Packages
- b1c7314cd0aa0dd4de545d0530a4e645 20975 main/binary-amd64/Packages.gz
+ 931fcc5ec4ec1e1766777220d07ca58d 20975 main/binary-amd64/Packages.gz
 SHA256:
  410a34adfbc62046643b5b1c2aca0aac2a2f34f652ce6ef5ead8feaba9a32dee 57061 main/binary-amd64/Packages
- e2c57f99cb4338e8c20e5c23a273a3e6bb5679db8b2eb086c182c64bdf5a5fd3 20975 main/binary-amd64/Packages.gz
+ af3bbd91fc9c16eeba0be99a40175f0eb879382c6f1d604348f41eeee4dfc78f 20975 main/binary-amd64/Packages.gz
 SHA512:
  9432ce9e81f1f1a60bc1607146e24801f7efaefc656b1f3a5eccafaa3246275da120968562ff1461737778abfc4be518911b2e7625179c3cddc9ac7b183f34cf 57061 main/binary-amd64/Packages
- 26ab1124a3f1d69d7cd8ee7ae296ec04197f13be4f6db99e0ac3022e6da49337c3d98192c13df0ea4d4fc9253cc4126e03c908e1d19002a0da0120a1654e89ab 20975 main/binary-amd64/Packages.gz
+ 29eec279bc403794eddfab31d76d3345535cd5e787f05c604f50bc21c8f6b1fee21a877bbb4829d379281dd992a63edaa9fc6bdee1033919a91ae532f2f3b84f 20975 main/binary-amd64/Packages.gz
