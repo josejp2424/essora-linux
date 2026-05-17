@@ -1,0 +1,200 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Oply 2.2-1 — Multimedia Suite for Essora Linux</title>
+<style>
+:root{--bg:#0b0f14;--card:#111824;--text:#e6edf3;--muted:#9fb0c0;--accent:#7D9B37;--line:#1d2a3a;--shadow:0 10px 30px rgba(0,0,0,.35)}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,#06080b,var(--bg));color:var(--text);font-family:system-ui,sans-serif;line-height:1.7}
+.wrap{max-width:980px;margin:auto;padding:28px 20px}
+.card{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:var(--shadow)}
+h1{font-size:42px;margin:0 0 10px}
+h2{margin-top:42px;color:var(--accent)}
+.hero,.img{width:100%;border-radius:20px;border:1px solid var(--line);margin:18px 0;box-shadow:var(--shadow)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.grid img{width:100%;border-radius:18px;border:1px solid var(--line)}
+.grid figure{margin:0}
+.grid figcaption{color:var(--muted);font-size:13px;padding-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:15px 0}
+.badge{padding:7px 10px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid var(--line);color:var(--muted);font-size:13px}
+.download{margin-top:40px;padding:20px;border-radius:18px;background:rgba(125,155,55,.08);border:1px solid rgba(125,155,55,.25)}
+.btn{display:inline-block;padding:12px 18px;border-radius:14px;background:var(--accent);color:#111;text-decoration:none;font-weight:700}
+.code{background:#000;padding:14px;border-radius:14px;border:1px solid var(--line);overflow:auto}
+ul{color:var(--muted)}
+@media(max-width:720px){.grid{grid-template-columns:1fr} h1{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<article class="card">
+
+<h1>Oply 2.2-1</h1>
+<p><b>The multimedia center of Essora Linux</b></p>
+
+<div class="meta">
+<span class="badge">Version 2.2-1</span>
+<span class="badge">GTK3</span>
+<span class="badge">MPV Integration</span>
+<span class="badge">YouTube Download</span>
+<span class="badge">IPTV</span>
+</div>
+
+<img class="hero" src="/blog/screenshots/oply-audio-player.png" alt="Oply Audio Player">
+
+<p>
+Oply is the integrated multimedia suite developed specifically for Essora Linux.
+Instead of separating music playback, IPTV, Internet radio, YouTube downloads
+and video playback into multiple unrelated applications, Oply combines everything
+inside a single lightweight interface built around the Essora ecosystem.
+</p>
+
+<h2>Audio Player</h2>
+
+<img class="img" src="/blog/screenshots/oply-audio-player.png">
+
+<p>
+Oply includes a complete audio player designed for everyday music playback with
+playlist support and a clean GTK3 interface integrated into Essora Desktop.
+</p>
+
+<ul>
+<li>Playlist support</li>
+<li>Modern GTK3 interface</li>
+<li>Lightweight resource usage</li>
+<li>Integrated multimedia workflow</li>
+</ul>
+
+<h2>Oply Convert — YouTube Downloader</h2>
+
+<img class="img" src="/blog/screenshots/oply-conver.png">
+
+<p>
+Oply Convert allows users to download both audio and video directly from YouTube
+without relying on external frontends.
+</p>
+
+<ul>
+<li>YouTube audio download</li>
+<li>YouTube video download</li>
+<li>Audio conversion support</li>
+<li>Integrated download management</li>
+</ul>
+
+<h2>Oply Radio</h2>
+
+<img class="img" src="/blog/screenshots/oply-radio.png">
+
+<p>
+Oply Radio provides access to online radio stations from around the world through
+a simple integrated interface.
+</p>
+
+<ul>
+<li>Worldwide online radio stations</li>
+<li>Integrated playback</li>
+<li>Fast station switching</li>
+</ul>
+
+<h2>Oply Video Player</h2>
+
+<img class="img" src="/blog/screenshots/oply-video-player.png">
+
+<p>
+The video player uses MPV integration to provide lightweight and high-performance
+video playback while maintaining the Essora visual style.
+</p>
+
+<ul>
+<li>MPV backend integration</li>
+<li>Fullscreen support</li>
+<li>Integrated controls</li>
+<li>Modern GTK3 interface</li>
+</ul>
+
+<h2>Built-in IPTV Support</h2>
+
+<img class="img" src="/blog/screenshots/oply-video-player-iptv.png">
+
+<p>
+Oply also supports IPTV playback. Users can load IPTV playlists directly into
+the player, and Essora includes a default IPTV list ready to use.
+</p>
+
+<ul>
+<li>IPTV playlist support</li>
+<li>Integrated IPTV browser</li>
+<li>Default IPTV list included</li>
+</ul>
+
+<h2>Why Oply exists</h2>
+
+<p>
+Oply was created because Essora wanted a multimedia solution fully integrated
+with its own desktop and ecosystem. Instead of depending on multiple unrelated
+applications, Oply centralizes audio, video, IPTV, radio and YouTube downloading
+into a single environment.
+</p>
+
+<h2>Essora Integration</h2>
+
+<ul>
+<li>Integrated into Essora Desktop</li>
+<li>Works alongside EssoraFM and Essora Store</li>
+<li>Designed for Devuan + OpenRC systems</li>
+<li>Lightweight multimedia environment</li>
+</ul>
+
+<h2>Source Code</h2>
+
+<ul>
+<li><a href="https://github.com/josejp2424/oply-player">GitHub Repository</a></li>
+<li><a href="https://sourceforge.net/projects/essora/files/Eos/packages/oply-player_2.2-1_amd64.deb">Download Package</a></li>
+</ul>
+
+<h2>Included Components</h2>
+
+<div class="grid">
+<figure>
+<img src="/blog/screenshots/oply-audio-player.png">
+<figcaption>Audio Player</figcaption>
+</figure>
+
+<figure>
+<img src="/blog/screenshots/oply-conver.png">
+<figcaption>YouTube Download & Convert</figcaption>
+</figure>
+
+<figure>
+<img src="/blog/screenshots/oply-radio.png">
+<figcaption>Internet Radio</figcaption>
+</figure>
+
+<figure>
+<img src="/blog/screenshots/oply-video-player.png">
+<figcaption>Video Player</figcaption>
+</figure>
+</div>
+
+<h2>Installation</h2>
+
+<div class="code">
+sudo dpkg -i oply-player_2.2-1_amd64.deb
+</div>
+
+<div class="download">
+<h2>Download</h2>
+
+<p>
+<a class="btn" href="https://sourceforge.net/projects/essora/files/Eos/packages/oply-player_2.2-1_amd64.deb">
+Download Oply 2.2-1
+</a>
+</p>
+</div>
+
+</article>
+</div>
+</body>
+</html>
