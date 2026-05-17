@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Essora CPUFreq 1.2-1 — CPU Frequency and Temperature Manager</title>
+<meta name="description" content="Essora CPUFreq 1.2-1 is a GTK3 CPU frequency and temperature manager for Essora Linux, with governor control, per-core settings, real-time monitoring and multilingual support.">
+<style>
+:root{--bg:#0b0f14;--card:#111824;--text:#e6edf3;--muted:#9fb0c0;--accent:#7D9B37;--line:#1d2a3a;--shadow:0 10px 30px rgba(0,0,0,.35)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(1200px 600px at 10% -10%,rgba(125,155,55,.18),transparent 60%),radial-gradient(900px 500px at 90% 0%,rgba(125,155,55,.10),transparent 55%),linear-gradient(180deg,#06080b,var(--bg));color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial;line-height:1.7}
+a{color:var(--text)}
+a:hover{opacity:.95}
+.wrap{max-width:960px;margin:auto;padding:28px 20px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:18px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:rgba(125,155,55,.14);border:1px solid rgba(125,155,55,.35)}
+.logo img{width:26px;height:26px;display:block;filter:drop-shadow(0 0 10px rgba(150,255,70,.25))}
+.brandName{font-size:17px;font-weight:800;line-height:1.1}
+.brandTag{font-size:13px;color:var(--muted);margin-top:2px}
+.nav{display:flex;gap:10px;flex-wrap:wrap}
+.nav a{padding:8px 10px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.02);text-decoration:none}
+.card{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:var(--shadow)}
+h1{font-size:42px;margin:0 0 8px;line-height:1.1}
+.subtitle{color:var(--muted);font-size:18px;margin:0 0 16px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 20px}
+.badge{padding:7px 10px;border-radius:999px;color:var(--muted);border:1px solid var(--line);background:rgba(0,0,0,.14);font-size:13px}
+h2{margin-top:45px;margin-bottom:10px;color:var(--accent);font-size:25px}
+h3{margin-top:28px;margin-bottom:8px;font-size:19px}
+p{margin:12px 0}
+ul{color:var(--muted);padding-left:22px}
+li{margin:5px 0}
+code{color:#dce8d1}
+pre{overflow:auto;padding:13px 14px;border-radius:14px;border:1px solid var(--line);background:rgba(0,0,0,.24);color:#dce8d1;font-size:14px}
+.hero-image{width:100%;border-radius:22px;margin:20px 0;border:1px solid var(--line);box-shadow:var(--shadow);display:block}
+.feature-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:18px}
+.feature{padding:15px;border-radius:18px;border:1px solid var(--line);background:rgba(0,0,0,.14)}
+.feature h3{margin-top:0;color:var(--text)}
+.feature p{color:var(--muted);margin-bottom:0}
+.download{margin-top:40px;padding:20px;border-radius:18px;background:rgba(125,155,55,.08);border:1px solid rgba(125,155,55,.25)}
+.btn{display:inline-block;margin-top:10px;padding:12px 18px;border-radius:14px;background:var(--accent);color:#0b0f14;font-weight:800;text-decoration:none;border:1px solid rgba(0,0,0,.25)}
+footer{margin-top:30px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+@media (max-width:720px){.card{padding:20px}h1{font-size:32px}h2{font-size:22px}.feature-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a class="brand" href="/" aria-label="Essora Linux">
+    <div class="logo" aria-hidden="true"><img src="/essora-logo.png" alt=""></div>
+    <div>
+      <div class="brandName">Essora Linux</div>
+      <div class="brandTag">The new dawn of essentials</div>
+    </div>
+  </a>
+
+  <nav class="nav">
+    <a href="/">Home</a>
+    <a href="/blog/">Blog</a>
+    <a href="/#downloads">Downloads</a>
+    <a href="/#community">Community</a>
+  </nav>
+</header>
+
+<article class="card">
+
+<h1>Essora CPUFreq 1.2-1</h1>
+<p class="subtitle">CPU frequency and temperature manager for Essora Linux</p>
+
+<div class="meta">
+  <span class="badge">Version 1.2-1</span>
+  <span class="badge">GTK3</span>
+  <span class="badge">Python 3</span>
+  <span class="badge">lm-sensors</span>
+  <span class="badge">Essora native tool</span>
+</div>
+
+<img class="hero-image" src="/blog/screenshots/essora-cpufreq.png" alt="Essora CPUFreq interface">
+
+<p>
+<b>Essora CPUFreq</b>, also known as <b>Essora CPU Manager</b>, is a GTK3 utility
+created for Essora Linux to monitor CPU temperature and manage CPU frequency
+scaling in real time.
+</p>
+
+<p>
+It gives users direct control over CPU governors, current frequency information,
+minimum and maximum frequency limits, scaling drivers, hardware frequency range
+and per-core CPU status from a clean graphical interface.
+</p>
+
+<h2>Why Essora CPUFreq exists</h2>
+
+<p>
+Essora is designed to be lightweight, fast and controllable. CPU frequency
+management is an important part of that philosophy because it allows the user to
+choose between performance, energy saving or a balanced behavior depending on the
+hardware and the task.
+</p>
+
+<p>
+Instead of forcing users to edit system files or run commands manually, Essora
+CPUFreq provides an integrated interface for viewing and applying CPU scaling
+settings directly from the desktop.
+</p>
+
+<h2>Main Features</h2>
+
+<div class="feature-grid">
+  <div class="feature">
+    <h3>Real-time CPU information</h3>
+    <p>Shows current frequency, minimum and maximum frequency limits, scaling driver and active governor.</p>
+  </div>
+
+  <div class="feature">
+    <h3>Temperature monitoring</h3>
+    <p>Displays CPU temperature using lm-sensors support when available on the system.</p>
+  </div>
+
+  <div class="feature">
+    <h3>Governor selection</h3>
+    <p>Allows choosing governors such as performance, powersave and balanced modes.</p>
+  </div>
+
+  <div class="feature">
+    <h3>Apply to all CPUs</h3>
+    <p>Settings can be applied to a single CPU core or across all detected CPU cores.</p>
+  </div>
+
+  <div class="feature">
+    <h3>System information</h3>
+    <p>Displays hostname, system, kernel, architecture, CPU count and active governor information.</p>
+  </div>
+
+  <div class="feature">
+    <h3>Essora integration</h3>
+    <p>Designed to fit naturally into the Essora desktop environment and visual style.</p>
+  </div>
+</div>
+
+<h2>CPU Control Modes</h2>
+
+<p>
+Essora CPUFreq exposes simple modes that are easy to understand:
+</p>
+
+<ul>
+<li><b>Performance</b> — prioritizes maximum performance when the system needs power.</li>
+<li><b>Power Save</b> — reduces frequency behavior to save energy and lower heat.</li>
+<li><b>Balanced</b> — aims for a middle point between performance and efficiency.</li>
+</ul>
+
+<p>
+These options make it useful for laptops, desktops, older machines and lightweight
+systems where temperature, battery usage and responsiveness matter.
+</p>
+
+<h2>How it works</h2>
+
+<p>
+The application reads CPU information from the Linux sysfs CPU interface:
+</p>
+
+<pre><code>/sys/devices/system/cpu</code></pre>
+
+<p>
+It then presents the available frequency and governor information in a graphical
+GTK3 window. When applying settings, root privileges may be required depending on
+the system configuration.
+</p>
+
+<h2>Multilingual Interface</h2>
+
+<p>
+Essora CPUFreq includes built-in translations and desktop file localization for
+multiple languages, including:
+</p>
+
+<ul>
+<li>English</li>
+<li>Spanish</li>
+<li>Arabic</li>
+<li>Catalan</li>
+<li>German</li>
+<li>French</li>
+<li>Italian</li>
+<li>Portuguese</li>
+<li>Hungarian</li>
+<li>Japanese</li>
+<li>Russian</li>
+<li>Chinese</li>
+</ul>
+
+<h2>Requirements</h2>
+
+<ul>
+<li>Essora Linux or compatible Devuan-based system</li>
+<li>Python 3</li>
+<li>GTK3 / PyGObject</li>
+<li>lm-sensors</li>
+<li>CPU frequency scaling support enabled in the kernel</li>
+</ul>
+
+<h2>Installation</h2>
+
+<p>
+Install the package with:
+</p>
+
+<pre><code>sudo dpkg -i essora-cpufreq_1.2-1_amd64.deb</code></pre>
+
+<p>
+After installation, it appears in the system menu as <b>Essora CPU Manager</b>.
+</p>
+
+<div class="download">
+<h2>Download</h2>
+
+<p>
+The official package is available here:
+</p>
+
+<a class="btn" target="_blank" rel="noreferrer" href="https://sourceforge.net/projects/essora/files/Eos/packages/essora-cpufreq_1.2-1_amd64.deb">
+Download Essora CPUFreq 1.2-1
+</a>
+</div>
+
+<h2>Final Words</h2>
+
+<p>
+Essora CPUFreq is a small but important part of the Essora ecosystem. It gives
+users practical control over CPU behavior while staying aligned with the Essora
+philosophy: lightweight tools, clear interfaces and full control over the system.
+</p>
+
+<footer>
+Essora Linux — Essora CPUFreq
+</footer>
+
+</article>
+</div>
+</body>
+</html>
