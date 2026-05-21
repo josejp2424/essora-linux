@@ -838,6 +838,72 @@ Description: Create iso, edit iso, burn iso or write (hybrid) iso to usb. Change
   - Display progress bar for writing ISO to USB
   - Changed entry box for to enter usb drive, to: display a list of available drives to choose from.
 
+Package: libobrender32v5
+Version: 3.6.1-13
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 129
+Depends: libc6, libcairo2, libglib2.0-0t64, libimlib2t64, libobt2v5, libpango-1.0-0, libpangoxft-1.0-0, librsvg2-2, libx11-6, libxft2
+Provides: libs
+Filename: pool/main/libobrender32v5_3.6.1-13_amd64.deb
+Size: 31016
+MD5sum: 5ce4684f6fcd793835c11c0d61e288b0
+SHA1: 7788366ca93c633040e71d4abc5451aeb23927e6
+SHA256: 3a5c5ff6d486c08a6403f30d1d32d41d2bf8732a86e41933dfbb10bbf60ac447
+Section: libs
+Priority: optional
+Homepage: http://www.openbox.org
+Description: rendering library for openbox themes
+ Openbox works with your applications, and makes your desktop easier to manage.
+ This is because the approach to its development was the opposite of what seems
+ to be the general case for window managers. Openbox was written first to
+ comply with standards and to work properly. Only when that was in place did
+ the team turn to the visual interface.
+ .
+ Openbox is fully functional as a stand-alone working environment, or can be
+ used as a drop-in replacement for the default window manager in the GNOME or
+ KDE desktop environments.
+ .
+ Openbox 3 is a completely new breed of window manager. It is not based upon
+ any existing code base, although the visual appearance has been based upon
+ that of Blackbox. Openbox 2 was based on the Blackbox 0.65.0 codebase.
+ .
+ This package contains the libobrender library files used by openbox
+ for theme rendering.||
+
+Package: libobt2v5
+Version: 3.6.1-13
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 119
+Depends: libc6, libglib2.0-0t64, libx11-6, libxext6, libxinerama1, libxml2, libxrandr2
+Provides: libs
+Filename: pool/main/libobt2v5_3.6.1-13_amd64.deb
+Size: 52620
+MD5sum: 08472f951754120fea9f920dcd8a84e5
+SHA1: c51d005867eb3245b1b09f48bd2ed5b5a5a3275b
+SHA256: f80fc142223bd3f1d411b94196710b7132a3fd97f2125d641824b91dfc27da42
+Section: libs
+Priority: optional
+Homepage: http://www.openbox.org
+Description: parsing library for openbox
+ Openbox works with your applications, and makes your desktop easier to manage.
+ This is because the approach to its development was the opposite of what seems
+ to be the general case for window managers. Openbox was written first to
+ comply with standards and to work properly. Only when that was in place did
+ the team turn to the visual interface.
+ .
+ Openbox is fully functional as a stand-alone working environment, or can be
+ used as a drop-in replacement for the default window manager in the GNOME or
+ KDE desktop environments.
+ .
+ Openbox 3 is a completely new breed of window manager. It is not based upon
+ any existing code base, although the visual appearance has been based upon
+ that of Blackbox. Openbox 2 was based on the Blackbox 0.65.0 codebase.
+ .
+ This package contains the libobt library files used by openbox
+ to load and parse configuration and theme files of openbox.|
+
 Package: linux-headers-7.0.0-rc7-essora
 Source: linux-upstream
 Version: 7.0.0~rc7-1
@@ -940,10 +1006,10 @@ Installed-Size: 1713
 Depends: libc6, libglib2.0-0t64, libice6, libobrender32v5, libobt2v5, libsm6, libstartup-notification0, libx11-6, libxau6, libxcursor1, libxext6, libxi6, libxinerama1, libxrandr2, python3, obconf, scrot
 Provides: x-session-manager, x-window-manager
 Filename: pool/main/openbox_3.6.1-13_amd64.deb
-Size: 338676
-MD5sum: 4416364c60834de4ad5f880af4d326ca
-SHA1: 976b0c30b86f5264f470f851a044389773ed2b0a
-SHA256: d14f518cfde87db0bc8481b5a4430aed3e8601e4a490286eb9487f23a7800a8e
+Size: 259744
+MD5sum: 94911ccf43f7c5fa96445a866a372b20
+SHA1: a3945891a223e40f47b809fb6c73577756970bc5
+SHA256: d12c5b079d596ca890a885f5b28b99a7e62bc787b859741158e56d112f75b95b
 Section: X11
 Priority: optional
 Homepage: http://www.openbox.org
@@ -970,7 +1036,39 @@ Description: standards-compliant, fast, light-weight and extensible window manag
   * Customizable mouse actions
   * Window resistance
   * Multi-head Xinerama support!
-  * Pipe menus|
+  * Pipe menus||
+
+Package: openbox-dev
+Version: 3.6.1-13
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 379
+Depends: libobrender32v5, libobt2v5, libxml2-dev, libglib2.0-dev, libpango1.0-dev, libimlib2-dev, librsvg2-dev, libxcursor-dev
+Provides: libdevel
+Filename: pool/main/openbox-dev_3.6.1-13_amd64.deb
+Size: 91808
+MD5sum: 46dd716f16888fee71c6b8e3ddbbbdbb
+SHA1: 7bc3b9dd7c746dff134b855882bdd2c7914bfdf3
+SHA256: 02758e11882639aed8389362d1ba7ab17265de66eaddbdb22bd8ece4e5e11dc9
+Section: libdevel
+Priority: optional
+Homepage: http://www.openbox.org
+Description: development files for the openbox window manager
+ Openbox works with your applications, and makes your desktop easier to manage.
+ This is because the approach to its development was the opposite of what seems
+ to be the general case for window managers. Openbox was written first to
+ comply with standards and to work properly. Only when that was in place did
+ the team turn to the visual interface.
+ .
+ Openbox is fully functional as a stand-alone working environment, or can be
+ used as a drop-in replacement for the default window manager in the GNOME or
+ KDE desktop environments.
+ .
+ Openbox 3 is a completely new breed of window manager. It is not based upon
+ any existing code base, although the visual appearance has been based upon
+ that of Blackbox. Openbox 2 was based on the Blackbox 0.65.0 codebase.
+ .
+ This package contains the development headers for building openbox stuff.|
 
 Package: pa-applet
 Version: 01-essora
