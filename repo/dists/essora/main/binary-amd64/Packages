@@ -916,17 +916,18 @@ Homepage: https://github.com/luffah/obkey?tab=readme-ov-file
 Description: Tobkey - openbox key editor - undead
 
 Package: openbox
-Source: openbox (3.6.1-12)
-Version: 3.6.1-12+b2
+Version: 3.6.1-13
 Architecture: amd64
-Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
-Installed-Size: 1254
-Recommends: obconf, scrot
-Filename: pool/main/openbox_3.6.1-12+b2_amd64.deb
-Size: 333416
-MD5sum: 78efe3ad82088d827e9643a40f922a23
-SHA1: a64be668fea083a6b9a883d8c2d93e17ab3fa664
-SHA256: 8342ba87fbaaaf72f7888975f57aba263eff380f1853bf527b25746b4f85dbec
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 1713
+Depends: libc6, libglib2.0-0t64, libice6, libobrender32v5, libobt2v5, libsm6, libstartup-notification0, libx11-6, libxau6, libxcursor1, libxext6, libxi6, libxinerama1, libxrandr2, python3, obconf, scrot
+Provides: x-session-manager, x-window-manager
+Filename: pool/main/openbox_3.6.1-13_amd64.deb
+Size: 338676
+MD5sum: 4416364c60834de4ad5f880af4d326ca
+SHA1: 976b0c30b86f5264f470f851a044389773ed2b0a
+SHA256: d14f518cfde87db0bc8481b5a4430aed3e8601e4a490286eb9487f23a7800a8e
+Section: X11
 Priority: optional
 Homepage: http://www.openbox.org
 Description: standards-compliant, fast, light-weight and extensible window manager
@@ -952,7 +953,7 @@ Description: standards-compliant, fast, light-weight and extensible window manag
   * Customizable mouse actions
   * Window resistance
   * Multi-head Xinerama support!
-  * Pipe menus
+  * Pipe menus|
 
 Package: pa-applet
 Version: 01-essora
@@ -1254,6 +1255,31 @@ Description: Fast and secure messaging application
  people or channels for broadcasting to unlimited audiences.
  .
  This package contains the official desktop client for Telegram.|
+
+Package: tint2-essora
+Version: 17.0.1-1.2
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 2092
+Depends: libc6, libcairo2, libgdk-pixbuf-2.0-0, libglib2.0-0t64, libgtk-3-0t64, libimlib2t64, libpango-1.0-0, libpangocairo-1.0-0, librsvg2-2, libstartup-notification0, libx11-6, libxcomposite1, libxdamage1, libxext6, libxinerama1, libxrandr2, libxrender1
+Filename: pool/main/tint2-essora_17.0.1-1.2_amd64.deb
+Size: 546932
+MD5sum: ebe1ee9cea3a437dc04e0f220fe8bad7
+SHA1: 9a96639cc6c93918138e2c9d7602735dad3132bf
+SHA256: dbd950a6625d81e718a25baf7485d4350106b1644032421dbbf865f5b04af38b
+Section: x11
+Priority: optional
+Homepage: https://gitlab.com/o9000/tint2/
+Description: lightweight taskbar
+ Tint is a simple panel/taskbar intentionally made for openbox3, but should
+ also work with other window managers. The taskbar includes transparency and
+ color settings for the font, icons, border, and background. It also supports
+ multihead setups, customized mouse actions, and a built-in clock. Tint was
+ originally based on ttm code. Since then, support has also been added
+ for a battery monitor and system tray.
+ .
+ The goal is to keep a clean and unintrusive look with lightweight code and
+ compliance with freedesktop specification.|
 
 Package: tkterminal
 Version: 0.1.0-1
