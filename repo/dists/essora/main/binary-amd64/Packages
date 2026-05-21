@@ -260,6 +260,23 @@ Description: Cortafuego por proceso para Essora Linux v2
   - Systray, minimize-to-tray, close dialog
   - Config en home del usuario real aunque se ejecute como root||||
 
+Package: essora-init
+Version: 0.1
+Architecture: amd64
+Maintainer: josejp2424
+Depends: libc6, libgcc-s1, libstdc++6
+Provides: init
+Filename: pool/main/essora-init_0.1_amd64.deb
+Size: 200536
+MD5sum: 95c59c4a72231824dcf4fbf3af9dd96c
+SHA1: 04c22ef9be512fb5ba10338b8d3bfda98aff702c
+SHA256: 070ca8485d70536687bfedb26495b76cef17a2468d88a937da5d77c3ad9ebf42
+Section: admin
+Priority: optional
+Description: Essora experimental init based on dinit
+ Lightweight experimental init and service manager for Essora.
+ This package is based on dinit and adds Essora naming, paths and packaging layout.|
+
 Package: essora-installer
 Version: 1.6-1
 Architecture: amd64
