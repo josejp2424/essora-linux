@@ -1435,6 +1435,41 @@ Description: uExtract 4.15 - extractor universal para múltiples formatos
  Esta versión 4.15 ha sido adaptada para Debian y derivados, conservando
  su enfoque minimalista y su facilidad de uso inspirada en Puppy Linux.
 
+Package: wbar
+Version: 2.3.5-2
+Architecture: amd64
+Maintainer: josejp2424 <puppylinuxjosejp2424@gmail.com>
+Installed-Size: 2452
+Depends: libc6, libgcc-s1, libimlib2t64, libstdc++6, libx11-6, python3, python3-gi, gir1.2-gtk-3.0, gir1.2-gdkpixbuf-2.0
+Provides: system
+Filename: pool/main/wbar_2.3.5-2_amd64.deb
+Size: 1863868
+MD5sum: 791e791045f5f59784eaaa54d165e851
+SHA1: 2469b5f3b710109e5cceb4481aeff479e429d5eb
+SHA256: bc0f0b5ccf63418a5fe6f086a5cb7da0b26886b080f26467f640dac49c0166ed
+Section: x11
+Priority: optional
+Homepage: https://github.com/rodolf0/wbar
+Description: Lightweight dock for X11 adapted for Essora Linux
+ wbar is a fast and minimal dock for X11 desktops.
+ This Essora edition (2.3.5) includes improvements for compatibility
+ with EssoraFM desktop mode and modern window managers.
+ .
+ Changes in this version:
+  - Fixed stacking behavior with EssoraFM (--desktop)
+  - Removed DOCK window type in above-desk mode to prevent overlap
+  - Improved compatibility with Openbox, JWM and LXDE
+  - Updated build fixes for modern GCC toolchains
+ .
+ Features:
+  - Lightweight and fast dock
+  - PNG icon support (Imlib2 based)
+  - Custom launchers via ~/.wbar
+  - Smooth zoom effects
+ .
+ This version is optimized for Essora environments and integrates
+ cleanly with Essora tools and desktop behavior.||||
+
 Package: win12-fantasy-theme
 Version: 2025-07-10
 Architecture: amd64
