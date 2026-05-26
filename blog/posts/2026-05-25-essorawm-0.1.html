@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EssoraWM 0.1 — Lightweight Window Manager for Essora Linux</title>
+<style>
+:root{--bg:#0b0f14;--card:#111824;--text:#e6edf3;--muted:#9fb0c0;--accent:#7D9B37;--line:#1d2a3a;--shadow:0 10px 30px rgba(0,0,0,.35)}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,#06080b,var(--bg));color:var(--text);font-family:system-ui,sans-serif;line-height:1.7}
+.wrap{max-width:980px;margin:auto;padding:28px 20px}
+.card{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:var(--shadow)}
+h1{font-size:42px;margin:0 0 10px}
+h2{margin-top:42px;color:var(--accent)}
+h3{margin-top:28px;color:#dfe8f0}
+a{color:var(--accent)}
+.hero,.img{width:100%;border-radius:20px;border:1px solid var(--line);margin:18px 0;box-shadow:var(--shadow)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.grid img{width:100%;border-radius:18px;border:1px solid var(--line)}
+.grid figure{margin:0}
+.grid figcaption{color:var(--muted);font-size:13px;padding-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:15px 0}
+.badge{padding:7px 10px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid var(--line);color:var(--muted);font-size:13px}
+.download{margin-top:40px;padding:20px;border-radius:18px;background:rgba(125,155,55,.08);border:1px solid rgba(125,155,55,.25)}
+.btn{display:inline-block;padding:12px 18px;border-radius:14px;background:var(--accent);color:#111;text-decoration:none;font-weight:700}
+.code{background:#000;padding:14px;border-radius:14px;border:1px solid var(--line);overflow:auto;color:#dfe8f0}
+ul{color:var(--muted)}
+.note{color:var(--muted);border-left:3px solid var(--accent);padding-left:14px;background:rgba(255,255,255,.025);border-radius:8px;padding-top:8px;padding-bottom:8px}
+@media(max-width:720px){.grid{grid-template-columns:1fr} h1{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<article class="card">
+
+<h1>EssoraWM 0.1</h1>
+<p><b>A lightweight window manager based on JWM, redesigned for the Essora ecosystem</b></p>
+
+<div class="meta">
+<span class="badge">EssoraWM 0.1</span>
+<span class="badge">Based on JWM 2.4.7</span>
+<span class="badge">Task Previews</span>
+<span class="badge">Wallpaper Manager</span>
+<span class="badge">ROX / PuppyPin Support</span>
+<span class="badge">MIT License</span>
+</div>
+
+<img class="hero" src="/blog/screenshots/essorawm.png" alt="EssoraWM desktop">
+
+<p>
+EssoraWM is a fork of JWM created for Essora Linux. It keeps the speed,
+simplicity and low resource usage of the original JWM window manager, while
+adding features that better fit the Essora desktop experience.
+</p>
+
+<p>
+The project keeps the original <code>jwm</code> binary name for compatibility,
+but identifies itself as EssoraWM:
+</p>
+
+<div class="code">jwm -version<br><br>EssoraWM 0.1<br>Based on JWM 2.4.7</div>
+
+<h2>Why EssoraWM exists</h2>
+
+<p>
+JWM is fast, stable and extremely lightweight. EssoraWM does not try to replace
+that foundation. Instead, it extends it with practical desktop improvements for
+modern lightweight systems, especially the Essora Linux environment.
+</p>
+
+<ul>
+<li>Maintains the original JWM structure and compatibility</li>
+<li>Keeps the <code>jwm</code> command for existing scripts and sessions</li>
+<li>Adds Essora visual integration and workflow improvements</li>
+<li>Uses Pymenu as an external launcher instead of the original menu workflow</li>
+<li>Adds a native wallpaper selector and task preview behavior</li>
+</ul>
+
+<h2>Task previews in the panel</h2>
+
+<img class="img" src="/blog/screenshots/essorawm-miniatura.png" alt="EssoraWM task thumbnails">
+
+<p>
+EssoraWM improves the panel task list by using window previews and removing the
+traditional task text labels from open windows. This makes the panel cleaner and
+more visual, especially when several applications are open.
+</p>
+
+<ul>
+<li>Task preview / thumbnail support</li>
+<li>Cleaner taskbar without duplicated window names</li>
+<li>Open applications are represented visually</li>
+<li>System tray and fixed panel applications keep their normal behavior</li>
+</ul>
+
+<h2>Native Wallpaper Manager</h2>
+
+<img class="img" src="/blog/screenshots/essorawm-wallpaper.png" alt="EssoraWM wallpaper selector">
+
+<p>
+EssoraWM includes a native wallpaper selector that can be launched directly from
+the window manager:
+</p>
+
+<div class="code">jwm -wallpaper</div>
+
+<p>
+The wallpaper manager searches images from <code>/usr/share/backgrounds</code>,
+shows previews, highlights the selected wallpaper and only applies the wallpaper
+when the user confirms the selection.
+</p>
+
+<ul>
+<li>Wallpaper thumbnails</li>
+<li>Green selection highlight</li>
+<li>Apply button to avoid accidental changes</li>
+<li>Scrollbar / navigation support for multiple wallpapers</li>
+<li>Wallpaper path saved in <code>~/.config/essorawm/wallpaper</code></li>
+</ul>
+
+<h2>ROX / PuppyPin compatibility</h2>
+
+<p>
+EssoraWM also includes compatibility with Puppy-style ROX desktops. If the file
+exists, EssoraWM detects:
+</p>
+
+<div class="code">$HOME/Choices/ROX-Filer/PuppyPin</div>
+
+<p>
+It updates the wallpaper path inside the existing backdrop entry while keeping
+the current style, for example:
+</p>
+
+<div class="code">&lt;backdrop style="Stretched"&gt;/usr/share/backgrounds/example.jpg&lt;/backdrop&gt;</div>
+
+<p>
+This makes the wallpaper selector useful not only for pure JWM sessions, but
+also for Puppy/ROX based environments where the desktop background is controlled
+through PuppyPin.
+</p>
+
+<h2>Pymenu integration</h2>
+
+<p>
+EssoraWM no longer depends on the traditional JWM menu as the main launcher.
+Instead, it is designed to work with Pymenu installed separately.
+</p>
+
+<div class="code">/usr/local/bin/pymenu</div>
+
+<p class="note">
+Pymenu is planned as a separate package. This keeps EssoraWM lightweight and
+modular, while allowing the launcher to evolve independently.
+</p>
+
+<img class="img" src="/blog/screenshots/essorawm-pymenu.png" alt="Essora Pymenu launcher">
+
+<h2>Build system and Debian package generation</h2>
+
+<p>
+EssoraWM includes a custom build script that compiles the window manager and
+creates a Debian package automatically.
+</p>
+
+<div class="code">chmod +x build-essorawm-deb.sh<br>./build-essorawm-deb.sh</div>
+
+<p>
+The build system keeps the generated files inside the source tree and produces
+a ready-to-install Debian package.
+</p>
+
+<ul>
+<li>Compiles EssoraWM</li>
+<li>Builds NLS translations</li>
+<li>Includes Essora assets</li>
+<li>Creates the Debian package automatically</li>
+<li>Keeps packaging output organized inside the build directory</li>
+</ul>
+
+<h2>Source Code</h2>
+
+<ul>
+<li><a href="https://github.com/josejp2424/essorawm">GitHub Repository</a></li>
+</ul>
+
+<h2>Original project</h2>
+
+<p>
+EssoraWM is based on JWM, Joe's Window Manager.
+</p>
+
+<ul>
+<li>Original project: <a href="https://joewing.net/projects/jwm/">JWM</a></li>
+<li>Original author: Joe Wingbermuehle</li>
+<li>License: MIT</li>
+<li>Essora modifications: josejp2424</li>
+</ul>
+
+<div class="download">
+<h2>EssoraWM Repository</h2>
+<p>
+<a class="btn" href="https://github.com/josejp2424/essorawm">View Source on GitHub</a>
+</p>
+</div>
+
+</article>
+</div>
+</body>
+</html>
