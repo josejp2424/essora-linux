@@ -1,0 +1,713 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>EssoraPup64 with XLibre — A Modern and Lightweight Puppy Linux</title>
+
+<style>
+:root{
+  --bg:#0b0f14;
+  --card:#111824;
+  --text:#e6edf3;
+  --muted:#9fb0c0;
+  --accent:#7D9B37;
+  --line:#1d2a3a;
+  --shadow:0 10px 30px rgba(0,0,0,.35)
+}
+
+*{
+  box-sizing:border-box
+}
+
+body{
+  margin:0;
+  background:linear-gradient(180deg,#06080b,var(--bg));
+  color:var(--text);
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.7
+}
+
+.wrap{
+  max-width:980px;
+  margin:auto;
+  padding:28px 20px
+}
+
+.card{
+  background:rgba(255,255,255,.03);
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:28px;
+  box-shadow:var(--shadow)
+}
+
+h1{
+  font-size:42px;
+  line-height:1.2;
+  margin:0 0 10px
+}
+
+h2{
+  margin-top:42px;
+  color:var(--accent)
+}
+
+h3{
+  margin-top:28px;
+  color:#dfe8f0
+}
+
+a{
+  color:var(--accent)
+}
+
+code{
+  color:#dfe8f0
+}
+
+.hero,
+.img{
+  width:100%;
+  display:block;
+  border-radius:20px;
+  border:1px solid var(--line);
+  margin:18px 0;
+  box-shadow:var(--shadow)
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+  margin-top:20px
+}
+
+.grid img{
+  width:100%;
+  display:block;
+  border-radius:18px;
+  border:1px solid var(--line);
+  box-shadow:var(--shadow)
+}
+
+.grid figure{
+  margin:0
+}
+
+.grid figcaption{
+  color:var(--muted);
+  font-size:13px;
+  padding-top:6px
+}
+
+.meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:15px 0
+}
+
+.badge{
+  padding:7px 10px;
+  border-radius:999px;
+  background:rgba(255,255,255,.05);
+  border:1px solid var(--line);
+  color:var(--muted);
+  font-size:13px
+}
+
+.highlight{
+  margin:24px 0;
+  padding:20px;
+  border-radius:18px;
+  background:rgba(125,155,55,.08);
+  border:1px solid rgba(125,155,55,.25)
+}
+
+.download{
+  margin-top:40px;
+  padding:20px;
+  border-radius:18px;
+  background:rgba(125,155,55,.08);
+  border:1px solid rgba(125,155,55,.25)
+}
+
+.btn{
+  display:inline-block;
+  padding:12px 18px;
+  border-radius:14px;
+  background:var(--accent);
+  color:#111;
+  text-decoration:none;
+  font-weight:700
+}
+
+.code{
+  background:#000;
+  padding:14px;
+  border-radius:14px;
+  border:1px solid var(--line);
+  overflow:auto;
+  color:#dfe8f0
+}
+
+ul{
+  color:var(--muted)
+}
+
+.note{
+  color:var(--muted);
+  border-left:3px solid var(--accent);
+  padding:8px 14px;
+  background:rgba(255,255,255,.025);
+  border-radius:8px
+}
+
+.footer-text{
+  margin-top:36px;
+  text-align:center;
+  color:var(--muted)
+}
+
+@media(max-width:720px){
+  .grid{
+    grid-template-columns:1fr
+  }
+
+  h1{
+    font-size:32px
+  }
+
+  .card{
+    padding:20px
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="wrap">
+<article class="card">
+
+<h1>EssoraPup64 with XLibre</h1>
+
+<p>
+<b>A modern and lightweight Puppy Linux system with its own integrated applications</b>
+</p>
+
+<div class="meta">
+  <span class="badge">64-bit</span>
+  <span class="badge">XLibre</span>
+  <span class="badge">Linux Kernel 7.1.3</span>
+  <span class="badge">JWM</span>
+  <span class="badge">EssoraWM</span>
+  <span class="badge">DEB</span>
+  <span class="badge">Flatpak</span>
+  <span class="badge">AppImage</span>
+  <span class="badge">Live and Frugal Installation</span>
+</div>
+
+<img
+class="hero"
+src="/blog/screenshots/escritorioessorapup64.png"
+alt="EssoraPup64 desktop running with XLibre">
+
+<p>
+<strong>EssoraPup64</strong> is a 64-bit distribution based on Puppy Linux that
+combines the XLibre graphical server, the lightweight JWM and EssoraWM window
+managers, and a complete collection of applications developed specifically for
+the Essora ecosystem.
+</p>
+
+<p>
+The project aims to preserve the simplicity, flexibility and low resource usage
+that characterize Puppy Linux while providing a more modern, integrated and
+ready-to-use desktop experience.
+</p>
+
+<p>
+EssoraPup64 can be used as a portable Live system, installed through a
+traditional Puppy-style frugal installation, or customized and remastered into
+a new ISO image.
+</p>
+
+<div class="highlight">
+  <strong>EssoraPup64 keeps the lightweight philosophy of Puppy Linux while
+  adding its own application store, installer, network tools, system utilities,
+  multimedia applications and desktop integration.</strong>
+</div>
+
+<h2>Main features</h2>
+
+<ul>
+  <li>64-bit architecture</li>
+  <li>XLibre graphical server</li>
+  <li>Linux Kernel 7.1.3</li>
+  <li>Lightweight JWM and EssoraWM desktop environments</li>
+  <li>Support for DEB, Flatpak and AppImage applications</li>
+  <li>Custom graphical tools for system administration</li>
+  <li>Live system support</li>
+  <li>Frugal installation support</li>
+  <li>BIOS and UEFI installation support</li>
+  <li>Built-in tools for creating a customized remastered ISO</li>
+  <li>Low resource usage and fast startup</li>
+</ul>
+
+<h2>Essora applications included</h2>
+
+<p>
+EssoraPup64 includes a collection of applications created to provide a
+consistent and integrated system experience. These tools are designed to remain
+lightweight while covering the most common desktop and system administration
+tasks.
+</p>
+
+<h2>Essora Store</h2>
+
+<img
+class="img"
+src="/blog/screenshots/essora-store_essorapup64.png"
+alt="Essora Store application manager">
+
+<p>
+<strong>Essora Store replaces Synaptic as the main graphical application
+manager in EssoraPup64.</strong>
+</p>
+
+<p>
+Instead of requiring a different graphical tool for each package format,
+Essora Store provides a single interface for discovering, installing and
+managing software from multiple sources.
+</p>
+
+<ul>
+  <li>DEB packages from the configured system repositories</li>
+  <li>Flatpak applications</li>
+  <li>AppImage applications</li>
+  <li>Application search and category navigation</li>
+  <li>Visual application information and icons</li>
+  <li>Installed application detection</li>
+  <li>Software update management</li>
+</ul>
+
+<p>
+This unified approach makes software management easier for new users while
+still providing access to the traditional Debian package ecosystem.
+</p>
+
+<p class="note">
+Essora Store is intended to be the primary graphical software manager in
+EssoraPup64, centralizing DEB, Flatpak and AppImage applications in one place.
+</p>
+
+<h2>Essora Installer</h2>
+
+<img
+class="img"
+src="/blog/screenshots/essora-installer_essorapup64.png"
+alt="EssoraPup64 Installer">
+
+<p>
+Essora Installer provides a clear and guided method for installing
+EssoraPup64.
+</p>
+
+<p>
+Unlike traditional Puppy Linux installation tools,
+<strong>Essora Installer does not use Grub4Config</strong>. It uses the
+traditional GNU GRUB workflow commonly found in Linux distributions.
+</p>
+
+<ul>
+  <li>Traditional GNU GRUB installation</li>
+  <li>GRUB-PC support for BIOS systems</li>
+  <li>GRUB-EFI support for UEFI systems</li>
+  <li>Frugal installation support</li>
+  <li>Automatic copying of the required Puppy system files</li>
+  <li>Automatic generation of an EssoraPup64 boot entry</li>
+  <li>Integration with an existing Linux GRUB installation</li>
+</ul>
+
+<p>
+The installer copies the required system files, prepares the installation
+directory and creates a boot entry compatible with a conventional Linux GRUB
+configuration.
+</p>
+
+<div class="code">
+Essora Installer<br><br>
+Traditional GNU GRUB<br>
+BIOS: GRUB-PC<br>
+UEFI: GRUB-EFI<br>
+No Grub4Config dependency
+</div>
+
+<h2>Essora Network</h2>
+
+<img
+class="img"
+src="/blog/screenshots/essora-network_essorapup64.png"
+alt="Essora Network connection manager">
+
+<p>
+Essora Network is the custom network connection manager included with
+EssoraPup64.
+</p>
+
+<p>
+It provides a lightweight graphical interface for Ethernet and wireless
+connections and can remain available through the system tray.
+</p>
+
+<ul>
+  <li>Ethernet connection detection</li>
+  <li>Wi-Fi network scanning</li>
+  <li>Connect and disconnect actions</li>
+  <li>Wireless password entry</li>
+  <li>Saved network credentials</li>
+  <li>Connection status monitoring</li>
+  <li>System tray integration</li>
+</ul>
+
+<h2>Essora Bluetooth</h2>
+
+<img
+class="img"
+src="/blog/screenshots/essorabluetooth_essorapup64.png"
+alt="Essora Bluetooth device manager">
+
+<p>
+Essora Bluetooth is a lightweight graphical utility for managing Bluetooth
+devices.
+</p>
+
+<p>
+It can be used to search for nearby devices and manage connections without
+requiring a large desktop environment or a heavy Bluetooth frontend.
+</p>
+
+<ul>
+  <li>Bluetooth adapter detection</li>
+  <li>Nearby device discovery</li>
+  <li>Device pairing</li>
+  <li>Connect and disconnect actions</li>
+  <li>Support for phones, speakers and headphones</li>
+  <li>Simple GTK interface</li>
+</ul>
+
+<h2>Essora CPU Manager</h2>
+
+<p>
+Essora CPU Manager provides a graphical interface for viewing and controlling
+processor frequency behavior.
+</p>
+
+<ul>
+  <li>CPU information</li>
+  <li>Current frequency monitoring</li>
+  <li>CPU governor selection</li>
+  <li>Per-core configuration</li>
+  <li>Global configuration application</li>
+  <li>Persistent settings between sessions</li>
+  <li>Temperature and system information where supported</li>
+</ul>
+
+<p>
+The utility is especially useful on laptops, older computers and systems where
+the user needs to choose between performance, power saving and lower operating
+temperatures.
+</p>
+
+<h2>Essora Firewall</h2>
+
+<p>
+Essora Firewall is a graphical firewall designed for Puppy Linux and
+EssoraPup64.
+</p>
+
+<ul>
+  <li>Simple firewall activation and deactivation</li>
+  <li>Network protection rules</li>
+  <li>Graphical rule management</li>
+  <li>Connection control</li>
+  <li>Lightweight system integration</li>
+  <li>No dependency on a large desktop firewall frontend</li>
+</ul>
+
+<h2>EssoraFM</h2>
+
+<p>
+EssoraFM is the custom file manager included with the Essora desktop.
+</p>
+
+<p>
+It is designed to provide fast file navigation and common desktop file
+operations through a lightweight GTK interface.
+</p>
+
+<ul>
+  <li>Icon and list views</li>
+  <li>Directory navigation</li>
+  <li>File and folder management</li>
+  <li>Storage device access</li>
+  <li>Wallpaper selection</li>
+  <li>Desktop and system integration</li>
+  <li>Low resource usage</li>
+</ul>
+
+<h2>Essora PyMenu</h2>
+
+<img
+class="img"
+src="/blog/screenshots/pymenu_essorapup64.png"
+alt="Essora PyMenu application launcher">
+
+<p>
+Essora PyMenu is the main application launcher used by EssoraPup64 and
+EssoraWM.
+</p>
+
+<p>
+The normal application menu is developed in C and GTK3 to provide fast startup
+and reduced memory usage.
+</p>
+
+<ul>
+  <li>Application categories</li>
+  <li>Fast application search</li>
+  <li>Favorites</li>
+  <li>User profiles</li>
+  <li>Theme support</li>
+  <li>Multiple language support</li>
+  <li>DEB application support</li>
+  <li>Flatpak application support</li>
+  <li>AppImage application support</li>
+  <li>Wine application support</li>
+</ul>
+
+<p>
+PyMenu integrates with EssoraWM while remaining a separate and modular
+application.
+</p>
+
+<h2>Oply multimedia suite</h2>
+
+<p>
+EssoraPup64 includes several multimedia tools from the Oply application family.
+The applications are designed around simple interfaces and commonly used
+multimedia functions.
+</p>
+
+<h3>Oply</h3>
+
+<p>
+The main application in the Oply suite, providing access to its integrated
+multimedia tools and functions.
+</p>
+
+<h3>Oply Radio</h3>
+
+<p>
+A lightweight Internet radio player for browsing and listening to online radio
+stations.
+</p>
+
+<h3>Oply Video Player</h3>
+
+<p>
+A simple video player designed for everyday media playback without the
+complexity of a full multimedia center.
+</p>
+
+<h3>Oply Convert</h3>
+
+<p>
+A graphical multimedia conversion utility for converting common audio and video
+formats.
+</p>
+
+<ul>
+  <li>Simple multimedia playback</li>
+  <li>Internet radio support</li>
+  <li>Audio and video conversion</li>
+  <li>Lightweight graphical interfaces</li>
+  <li>Integration with the Essora desktop</li>
+</ul>
+
+<h2>Essora Cleaner</h2>
+
+<p>
+Essora Cleaner is a system cleaning utility designed to find and remove
+unnecessary files.
+</p>
+
+<ul>
+  <li>Application cache cleaning</li>
+  <li>Browser cache cleaning</li>
+  <li>Thumbnail cache cleaning</li>
+  <li>Temporary file removal</li>
+  <li>Flatpak residue detection</li>
+  <li>Support for the root account and regular users</li>
+</ul>
+
+<p>
+The utility checks the locations used by Puppy Linux, Essora applications,
+browsers and Flatpak installations.
+</p>
+
+<h2>Essora Locale</h2>
+
+<p>
+Essora Locale provides a graphical interface for changing the system language,
+keyboard layout and regional configuration.
+</p>
+
+<ul>
+  <li>System language selection</li>
+  <li>Keyboard layout selection</li>
+  <li>Regional configuration</li>
+  <li>Puppy Linux locale integration</li>
+  <li>Multiple language support</li>
+  <li>Optional X session restart after applying changes</li>
+</ul>
+
+<h2>Essora VPN</h2>
+
+<p>
+Essora VPN provides a graphical interface for configuring and managing VPN
+connections.
+</p>
+
+<p>
+Its purpose is to make VPN configuration more accessible without requiring the
+user to manage every connection manually from the command line.
+</p>
+
+<ul>
+  <li>Graphical VPN configuration</li>
+  <li>Connection and disconnection controls</li>
+  <li>Saved VPN profiles</li>
+  <li>Lightweight system integration</li>
+</ul>
+
+<h2>RemasterPup Essora</h2>
+
+<p>
+RemasterPup Essora is the custom remastering utility included with
+EssoraPup64.
+</p>
+
+<p>
+It can create a new bootable ISO image from the currently configured system,
+allowing users and developers to preserve installed applications, system
+changes and personal customizations.
+</p>
+
+<ul>
+  <li>Create a new EssoraPup64 ISO</li>
+  <li>Preserve installed applications</li>
+  <li>Preserve system configuration</li>
+  <li>Include desktop customizations</li>
+  <li>Rebuild the main Puppy SFS files</li>
+  <li>Create personal or community editions</li>
+</ul>
+
+<p>
+This makes EssoraPup64 suitable not only as a desktop operating system, but also
+as a base for creating specialized Puppy Linux distributions.
+</p>
+
+<h2>Desktop screenshots</h2>
+
+<div class="grid">
+
+  <figure>
+    <img
+      src="/blog/screenshots/escritorioessorapup64.png"
+      alt="EssoraPup64 desktop">
+    <figcaption>EssoraPup64 desktop running with XLibre.</figcaption>
+  </figure>
+
+  <figure>
+    <img
+      src="/blog/screenshots/essora-store_essorapup64.png"
+      alt="Essora Store">
+    <figcaption>Essora Store manages DEB, Flatpak and AppImage applications.</figcaption>
+  </figure>
+
+  <figure>
+    <img
+      src="/blog/screenshots/essora-installer_essorapup64.png"
+      alt="Essora Installer">
+    <figcaption>Essora Installer with traditional GNU GRUB support.</figcaption>
+  </figure>
+
+  <figure>
+    <img
+      src="/blog/screenshots/essora-network_essorapup64.png"
+      alt="Essora Network">
+    <figcaption>Essora Network manages Ethernet and Wi-Fi connections.</figcaption>
+  </figure>
+
+  <figure>
+    <img
+      src="/blog/screenshots/essorabluetooth_essorapup64.png"
+      alt="Essora Bluetooth">
+    <figcaption>Essora Bluetooth provides lightweight device management.</figcaption>
+  </figure>
+
+  <figure>
+    <img
+      src="/blog/screenshots/pymenu_essorapup64.png"
+      alt="Essora PyMenu">
+    <figcaption>Essora PyMenu provides application search, categories and favorites.</figcaption>
+  </figure>
+
+</div>
+
+<h2>An integrated experience</h2>
+
+<p>
+One of the main objectives of EssoraPup64 is to reduce dependence on unrelated
+external utilities and provide applications designed specifically for the
+system.
+</p>
+
+<p>
+Essora applications share a consistent visual appearance and are designed to
+work together. Many of the tools are developed in C and GTK3 to reduce memory
+usage, improve startup speed and minimize dependence on large runtime
+environments.
+</p>
+
+<p>
+The system does not attempt to abandon the Puppy Linux philosophy. Instead, it
+preserves Puppy's speed, portability, flexibility and frugal installation model
+while adding a more complete and modern desktop environment.
+</p>
+
+<div class="highlight">
+  <h2>Lightweight like Puppy, modern like Essora</h2>
+
+  <p>
+  EssoraPup64 combines Puppy Linux flexibility with XLibre, EssoraWM and a
+  complete collection of integrated applications for software management,
+  installation, networking, Bluetooth, multimedia, localization, system
+  maintenance and ISO remastering.
+  </p>
+</div>
+
+<p class="footer-text">
+  <strong>EssoraPup64 with XLibre — lightweight like Puppy, modern like Essora.</strong>
+</p>
+
+</article>
+</div>
+
+</body>
+</html>
