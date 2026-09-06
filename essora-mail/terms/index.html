@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Essora Mail — Terms of Service</title>
+
+  <link rel="icon" href="/favicon.ico">
+
+  <style>
+    :root {
+      --bg:#0b0f14;
+      --card:#111824;
+      --text:#e6edf3;
+      --muted:#9fb0c0;
+      --accent:#6E9B08;
+      --line:#1d2a3a;
+    }
+
+    * { box-sizing:border-box; }
+
+    body {
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial;
+      background:#0b0f14;
+      color:var(--text);
+    }
+
+    .wrap {
+      max-width:900px;
+      margin:0 auto;
+      padding:28px;
+    }
+
+    h1 { font-size:34px; }
+
+    h2 {
+      margin-top:30px;
+      color:#dbe8b9;
+    }
+
+    p, li {
+      line-height:1.7;
+    }
+
+    .muted { color:var(--muted); }
+
+    .card {
+      padding:22px;
+      border:1px solid var(--line);
+      background:var(--card);
+    }
+
+    a { color:#cce68c; }
+
+    footer {
+      margin-top:30px;
+      padding-top:18px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      font-size:13px;
+    }
+  </style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <p>
+    <a href="/essora-mail/">← Essora Mail</a>
+  </p>
+
+  <h1>Essora Mail Terms of Service</h1>
+
+  <p class="muted">
+    Last updated: September 6, 2026
+  </p>
+
+  <div class="card">
+
+    <h2>1. About Essora Mail</h2>
+
+    <p>
+      Essora Mail is a desktop email client developed as part of the
+      Essora Linux project. It allows users to connect compatible email
+      accounts and read, send and manage email from their computer.
+    </p>
+
+    <h2>2. Acceptance of these terms</h2>
+
+    <p>
+      By using Essora Mail, you agree to these Terms of Service.
+      If you do not agree with these terms, you should not use the application.
+    </p>
+
+    <h2>3. Email provider accounts</h2>
+
+    <p>
+      Essora Mail connects to third-party email providers such as Google
+      and other compatible mail services.
+    </p>
+
+    <p>
+      Users are responsible for complying with the terms and policies of
+      their email provider.
+    </p>
+
+    <h2>4. Account authorization</h2>
+
+    <p>
+      Essora Mail may use secure authorization methods such as OAuth 2.0
+      to obtain access requested by the user.
+    </p>
+
+    <p>
+      Essora Mail does not require users to provide their Google account
+      password directly to the application when Google OAuth authentication
+      is used.
+    </p>
+
+    <h2>5. User responsibilities</h2>
+
+    <p>
+      Users are responsible for the email accounts they connect and for
+      messages or content they send using Essora Mail.
+    </p>
+
+    <p>
+      Essora Mail must not be used for unlawful activity, unauthorized
+      access, spam, abuse or activity that violates the policies of an
+      email provider.
+    </p>
+
+    <h2>6. Local application</h2>
+
+    <p>
+      Essora Mail is designed primarily as a local desktop application.
+      Email communication normally occurs directly between the user's
+      computer and the configured email provider.
+    </p>
+
+    <p>
+      Essora does not operate an intermediary mail service through which
+      users' email messages must pass.
+    </p>
+
+    <h2>7. Availability</h2>
+
+    <p>
+      The availability of particular features may depend on external email
+      providers, network connectivity, protocols and third-party services.
+    </p>
+
+    <p>
+      Changes made by an email provider may affect the operation of
+      Essora Mail.
+    </p>
+
+    <h2>8. No warranty</h2>
+
+    <p>
+      Essora Mail is provided on an "as is" basis without warranties of
+      uninterrupted operation or compatibility with every email service
+      or configuration.
+    </p>
+
+    <h2>9. Limitation of liability</h2>
+
+    <p>
+      To the extent permitted by applicable law, the Essora project and
+      its contributors are not responsible for indirect or consequential
+      losses resulting from the use or inability to use Essora Mail.
+    </p>
+
+    <h2>10. Privacy</h2>
+
+    <p>
+      Information about how Essora Mail handles account information and
+      email data is available in the
+      <a href="/essora-mail/privacy/">Essora Mail Privacy Policy</a>.
+    </p>
+
+    <h2>11. Changes to these terms</h2>
+
+    <p>
+      These Terms of Service may be updated as Essora Mail develops.
+      The current version will always be published on this page.
+    </p>
+
+    <h2>12. Contact</h2>
+
+    <p>
+      Essora Mail is part of the Essora Linux project.
+    </p>
+
+    <p>
+      Project:
+      <a href="https://github.com/josejp2424/essora-linux">
+        github.com/josejp2424/essora-linux
+      </a>
+    </p>
+
+  </div>
+
+  <footer>
+    © <span id="year"></span> Essora Linux · Essora Mail
+  </footer>
+
+</div>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
