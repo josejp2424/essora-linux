@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Essora Mail — Privacy Policy</title>
+
+  <link rel="icon" href="/favicon.ico">
+
+  <style>
+    :root {
+      --bg:#0b0f14;
+      --card:#111824;
+      --text:#e6edf3;
+      --muted:#9fb0c0;
+      --accent:#6E9B08;
+      --line:#1d2a3a;
+    }
+
+    * { box-sizing:border-box; }
+
+    body {
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial;
+      background:#0b0f14;
+      color:var(--text);
+    }
+
+    .wrap {
+      max-width:900px;
+      margin:0 auto;
+      padding:28px;
+    }
+
+    h1 { font-size:34px; }
+
+    h2 {
+      margin-top:30px;
+      color:#dbe8b9;
+    }
+
+    p, li {
+      line-height:1.7;
+    }
+
+    .muted { color:var(--muted); }
+
+    .card {
+      padding:22px;
+      border:1px solid var(--line);
+      background:var(--card);
+    }
+
+    a { color:#cce68c; }
+
+    footer {
+      margin-top:30px;
+      padding-top:18px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      font-size:13px;
+    }
+  </style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <p>
+    <a href="/essora-mail/">← Essora Mail</a>
+  </p>
+
+  <h1>Essora Mail Privacy Policy</h1>
+
+  <p class="muted">
+    Last updated: September 6, 2026
+  </p>
+
+  <div class="card">
+
+    <h2>Overview</h2>
+
+    <p>
+      Essora Mail is a desktop email client developed for Essora Linux.
+      The application allows users to access, read, send and manage email
+      from supported email providers.
+    </p>
+
+    <h2>Information accessed</h2>
+
+    <p>
+      When a user connects an email account, Essora Mail may access
+      information required to provide email functionality, including:
+    </p>
+
+    <ul>
+      <li>Email address and account identity.</li>
+      <li>Email messages and message metadata.</li>
+      <li>Email folders and labels.</li>
+      <li>Attachments.</li>
+      <li>Authentication tokens required to maintain the account connection.</li>
+    </ul>
+
+    <h2>How information is used</h2>
+
+    <p>
+      Email account data is used only to provide features requested by the
+      user, including reading, composing, sending, replying to, organizing
+      and searching email.
+    </p>
+
+    <p>
+      Essora does not use email content for advertising, profiling or
+      unrelated analytics.
+    </p>
+
+    <h2>Google account access</h2>
+
+    <p>
+      When Google authentication is used, Essora Mail uses Google OAuth 2.0.
+      The user's Google password is never collected or stored by Essora Mail.
+    </p>
+
+    <p>
+      Authentication tokens may be stored locally on the user's computer
+      so the user does not need to sign in every time the application starts.
+    </p>
+
+    <h2>Local processing</h2>
+
+    <p>
+      Essora Mail is designed as a local desktop application.
+      Email data is exchanged directly between the user's computer and the
+      configured email provider.
+    </p>
+
+    <p>
+      Essora Mail does not require email messages to pass through an
+      Essora-operated mail server.
+    </p>
+
+    <h2>Data sharing</h2>
+
+    <p>
+      Essora Mail does not sell personal information and does not sell,
+      rent or share email content with advertisers or data brokers.
+    </p>
+
+    <h2>Google API Services User Data Policy</h2>
+
+    <p>
+      Essora Mail's use and transfer of information received from Google APIs
+      will adhere to the Google API Services User Data Policy, including the
+      Limited Use requirements.
+    </p>
+
+    <h2>Data retention</h2>
+
+    <p>
+      Account settings, locally cached mail data and authentication tokens
+      may remain on the user's computer until the account is removed,
+      the user signs out, or the application data is deleted.
+    </p>
+
+    <h2>Revoking Google access</h2>
+
+    <p>
+      Users can disconnect their Google account from Essora Mail and may
+      also revoke Essora Mail access from their Google Account security
+      settings.
+    </p>
+
+    <h2>Security</h2>
+
+    <p>
+      Essora Mail uses encrypted connections when communicating with
+      supported mail providers and aims to store authentication information
+      locally with restricted filesystem permissions.
+    </p>
+
+    <h2>Changes to this policy</h2>
+
+    <p>
+      This Privacy Policy may be updated as Essora Mail evolves.
+      The current version will always be published on this page.
+    </p>
+
+    <h2>Contact</h2>
+
+    <p>
+      Essora Mail is part of the Essora Linux project.
+    </p>
+
+    <p>
+      Project:
+      <a href="https://github.com/josejp2424/essora-linux">
+        github.com/josejp2424/essora-linux
+      </a>
+    </p>
+
+  </div>
+
+  <footer>
+    © <span id="year"></span> Essora Linux · Essora Mail
+  </footer>
+
+</div>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

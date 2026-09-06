@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Essora Mail — Simple Desktop Email</title>
+
+  <link rel="icon" href="/favicon.ico">
+  <meta name="description" content="Essora Mail is a lightweight graphical email client for Essora Linux.">
+  <meta name="theme-color" content="#6E9B08">
+
+  <style>
+    :root {
+      --bg:#0b0f14;
+      --card:#111824;
+      --text:#e6edf3;
+      --muted:#9fb0c0;
+      --accent:#6E9B08;
+      --line:#1d2a3a;
+    }
+
+    * { box-sizing:border-box; }
+
+    body {
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial;
+      background:
+        radial-gradient(1000px 500px at 10% -10%,rgba(110,155,8,.18),transparent 60%),
+        linear-gradient(180deg,#06080b,var(--bg));
+      color:var(--text);
+    }
+
+    .wrap {
+      max-width:900px;
+      margin:0 auto;
+      padding:24px;
+    }
+
+    header {
+      display:flex;
+      align-items:center;
+      gap:14px;
+      padding-bottom:20px;
+      border-bottom:1px solid var(--line);
+    }
+
+    .logo {
+      width:48px;
+      height:48px;
+      display:grid;
+      place-items:center;
+      border:1px solid rgba(110,155,8,.4);
+      background:rgba(110,155,8,.12);
+      font-size:26px;
+      font-weight:900;
+      color:var(--accent);
+    }
+
+    h1 { margin:30px 0 10px; font-size:36px; }
+    h2 { margin-top:0; }
+
+    p, li { line-height:1.65; }
+
+    .muted { color:var(--muted); }
+
+    .card {
+      margin-top:18px;
+      padding:20px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+    }
+
+    a { color:#cce68c; }
+
+    .button {
+      display:inline-block;
+      padding:10px 15px;
+      margin-top:10px;
+      background:var(--accent);
+      color:#071006;
+      font-weight:800;
+      text-decoration:none;
+    }
+
+    footer {
+      margin-top:30px;
+      padding-top:18px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      font-size:13px;
+    }
+  </style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="logo">E</div>
+    <div>
+      <strong>Essora Mail</strong><br>
+      <span class="muted">Simple · Fast · Native</span>
+    </div>
+  </header>
+
+  <main>
+    <h1>Essora Mail</h1>
+
+    <p class="muted">
+      Essora Mail is a lightweight graphical desktop email client designed
+      for simplicity. It aims to make reading, sending and managing email
+      easy for everyday users without exposing complex mail configuration.
+    </p>
+
+    <section class="card">
+      <h2>Simple by design</h2>
+      <ul>
+        <li>Easy account setup.</li>
+        <li>Read and send email.</li>
+        <li>Multiple accounts and folders.</li>
+        <li>Attachments, search and message organization.</li>
+        <li>Google OAuth authentication for Gmail.</li>
+        <li>Native C and GTK3 interface.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Privacy</h2>
+      <p>
+        Essora Mail is designed as a local desktop application.
+        Email content is accessed directly from the user's email provider
+        and is not routed through Essora servers.
+      </p>
+
+      <a class="button" href="/essora-mail/privacy/">
+        Privacy Policy
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Essora Linux · Essora Mail
+  </footer>
+
+</div>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
