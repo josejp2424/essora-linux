@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Essora Eos Fluxbox XLibre — Lightweight, Integrated and Under Your Control</title>
+<meta name="description" content="Essora Eos Fluxbox XLibre introduces Fluxbox2, FluxboxConfig, PyMenu, ROX-Filer2 and the experimental Essora Assistant in a lightweight Devuan-based system.">
+<style>
+:root{
+  --bg:#0b0f14;
+  --card:#111824;
+  --text:#e6edf3;
+  --muted:#9fb0c0;
+  --accent:#7D9B37;
+  --accent2:#1F7A52;
+  --line:#1d2a3a;
+  --shadow:0 10px 30px rgba(0,0,0,.35)
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:linear-gradient(180deg,#06080b,var(--bg));
+  color:var(--text);
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.7
+}
+.wrap{max-width:1040px;margin:auto;padding:28px 20px}
+.card{
+  background:rgba(255,255,255,.03);
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:28px;
+  box-shadow:var(--shadow)
+}
+h1{font-size:42px;line-height:1.2;margin:0 0 10px}
+h2{margin-top:42px;color:var(--accent)}
+h3{margin-top:28px;color:#dfe8f0}
+a{color:var(--accent)}
+code{color:#dfe8f0}
+.hero,.img{
+  width:100%;
+  display:block;
+  border-radius:20px;
+  border:1px solid var(--line);
+  margin:18px 0;
+  box-shadow:var(--shadow)
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+  margin-top:20px
+}
+.grid figure{margin:0}
+.grid img{
+  width:100%;
+  display:block;
+  border-radius:18px;
+  border:1px solid var(--line);
+  box-shadow:var(--shadow)
+}
+.grid figcaption{
+  color:var(--muted);
+  font-size:13px;
+  padding:7px 3px 0
+}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:15px 0}
+.badge{
+  padding:7px 10px;
+  border-radius:999px;
+  background:rgba(255,255,255,.05);
+  border:1px solid var(--line);
+  color:var(--muted);
+  font-size:13px
+}
+.highlight,.download,.support{
+  margin:24px 0;
+  padding:20px;
+  border-radius:18px;
+  background:rgba(125,155,55,.08);
+  border:1px solid rgba(125,155,55,.25)
+}
+.support{background:rgba(31,122,82,.10);border-color:rgba(31,122,82,.35)}
+.btn{
+  display:inline-block;
+  padding:12px 18px;
+  margin:6px 8px 0 0;
+  border-radius:14px;
+  background:var(--accent);
+  color:#111;
+  text-decoration:none;
+  font-weight:700
+}
+.btn.secondary{background:transparent;color:var(--text);border:1px solid rgba(125,155,55,.55)}
+.code{
+  background:#000;
+  padding:14px;
+  border-radius:14px;
+  border:1px solid var(--line);
+  overflow:auto;
+  color:#dfe8f0
+}
+ul{color:var(--muted)}
+.note{
+  color:var(--muted);
+  border-left:3px solid var(--accent);
+  padding:8px 14px;
+  background:rgba(255,255,255,.025);
+  border-radius:8px
+}
+.footer-text{margin-top:36px;text-align:center;color:var(--muted)}
+.small{font-size:14px;color:var(--muted)}
+@media(max-width:720px){
+  .grid{grid-template-columns:1fr}
+  h1{font-size:32px}
+  .card{padding:20px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<article class="card">
+
+<h1>Essora Eos Fluxbox XLibre</h1>
+<p><b>A lightweight desktop built around Fluxbox2, XLibre, ROX-Filer2 and the Essora ecosystem.</b></p>
+
+<div class="meta">
+  <span class="badge">64-bit</span>
+  <span class="badge">Devuan Excalibur</span>
+  <span class="badge">XLibre</span>
+  <span class="badge">Essora Kernel</span>
+  <span class="badge">Fluxbox2</span>
+  <span class="badge">GTK3</span>
+  <span class="badge">ROX-Filer2</span>
+  <span class="badge">PyMenu</span>
+  <span class="badge">DEB</span>
+  <span class="badge">Flatpak</span>
+</div>
+
+<img class="hero" src="/blog/screenshots/desktop_20260920_230158.png" alt="Essora Eos Fluxbox XLibre desktop">
+
+<p>
+<strong>Essora Eos Fluxbox XLibre</strong> represents a new stage in the development of Essora Project.
+This edition keeps the system fast and lightweight, while integrating more of the desktop stack under a single project: from the Essora kernel build and XLibre to Fluxbox2, ROX-Filer2 and the applications used to configure and manage the system.
+</p>
+
+<div class="highlight">
+  <strong>The goal is not to make a large desktop environment. The goal is to keep the system small, understandable and modular while making its main components work together as one coherent platform.</strong>
+</div>
+
+<h2>Fluxbox2 — not the traditional Fluxbox</h2>
+
+<p>
+One of the most important differences in this edition is <strong>Fluxbox2</strong>.
+Although it originates from Fluxbox, Fluxbox2 should not be confused with the traditional upstream window manager.
+It is an Essora Project fork developed specifically for the needs of the Essora desktop.
+</p>
+
+<p>
+Fluxbox2 preserves the qualities that made Fluxbox attractive — speed, low memory usage and simplicity — while adding Essora-specific integration and GTK3-based desktop components.
+The project is being developed as a lightweight desktop layer rather than as a large monolithic desktop environment.
+</p>
+
+<h3>FluxboxConfig</h3>
+<p>
+Fluxbox2 is accompanied by <strong>FluxboxConfig</strong>, a graphical configuration tool designed to make the desktop easier to manage without forcing users to edit multiple configuration files manually.
+The intention is to keep Fluxbox lightweight while providing a more accessible and consistent Essora experience.
+</p>
+
+<h2>PyMenu — a dynamic application menu</h2>
+
+<p>
+The traditional static Fluxbox menu is replaced by <strong>PyMenu</strong>, Essora's dynamic application launcher.
+PyMenu reads the applications installed on the system and builds its categories from standard desktop entries, so the menu can follow software changes without requiring a hand-maintained menu file.
+</p>
+
+<ul>
+  <li>Dynamic application categories</li>
+  <li>Application search</li>
+  <li>Favorites</li>
+  <li>Automatic detection of installed software</li>
+  <li>Integration with the Essora desktop</li>
+  <li>Support for standard Linux desktop entries</li>
+</ul>
+
+<h2>ROX-Filer2 manages both files and the desktop</h2>
+
+<img class="img" src="/blog/screenshots/roxfiler2_20260920_231116.png" alt="ROX-Filer2 running on Essora Eos">
+
+<p>
+<strong>ROX-Filer2</strong> is the main and only file manager used by this edition, and it is also responsible for managing the desktop.
+This gives Essora one lightweight component for file navigation, desktop icons, storage devices and common file operations.
+</p>
+
+<ul>
+  <li>File and directory management</li>
+  <li>Desktop icons</li>
+  <li>Mounted device access</li>
+  <li>Mount and unmount actions</li>
+  <li>Network and Samba integration</li>
+  <li>Modern and Classic interfaces</li>
+  <li>X11 and Wayland-oriented development</li>
+</ul>
+
+<p class="note">
+Using one file manager for both the desktop and normal file operations reduces duplicated functionality and gives Essora tighter control over how removable devices, folders and desktop items behave.
+</p>
+
+<h2>Software management: APT/dpkg and Flatpak in one Essora interface</h2>
+
+<p>
+Essora includes its own graphical package management interface for traditional Debian packages and Flatpak applications.
+The aim is to make software management clear without hiding the underlying package systems.
+</p>
+
+<div class="grid">
+  <figure>
+    <img src="/blog/screenshots/apt_20260920_230853.png" alt="Essora APT and dpkg package manager">
+    <figcaption>APT/dpkg management with package state, upgrades, repositories and repair tools.</figcaption>
+  </figure>
+  <figure>
+    <img src="/blog/screenshots/flatpak_20260920_230903.png" alt="Flatpak applications in Essora package manager">
+    <figcaption>Flatpak applications integrated in the same lightweight Essora software manager.</figcaption>
+  </figure>
+</div>
+
+<h2>Essora Browser</h2>
+
+<img class="img" src="/blog/screenshots/browser_20260920_231555.png" alt="Essora Browser on Essora Eos Fluxbox XLibre">
+
+<p>
+Essora Eos also includes <strong>Essora Browser</strong>, the browser adapted by Essora Project from the Mozilla Firefox and Gecko codebase.
+The browser follows the visual identity of the system while retaining compatibility with the modern web platform provided by Firefox.
+</p>
+
+<h2>More control from the kernel to the desktop</h2>
+
+<p>
+Essora Project is gradually taking responsibility for a larger part of its own system stack.
+Instead of depending on unrelated external utilities for every essential desktop task, the project is moving toward a platform where the main pieces are selected, adapted or developed to work together.
+</p>
+
+<div class="code">
+Essora Kernel<br>
+&nbsp;&nbsp;↓<br>
+XLibre<br>
+&nbsp;&nbsp;↓<br>
+Fluxbox2 + FluxboxConfig<br>
+&nbsp;&nbsp;↓<br>
+PyMenu + ROX-Filer2<br>
+&nbsp;&nbsp;↓<br>
+Essora system applications
+</div>
+
+<p>
+This does not mean abandoning the GNU/Linux, Debian or Devuan ecosystems.
+It means reducing unnecessary dependence on unrelated desktop tools where Essora can provide a smaller, more integrated solution of its own.
+</p>
+
+<h2>Essora Assistant — experimental AI integration</h2>
+
+<img class="img" src="/blog/screenshots/essora-assistant_20260920_231432.png" alt="Experimental Essora Assistant on Essora Eos">
+
+<p>
+Essora Eos is also testing <strong>Essora Assistant</strong>, an experimental AI assistant designed to explore a simpler way to interact with the system.
+It is currently in an <strong>Alpha experimental stage</strong> and should not yet be considered a finished or critical system component.
+</p>
+
+<p>
+At this stage the assistant can already be used for several tasks, including answering questions, performing web searches, helping with documents and study tasks, assisting with software installation and guiding the user through some system operations.
+</p>
+
+<ul>
+  <li>Answer questions about the system</li>
+  <li>Perform web searches</li>
+  <li>Help summarize and work with documents</li>
+  <li>Assist with study tasks</li>
+  <li>Find software</li>
+  <li>Help install programs when requested</li>
+  <li>Guide the user through selected system tasks</li>
+</ul>
+
+<div class="highlight">
+  <strong>The assistant is optional. The user remains in control.</strong><br>
+  Essora Assistant is intended to become another interface for using the system, not a replacement for the user's decisions.
+</div>
+
+<p>
+The project is currently evaluating which functions are useful, which actions should require confirmation and how to keep every operation understandable to the user.
+The next objective is a more stable <strong>Beta base</strong> that can make everyday system management easier for people who choose to use it.
+</p>
+
+<h2>Desktop screenshots</h2>
+
+<div class="grid">
+  <figure>
+    <img src="/blog/screenshots/desktop_20260920_230158.png" alt="Essora Eos welcome screen">
+    <figcaption>Essora Eos desktop and Welcome screen.</figcaption>
+  </figure>
+  <figure>
+    <img src="/blog/screenshots/essora-assistant_20260920_231432.png" alt="Essora Assistant alpha">
+    <figcaption>Essora Assistant in its current experimental Alpha stage.</figcaption>
+  </figure>
+  <figure>
+    <img src="/blog/screenshots/roxfiler2_20260920_231116.png" alt="ROX-Filer2 file manager">
+    <figcaption>ROX-Filer2 is the file manager and desktop manager for this edition.</figcaption>
+  </figure>
+  <figure>
+    <img src="/blog/screenshots/apt_20260920_230853.png" alt="Essora APT dpkg manager">
+    <figcaption>APT/dpkg package management.</figcaption>
+  </figure>
+  <figure>
+    <img src="/blog/screenshots/flatpak_20260920_230903.png" alt="Essora Flatpak manager">
+    <figcaption>Flatpak software management.</figcaption>
+  </figure>
+  <figure>
+    <img src="/blog/screenshots/browser_20260920_231555.png" alt="Essora Browser">
+    <figcaption>Essora Browser integrated with the visual identity of the system.</figcaption>
+  </figure>
+</div>
+
+<h2>Lightweight does not mean limited</h2>
+
+<p>
+Essora continues to follow a simple idea: a lightweight operating system does not have to be a limited operating system.
+Fluxbox2 remains small, ROX-Filer2 handles both files and the desktop, PyMenu provides dynamic application discovery, GTK3 is used for lightweight graphical tools, and XLibre provides the graphical foundation.
+</p>
+
+<p>
+The direction of the project can be summarized in three principles: <strong>integrate more, duplicate less, and keep the user in control.</strong>
+</p>
+
+<div class="download">
+  <h2>Download Essora Eos Fluxbox XLibre</h2>
+  <p>Try the current Essora Eos Fluxbox XLibre ISO:</p>
+  <a class="btn" href="https://sourceforge.net/projects/essora/files/Excalibur/Essora_Eos_Fluxbox_Xlibre-20260921_0348.iso" target="_blank" rel="noopener noreferrer">Download from SourceForge</a>
+  <p class="small">File: Essora_Eos_Fluxbox_Xlibre-20260921_0348.iso</p>
+</div>
+
+<div class="support">
+  <h2>Help Essora gain visibility</h2>
+  <p>
+  If you like the project and want to help more people discover it, you can visit the Essora page on DistroWatch.
+  Every bit of community visibility helps an independent project reach new users and testers.
+  </p>
+  <a class="btn secondary" href="https://distrowatch.com/table.php?distribution=essora" target="_blank" rel="noopener noreferrer">Visit Essora on DistroWatch</a>
+</div>
+
+<div class="highlight">
+  <h2>Essora Eos Fluxbox XLibre</h2>
+  <p>
+  <strong>Lightweight by design. Integrated by choice. Under the user's control.</strong>
+  </p>
+</div>
+
+<p class="footer-text"><strong>Essora Project — lightweight, integrated and built to remain understandable.</strong></p>
+
+</article>
+</div>
+</body>
+</html>
