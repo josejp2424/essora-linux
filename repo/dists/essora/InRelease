@@ -1,37 +1,37 @@
 -----BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA512
+Hash: SHA256
 
-Origin: Essora Linux
+Origin: Essora
 Label: Essora
 Suite: essora
 Codename: essora
 Version: 1.0
 Architectures: amd64
 Components: main
-Description: Official Essora Linux package repository
-Date: Fri, 22 May 2026 13:51:53 +0000
+Description: Essora GNU/Linux package repository
+Date: Wed, 21 Oct 2026 17:06:08 +0000
 MD5Sum:
- b8900daa8a46515f7b492679622bfcc5 64873 main/binary-amd64/Packages
- e4edc9d230e4c0674f60d851bc75fe7e 22770 main/binary-amd64/Packages.gz
+ d41d8cd98f00b204e9800998ecf8427e 0 main/binary-amd64/Packages
+ 7d99f42cd29d4947618e7e038b26b34b 29 main/binary-amd64/Packages.gz
 SHA256:
- caf2ef7a4cbeb3fafb3309d51f35e07a5985a5ddc4f07334e21e15deb2ee7435 64873 main/binary-amd64/Packages
- 2db47a6419ebb315fb719346a21ab67ada8d869cc8ca48e7b811a671c24750c8 22770 main/binary-amd64/Packages.gz
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-amd64/Packages
+ 5c60f85ed234c25b0312df07ce9beb7233beb8d4399352f8206c24949ba9e0f0 29 main/binary-amd64/Packages.gz
 SHA512:
- b48f8f3a5d0d5d88e58c557b0e32fb60be7ad591c926c4789290b8073f89bd44bd783c0c36347dedd199e1d663b49a50956fff3b5dc625680f279697e0e33ff4 64873 main/binary-amd64/Packages
- ce7264436b38cf6fd2c0b330f3a2045e5cff56002f3e60b1c7a4e82b79e53e36a7679df3c550a71447587801e2f37d4ba06e38d5405f459d9a58eb73467af2df 22770 main/binary-amd64/Packages.gz
+ cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e 0 main/binary-amd64/Packages
+ 598e31cf8ba1b57dc5967118366107169f8b899357450f2af414afa60aea70d15f0c9687cdb6e8363fd01d6bd1608e29031e8e7ba12f1dff55d12f6d4ac5c497 29 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEaj4T2kJCTJ908EffLIY0wH/IEQoFAmoQX3kACgkQLIY0wH/I
-EQrr9hAAmpqCWAFQKDFU8E46HITLWGIcgRciJ50OTB2p4WpDdCk0+C217wR1ap8Z
-+/9zppXdnG09QJFWzOCCiWX/N1u2JjQsCquWPN2m40piy5Cf9Mwp8l9W0rxYTknw
-+0+a3v/S8Fc4oM1aff6jsK7NYNTNpIowgnb0+lpq4GaC3jdeKEuzsN2PTOZb1PlI
-pC3jkR/xV4wnp3cznmTKIzZamPMm6rSSW3Y8gjR1kXv7j5vdzI6I0eW1ITPy9DPa
-AKLfq+RNOfv/4dQ6+hL5je7UXAH8XHIpA3yQeLpXy+FRoTwsM/obvibsvCxXVPhG
-YlQqdLLT30F+PX5RS5MtHPrUfF1JuycLknaEla11ANhI3drpwxLvqzg3yQsxGVOO
-eF4jXeIzY7KnXKG5TZv9K90Lpbd0sofkr+lHmxCOd04i961De5Y99VT4HL715Dom
-QD6XD4POyeX39jkzHns4yaW8jClPAAokdemPCtUDKU/uRm44k2IWs7YW/uO10kky
-0tJZn88rdOODmETqPsAA6bjLQH0LzcjmzBgzwIMhJ8WBLmL3MPA4DaQRnjt049S4
-6rGB8qtDcLQJM76lDEH/WfEP6EMIC7dqN12hcv2phiKknyJI/9EnD2y9biaf/2UB
-B4hJ9yCDZ4RP/7TJlklvedMoXdYhJmUxPy+zNgvLFRaCObIsaKo=
-=cK/T
+iQIzBAEBCAAdFiEEmSfAdMJoJ9v9qaoYsyYCRYVbOdgFAmrY8QAACgkQsyYCRYVb
+OdhaIA/9HkM82qlweW6cFs5MsywsTSIyxttJMTSgbJJRLaotVax691SY/VsyIrSe
+gmnYJ2/gvSfusRZEfaf3IyUBPQXehH1v4a/auJbpZIwUm10m4L7c5rjtmA3eu6pF
+eNWl0FQZwaehHkZDpf/gMqOHWEejY2hQCP1mJfU6TExU3tmjK/RLFfIWVKLj/2w9
+d2Mi75QL97vW8r2emmdLcjRNk95gkx+ijtfaCfBRIRM/ZTiz+UbJPaChpjX4V63M
+vaiZ4sRPa8N+7Aorx1xOJHYwr8F+FtOQs2IC4adgmATRrJ+xAgnMydStmhUinFia
+SUJpRfL6ou5YzkWjBvUeSXCUQTuNI0AVpjy+IAzcl8d8sAES6iwrn95NgF/qR6y4
+HL673BUtrYcgy2z9oWshaGqO/f8F0TJ1gh8hgzFzzRHJSSfUyL8pFDC1uo8tvSJ5
+ukdjsWM73umv8KNCmb3nTN8ObgijTCYenIMVjBdDAaF54e/XtIwBQ3WszanqvaDW
+EchEQo2aRInEbIikmhaEx8H7aMM/0dqqbfwDkYpJ2d50OEIIQt/PNyksZFjlRiuM
+gitGcXQwN5NXU5dGsEup7Ko/a2nuVKN7x9foEXPyifv2Bf64ZKjk0O+S1/lvAQJD
+lX/zKP6vs8tkQev5EfFRqN83NlTlBduEeYWHgh+Aoll35aWWmfc=
+=xdND
 -----END PGP SIGNATURE-----
