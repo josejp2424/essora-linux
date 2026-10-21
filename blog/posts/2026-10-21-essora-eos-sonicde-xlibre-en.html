@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Essora Eos SonicDE — A New Home for X11, Built the Essora Way</title>
+<meta name="description" content="Meet Essora Eos SonicDE: an independent, systemd-free GNU/Linux build combining XLibre, SonicDE, Qt6, the Essora kernel and the enhanced ROX-Filer2-Qt file manager instead of Dolphin.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Essora Eos SonicDE — A New Home for X11, Built the Essora Way">
+<meta property="og:description" content="SonicDE and XLibre meet the Essora philosophy: a capable Qt6 desktop, a lighter file manager, and real control over your workspace.">
+<meta property="og:image" content="/blog/screenshots/sonicde/desktop.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{
+  --bg:#0b0f14;
+  --card:#111824;
+  --text:#e6edf3;
+  --muted:#a8b8c5;
+  --accent:#95b853;
+  --accent2:#236648;
+  --line:#253245;
+  --shadow:0 10px 30px rgba(0,0,0,.35)
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:linear-gradient(180deg,#06080b,var(--bg) 38%,#0b1116);
+  color:var(--text);
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.75
+}
+a{color:var(--accent);text-underline-offset:3px}
+a:hover{color:#c7df92}
+.wrap{max-width:1040px;margin:auto;padding:28px 20px 56px}
+.card{
+  background:rgba(255,255,255,.025);
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:28px;
+  box-shadow:var(--shadow)
+}
+.eyebrow{color:var(--accent);text-transform:uppercase;font-size:12px;letter-spacing:.19em;font-weight:800;margin:0 0 9px}
+h1{font-size:clamp(32px,5.5vw,50px);line-height:1.14;margin:0 0 12px;letter-spacing:-.025em}
+h2{margin:43px 0 12px;font-size:26px;line-height:1.32;color:var(--accent)}
+h3{margin:26px 0 10px;font-size:19px;color:#e2edf4}
+p{margin:13px 0}
+.lead{font-size:18px;line-height:1.7;color:#dce7e8;max-width:830px}
+.hero,.img{
+  width:100%;height:auto;display:block;border-radius:19px;
+  border:1px solid var(--line);margin:20px 0;
+  box-shadow:var(--shadow)
+}
+.hero{margin-top:23px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:17px 0 20px}
+.badge{
+  display:inline-block;padding:6px 11px;border-radius:999px;
+  background:rgba(255,255,255,.045);border:1px solid var(--line);
+  color:var(--muted);font-size:13px;line-height:1.4
+}
+.badge.emphasis{border-color:rgba(149,184,83,.45);color:#d6edaa;background:rgba(149,184,83,.08)}
+.highlight,.download,.support{
+  margin:25px 0;padding:21px;border-radius:18px;
+  background:rgba(149,184,83,.075);border:1px solid rgba(149,184,83,.25)
+}
+.highlight strong{color:#ebf5dc}
+.support{background:rgba(35,102,72,.12);border-color:rgba(35,102,72,.55)}
+.highlight h2,.download h2,.support h2{margin:0 0 12px}
+.btn{
+  display:inline-block;padding:12px 18px;margin:8px 8px 0 0;border-radius:14px;
+  background:var(--accent);color:#11190d;text-decoration:none;font-weight:800;
+  transition:filter .15s ease
+}
+.btn:hover{color:#11190d;filter:brightness(1.1)}
+.btn.secondary{background:transparent;color:var(--text);border:1px solid rgba(149,184,83,.55)}
+.btn.secondary:hover{color:#eaf2e0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px;margin:23px 0}
+.grid figure{margin:0;min-width:0}
+.grid img{width:100%;height:auto;display:block;border-radius:16px;border:1px solid var(--line);box-shadow:var(--shadow)}
+figure{margin:22px 0}
+figure>img.img{margin-bottom:8px}
+figcaption{font-size:13px;line-height:1.6;color:var(--muted);padding:5px 3px 0}
+ul{color:#b8c6d0;padding-left:23px}
+li{margin:6px 0}
+li strong{color:#ecf3f5}
+.note{
+  color:var(--muted);border-left:3px solid var(--accent);padding:10px 15px;
+  background:rgba(255,255,255,.025);border-radius:8px
+}
+.code{
+  background:#070b0e;padding:20px;border-radius:15px;
+  border:1px solid var(--line);overflow-x:auto;
+  color:#dce9e2;font:14px/1.85 ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;
+  white-space:pre
+}
+.specs{width:100%;border-collapse:collapse;margin:22px 0;border:1px solid var(--line);font-size:15px}
+.specs th,.specs td{border-bottom:1px solid var(--line);padding:12px 14px;text-align:left;vertical-align:top}
+.specs th{width:30%;color:#d3e5cd;font-weight:700;background:rgba(35,102,72,.10)}
+.specs td{color:#c1ccd6}
+.specs tr:last-child th,.specs tr:last-child td{border-bottom:0}
+.small{font-size:13px;color:var(--muted)}
+.footer-text{margin-top:38px;text-align:center;color:var(--muted);font-size:14px}
+.rule{height:1px;background:var(--line);margin:42px 0 0}
+@media(max-width:720px){
+  .grid{grid-template-columns:1fr}
+  .card{padding:18px}
+  .wrap{padding:12px 12px 36px}
+  h2{font-size:23px}
+  .lead{font-size:16px}
+  .specs th{width:36%}
+  .specs th,.specs td{padding:10px;font-size:13px}
+  .code{font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<article class="card">
+
+<p class="eyebrow">Essora Project · October 21, 2026</p>
+<h1>Essora Eos SonicDE</h1>
+<p class="lead"><strong>A new home for X11. A modern desktop, built the Essora way.</strong></p>
+
+<div class="meta">
+  <span class="badge emphasis">SonicDE Edition</span>
+  <span class="badge">64-bit</span>
+  <span class="badge">XLibre / X11</span>
+  <span class="badge">SonicDE</span>
+  <span class="badge">Qt6</span>
+  <span class="badge">Essora Kernel</span>
+  <span class="badge">Systemd-free</span>
+  <span class="badge">Devuan Excalibur packages</span>
+  <span class="badge">ROX-Filer2-Qt</span>
+  <span class="badge">APT / dpkg / Flatpak</span>
+</div>
+
+<img class="hero" src="/blog/screenshots/sonicde/desktop.png" width="1600" height="900" alt="Essora Eos SonicDE desktop with the Essora wallpaper, SonicDE panel, desktop drive icons and desklet">
+
+<p>
+<strong>Essora Eos SonicDE</strong> brings together two projects with a clear commitment to the X11 desktop:
+<a href="https://sonicde.org/" target="_blank" rel="noopener noreferrer">SonicDE</a>, a community-driven desktop environment derived from KDE Plasma 6,
+and <a href="https://www.xlibre.net/" target="_blank" rel="noopener noreferrer">XLibre</a>, a community-developed X11 server.
+Essora builds on that foundation with its own system integration, kernel, visual identity and applications.
+</p>
+
+<p>
+The result is a desktop that feels complete without surrendering the Essora philosophy: <strong>choose the right components,
+avoid unnecessary duplication and keep the user in control.</strong> This edition is not about making a smaller imitation
+of something else. It is about making a desktop that belongs to Essora.
+</p>
+
+<div class="highlight">
+  <strong>X11 is not an afterthought here. It is the foundation.</strong>
+  <p>Essora Eos SonicDE combines a capable Qt6 desktop with a deliberately selected set of Essora tools — including a lighter alternative to Dolphin and an optional, configurable drive-icon layer.</p>
+</div>
+
+<h2>SonicDE and XLibre — a desktop with a clear direction</h2>
+
+<p>
+SonicDE is a community-maintained fork of the Plasma 6 desktop family, focused on preserving and developing a first-class
+X11 experience while remaining independent of any single init system. Its own desktop components include
+<strong>Sonic Workspace</strong> and <strong>sonic-win</strong>, the X11 window manager and compositor.
+It offers a familiar, full desktop experience without requiring Essora to adopt a Wayland-only direction.
+</p>
+
+<p>
+Underneath it, <strong>XLibre</strong> provides the display-server foundation. XLibre continues the development of the X11 server
+through community maintenance, compatibility work and improvements to the graphics stack.
+Essora deliberately brings the two together rather than treating X11 as a legacy fallback.
+</p>
+
+<ul>
+  <li><strong>SonicDE:</strong> desktop shell, panel, workspace and session components.</li>
+  <li><strong>sonic-win:</strong> window management and compositing for the X11 session.</li>
+  <li><strong>Qt6:</strong> the application and desktop toolkit powering SonicDE and ROX-Filer2-Qt.</li>
+  <li><strong>XLibre:</strong> the X11 display server used by the edition.</li>
+  <li><strong>Essora integration:</strong> system utilities, applications, themes and desktop choices designed to work together.</li>
+</ul>
+
+<h2>Essora is more than a different desktop on Devuan</h2>
+
+<p>
+This edition follows the same independent-build approach as Essora Eos. It is <strong>not simply a stock Devuan installation
+with SonicDE added on top</strong>. Essora is assembled through its own build process, starting from a minimal BusyBox-based foundation and adding carefully
+selected system components and its own kernel. It uses packages from <strong>Devuan Excalibur</strong> as part of its software ecosystem.
+That distinction matters: the packages help supply the system, but the desktop integration and direction are Essora's own.
+</p>
+
+<p>
+The system remains <strong>systemd-free</strong>, with the software stack chosen to support the project's design.
+The SonicDE edition also uses Essora's Qt6 build and its dedicated desktop components, rather than relying on a collection
+of unrelated configuration tools to deliver the whole experience.
+</p>
+
+<table class="specs" aria-label="Essora Eos SonicDE component overview">
+  <tbody>
+    <tr><th scope="row">System</th><td>Essora Eos GNU/Linux, independently assembled</td></tr>
+    <tr><th scope="row">Package ecosystem</th><td>Devuan Excalibur packages, APT/dpkg and Flatpak support</td></tr>
+    <tr><th scope="row">Kernel</th><td>Essora Kernel</td></tr>
+    <tr><th scope="row">Graphics</th><td>XLibre (X11)</td></tr>
+    <tr><th scope="row">Desktop</th><td>SonicDE, Sonic Workspace and sonic-win</td></tr>
+    <tr><th scope="row">Toolkit</th><td>Qt6 for the SonicDE desktop and ROX-Filer2-Qt; GTK3 for selected Essora applications</td></tr>
+    <tr><th scope="row">File manager</th><td>ROX-Filer2-Qt instead of Dolphin</td></tr>
+    <tr><th scope="row">System applications</th><td>Essora Control Center, Essora package tools, Essora Office and Essora Browser</td></tr>
+  </tbody>
+</table>
+
+<h2>No Dolphin. ROX-Filer2-Qt, built for Essora SonicDE.</h2>
+
+<figure>
+  <img class="img" src="/blog/screenshots/sonicde/roxfiler2-qt.png" width="1600" height="900" loading="lazy" alt="ROX-Filer2-Qt file manager on SonicDE showing tabs, places, partitions and a Qt6 about dialog">
+  <figcaption>ROX-Filer2-Qt — a Qt6 file manager developed specifically for the Essora SonicDE edition.</figcaption>
+</figure>
+
+<p>
+<strong>Dolphin will not be included in this edition.</strong> That is an intentional decision, not a missing package.
+Essora uses <strong>ROX-Filer2-Qt</strong>, its own Qt6 adaptation of ROX-Filer2, as the primary file manager.
+The goal is a more focused and lightweight approach, without giving up the features people expect from a modern file manager.
+</p>
+
+<p>
+ROX-Filer2-Qt preserves the practical spirit of ROX while bringing a more contemporary interface and deeper integration
+with the SonicDE desktop. Its ongoing development includes improvements to everyday navigation, storage handling and
+file operations.
+</p>
+
+<ul>
+  <li><strong>Tabs and a modern navigation toolbar</strong> for working across multiple folders.</li>
+  <li><strong>Breadcrumb navigation, a places sidebar and quick filtering</strong> to find what you need with less friction.</li>
+  <li><strong>Devices and partitions</strong> visible directly in the file manager, with mount and unmount controls.</li>
+  <li><strong>Mounted image visibility:</strong> options for displaying mounted ISO, SFS and IMG volumes alongside other devices.</li>
+  <li><strong>File operations and drag-and-drop</strong> with copy, move and link workflows.</li>
+  <li><strong>Samba-related options</strong> for working with network shares.</li>
+  <li><strong>Qt6 and SonicDE integration</strong> with a native-looking interface and an Essora-focused development path.</li>
+</ul>
+
+<p class="note">
+The objective is not to claim that ROX-Filer2-Qt has every Dolphin feature. It is to deliver the file-management features
+that matter to this edition, with a smaller and more direct approach. Its development is active, and more improvements are planned.
+</p>
+
+<h2>Desktop drive icons — your desktop, your choice</h2>
+
+<figure>
+  <img class="img" src="/blog/screenshots/sonicde/preferences.png" width="1600" height="900" loading="lazy" alt="ROX-Filer2-Qt preferences for enabling, disabling, arranging and customizing drive icons on the SonicDE desktop">
+  <figcaption>The Desktop drive icons preferences: display the volumes you want, adjust their appearance and position, or disable them for a completely clean desktop.</figcaption>
+</figure>
+
+<p>
+One of the most useful Essora additions is the optional <strong>desktop drive-icon feature managed by ROX-Filer2-Qt</strong>.
+It lets you access drives directly from the SonicDE desktop without having to turn ROX-Filer2 into the desktop background manager.
+The icons run as a separate user process; <strong>SonicDE keeps control of the wallpaper and desktop itself.</strong>
+</p>
+
+<p>
+From the preferences window, you can decide exactly how those icons should behave:
+</p>
+
+<ul>
+  <li>Show or hide drive icons on the SonicDE desktop.</li>
+  <li>Include internal partitions and removable devices.</li>
+  <li>Display only mounted volumes, or include selected other volumes.</li>
+  <li>Choose whether system partitions and mounted ISO, SFS or IMG images appear.</li>
+  <li>Place the icons at a preferred screen edge and arrange them horizontally or vertically.</li>
+  <li>Adjust icon size, spacing, offsets and icon-background appearance.</li>
+</ul>
+
+<div class="highlight">
+  <strong>Prefer a desktop without drive icons? Turn them off.</strong>
+  <p>Nothing is forced. Keep convenient drive access on the desktop, customize it to your workflow, or remove those icons entirely and enjoy a clean SonicDE workspace.</p>
+</div>
+
+<h2>Essora Control Center — a consistent place to make it yours</h2>
+
+<figure>
+  <img class="img" src="/blog/screenshots/sonicde/essora-control.png" width="1600" height="900" loading="lazy" alt="Essora Control Center showing GTK appearance, icon theme, cursor and fonts settings on SonicDE">
+  <figcaption>Essora Control Center brings together desktop-related preferences and keeps GTK application appearance configurable.</figcaption>
+</figure>
+
+<p>
+Essora's identity should be visible without taking control away from the user's selected theme.
+<strong>Essora Control Center</strong> offers accessible settings for appearance and desktop-related components,
+including GTK themes, icons, cursors and fonts. The interface also provides sections for the panel, application menu,
+user settings and Essora Desklet.
+</p>
+
+<p>
+The edition ships with an Essora visual identity, but that is a starting point rather than a restriction.
+The user can customize the look and feel while retaining the integration between the desktop and Essora applications.
+</p>
+
+<h2>Software management — APT/dpkg and Flatpak</h2>
+
+<figure>
+  <img class="img" src="/blog/screenshots/sonicde/edpkg.png" width="1600" height="900" loading="lazy" alt="Essora APT/dpkg software manager on SonicDE, with installed and available packages and a Flatpak tab">
+  <figcaption>Essora's software-management interface includes APT/dpkg tools and access to Flatpak software.</figcaption>
+</figure>
+
+<p>
+Essora does not ask users to abandon standard GNU/Linux package management. <strong>APT and dpkg</strong> remain central
+to managing Debian-format packages, while <strong>Flatpak</strong> provides another way to install applications.
+The Essora graphical interface brings common package tasks into one place, including package status, upgrades,
+repositories and maintenance actions.
+</p>
+
+<h2>Essora Office — everyday work, inside the Essora ecosystem</h2>
+
+<figure>
+  <img class="img" src="/blog/screenshots/sonicde/essora-office.png" width="1600" height="900" loading="lazy" alt="Essora Office start screen featuring Writer, Sheet, Slides, Draw and PDF tools">
+  <figcaption>Essora Office brings together document, spreadsheet, presentation, drawing and PDF tools in one Essora application.</figcaption>
+</figure>
+
+<p>
+The software experience extends beyond desktop configuration. <strong>Essora Office</strong> is part of the project's
+own application ecosystem, bringing together tools for documents, spreadsheets, presentations, drawings and PDFs.
+It is an actively developed project, built around the idea that everyday functionality should feel consistent with the system.
+</p>
+
+<h2>Essora Browser — built around the modern web</h2>
+
+<figure>
+  <img class="img" src="/blog/screenshots/sonicde/essora-browser.png" width="1600" height="900" loading="lazy" alt="Essora Browser showing its about screen and the Essora website">
+  <figcaption>Essora Browser is an Essora-adapted browser built on the Mozilla Firefox and Gecko codebase.</figcaption>
+</figure>
+
+<p>
+<strong>Essora Browser</strong> continues the same approach: a familiar application foundation, adapted to fit the Essora
+environment. Based on Mozilla Firefox and Gecko, it provides modern web compatibility with Essora-specific presentation
+and integration.
+</p>
+
+<h2>One desktop, one direction</h2>
+
+<p>
+The interesting part of this edition is not any single component. It is how the pieces work together.
+SonicDE provides the full desktop. XLibre provides X11. ROX-Filer2-Qt handles file navigation and optionally the drive icons.
+Essora Control Center, the software manager, Office and Browser form a growing set of system applications.
+Each part has a purpose, and the user can choose how much of it to use.
+</p>
+
+<div class="code">Essora Eos GNU/Linux
+   ├── Essora system build + Devuan Excalibur packages
+   ├── Essora Kernel
+   ├── XLibre (X11 display server)
+   ├── SonicDE (Qt6 desktop)
+   │     ├── sonic-win + Sonic Workspace
+   │     └── Essora desktop integration
+   ├── ROX-Filer2-Qt
+   │     ├── File manager (instead of Dolphin)
+   │     └── Optional desktop drive icons
+   └── Essora applications
+         ├── Control Center
+         ├── APT/dpkg + Flatpak tools
+         ├── Office
+         └── Browser</div>
+
+<h2>Essora Eos SonicDE in pictures</h2>
+
+<div class="grid">
+  <figure>
+    <img src="/blog/screenshots/sonicde/desktop.png" width="1600" height="900" loading="lazy" alt="SonicDE desktop with the Essora wallpaper and panel">
+    <figcaption>The Essora Eos SonicDE desktop, designed around a clean and distinctive visual identity.</figcaption>
+  </figure>
+  <figure>
+    <img src="/blog/screenshots/sonicde/roxfiler2-qt.png" width="1600" height="900" loading="lazy" alt="ROX-Filer2-Qt running on SonicDE">
+    <figcaption>ROX-Filer2-Qt replaces Dolphin with an Essora-focused Qt6 file manager.</figcaption>
+  </figure>
+  <figure>
+    <img src="/blog/screenshots/sonicde/preferences.png" width="1600" height="900" loading="lazy" alt="ROX-Filer2-Qt desktop drive icon options">
+    <figcaption>Desktop drive icons can be repositioned, customized or disabled altogether.</figcaption>
+  </figure>
+  <figure>
+    <img src="/blog/screenshots/sonicde/essora-control.png" width="1600" height="900" loading="lazy" alt="Essora Control Center on SonicDE">
+    <figcaption>Essora Control Center provides practical appearance and desktop settings.</figcaption>
+  </figure>
+  <figure>
+    <img src="/blog/screenshots/sonicde/edpkg.png" width="1600" height="900" loading="lazy" alt="Essora package manager on SonicDE">
+    <figcaption>Manage packages with APT/dpkg and Flatpak through Essora tools.</figcaption>
+  </figure>
+  <figure>
+    <img src="/blog/screenshots/sonicde/essora-office.png" width="1600" height="900" loading="lazy" alt="Essora Office home screen">
+    <figcaption>Essora Office adds an integrated set of everyday productivity tools.</figcaption>
+  </figure>
+  <figure>
+    <img src="/blog/screenshots/sonicde/essora-browser.png" width="1600" height="900" loading="lazy" alt="Essora Browser on SonicDE">
+    <figcaption>Essora Browser continues the project's approach to adapted applications.</figcaption>
+  </figure>
+</div>
+
+<h2>Thank you, XLibre and SonicDE</h2>
+
+<p>
+<strong>Our sincere thanks to the developers and contributors of
+<a href="https://www.xlibre.net/" target="_blank" rel="noopener noreferrer">XLibre</a> and
+<a href="https://sonicde.org/" target="_blank" rel="noopener noreferrer">SonicDE</a>.</strong>
+Their work, persistence and commitment to open development make projects like this possible.
+XLibre is giving the X11 server an active community-driven future, and SonicDE is demonstrating that a capable,
+modern desktop can continue to take X11 and init-system independence seriously.
+</p>
+
+<p>
+Essora builds on that work with respect for the upstream projects and their contributors. This edition would not exist
+in its current form without their efforts. <strong>Thank you for the excellent work you are doing for free software.</strong>
+</p>
+
+<h2>What makes this edition different?</h2>
+
+<p>
+A capable desktop does not need to dictate every application or workflow. In Essora Eos SonicDE, <strong>SonicDE brings
+the desktop experience, XLibre keeps X11 at the center, and Essora chooses how the remaining pieces fit together.</strong>
+Replacing Dolphin with ROX-Filer2-Qt, making desktop drive icons optional and keeping system tools under the Essora umbrella
+are practical examples of that idea.
+</p>
+
+<div class="highlight">
+  <strong>Not a stock desktop with a new wallpaper. An Essora edition with its own decisions.</strong>
+  <p>Modern where it matters. Lightweight where it makes sense. Free to use, configure and explore.</p>
+</div>
+
+<div class="download">
+  <h2>Download Essora Eos SonicDE</h2>
+  <p>Discover Essora Eos SonicDE and follow the ISO releases on SourceForge.</p>
+  <!-- Replace this SourceForge project-files URL with the final ISO download URL when it is published. -->
+  <a class="btn" href="https://sourceforge.net/projects/essora/files/" target="_blank" rel="noopener noreferrer">Download on SourceForge</a>
+  <p class="small">The direct ISO link will be added when the release is available.</p>
+</div>
+
+<div class="support">
+  <h2>Help more people discover Essora</h2>
+  <p>
+    Essora is an independent project. If you find its approach interesting, share the release,
+    give it a try and help other GNU/Linux users discover it.
+  </p>
+  <a class="btn secondary" href="https://distrowatch.com/table.php?distribution=essora" target="_blank" rel="noopener noreferrer">Find Essora on DistroWatch</a>
+</div>
+
+<div class="rule"></div>
+<p class="footer-text"><strong>Essora Project — Freedom to Create. Freedom to Explore.</strong></p>
+
+</article>
+</div>
+</body>
+</html>
