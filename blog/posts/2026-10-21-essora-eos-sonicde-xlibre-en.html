@@ -67,6 +67,23 @@ p{margin:13px 0}
 .highlight strong{color:#ebf5dc}
 .support{background:rgba(35,102,72,.12);border-color:rgba(35,102,72,.55)}
 .highlight h2,.download h2,.support h2{margin:0 0 12px}
+/* Readable installation-media warning, separate from the release download card. */
+.compat-notice{
+  margin:22px 0 2px;
+  padding:17px 20px;
+  border-left:4px solid #f4b942;
+  border-top:1px solid rgba(244,185,66,.40);
+  border-right:1px solid rgba(244,185,66,.40);
+  border-bottom:1px solid rgba(244,185,66,.40);
+  border-radius:10px;
+  background:rgba(244,185,66,.11);
+  color:#f4ead5
+}
+.compat-notice h3{margin:0 0 8px;color:#ffd47b;font-size:18px}
+.compat-notice p{margin:0;color:#f4ead5;font-size:14px;line-height:1.7}
+.compat-notice p + p{margin-top:10px}
+.compat-notice strong{color:#ffde95}
+
 .btn{
   display:inline-block;padding:12px 18px;margin:8px 8px 0 0;border-radius:14px;
   background:var(--accent);color:#11190d;text-decoration:none;font-weight:800;
@@ -422,10 +439,13 @@ are practical examples of that idea.
 <div class="download">
   <h2>Download Essora Eos SonicDE</h2>
   <p>Discover Essora Eos SonicDE and follow the ISO releases on SourceForge.</p>
-  <!-- Replace this SourceForge project-files URL with the final ISO download URL when it is published. -->
   <a class="btn" href="https://sourceforge.net/projects/essora/files/Excalibur/Essora_xlibre_SonicDE-20261021_1930.iso" target="_blank" rel="noopener noreferrer">Download on SourceForge</a>
   <p class="small">MD5 6291fdf8baa80646529fe789ef1d66c6.</p>
-  <p class="small">The direct ISO link will be added when the release is available.</p>
+  <aside class="compat-notice" aria-label="Installation and compatibility notice">
+    <h3>⚠ Installation &amp; Compatibility Notice</h3>
+    <p>The ISO has been successfully tested booting with <strong>Ventoy</strong>, which is currently the recommended method for creating bootable USB media. Issues have been reported when using <strong>Rufus</strong>. Some virtual machines may also experience boot or display problems depending on their configuration. We recommend using Ventoy for installation on physical hardware.</p>
+    <p>Some users have also reported graphics-related compatibility issues when running <strong>XLibre</strong> on systems with <strong>NVIDIA</strong> graphics cards. The underlying cause has not yet been confirmed, and compatibility may vary depending on the GPU, driver and system configuration.</p>
+  </aside>
 </div>
 
 <div class="support">
