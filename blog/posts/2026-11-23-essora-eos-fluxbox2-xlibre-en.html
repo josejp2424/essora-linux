@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0b1015">
+  <meta name="description" content="Essora Eos Fluxbox2 XLibre, November 2026: Fluxbox2 1.7.20 with GTK3 themes, integrated panel, new Start menu, Picom and Desklet, plus updates to Essora Browser, Office, Editor, Store, VM and MagDock.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Essora Eos Fluxbox2 XLibre — A New Step Forward">
+  <meta property="og:description" content="A refreshed Fluxbox2 desktop, GTK3 theming, an integrated panel and new versions of the Essora applications.">
+  <meta property="og:image" content="https://essora.org/blog/screenshots/desktop_fluxbox2.webp">
+  <meta property="article:published_time" content="2026-11-23">
+  <title>Essora Eos Fluxbox2 XLibre — A New Step Forward</title>
+  <style>
+    :root {
+      --bg: #090e12;
+      --card: #101a21;
+      --surface: #14222d;
+      --text: #e8f0ee;
+      --muted: #a3b5b9;
+      --accent: #a7ce54;
+      --accent-deep: #217b59;
+      --border: #263840;
+      --shadow: 0 18px 52px rgba(0,0,0,.28);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--text);
+      background: radial-gradient(ellipse at 50% -100px, rgba(43,106,78,.20), transparent 530px),
+                  linear-gradient(180deg, #070c10, var(--bg) 24%, #0c1418);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.73;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    a:hover { color: #cff68c; }
+    .wrap { max-width: 1070px; margin: 0 auto; padding: 34px 21px 65px; }
+    article {
+      padding: 40px clamp(20px, 4vw, 58px) 46px;
+      border-radius: 26px;
+      border: 1px solid var(--border);
+      background: rgba(15,24,31,.92);
+      box-shadow: var(--shadow);
+    }
+    .eyebrow { margin: 0 0 12px; color: var(--accent); font-weight: 700; font-size: .84rem; letter-spacing: .10em; text-transform: uppercase; }
+    h1 { margin: 0 0 12px; font-size: clamp(2.1rem, 5.8vw, 3.5rem); font-weight: 780; line-height: 1.13; letter-spacing: -.035em; }
+    h1 span { color: var(--accent); }
+    h2 { margin: 0 0 15px; color: var(--accent); line-height: 1.3; font-size: clamp(1.45rem, 3vw, 1.92rem); letter-spacing: -.025em; }
+    h3 { margin: 0 0 10px; font-size: 1.16rem; line-height: 1.35; color: #eaf6ef; }
+    p { margin: 0 0 17px; }
+    .lead { color: #d7e4e2; font-size: 1.18rem; line-height: 1.65; max-width: 850px; }
+    .meta { display: flex; flex-wrap: wrap; gap: 8px; margin: 21px 0 26px; }
+    .tag { display: inline-block; border-radius: 999px; border: 1px solid #2a4640; background: #172a2a; color: #cae6d5; padding: 5px 11px; font-size: .81rem; line-height: 1.5; }
+    .hero, figure { margin: 0; }
+    .shot { display: block; border-radius: 15px; overflow: hidden; background: #0a1820; border: 1px solid var(--border); box-shadow: 0 10px 29px rgba(0,0,0,.20); }
+    .shot img { display: block; width: 100%; height: auto; transition: transform .2s ease; }
+    .shot:hover img { transform: scale(1.008); }
+    figcaption { font-size: .88rem; color: var(--muted); line-height: 1.6; padding: 9px 3px 0; }
+    .hero figcaption { padding-top: 12px; }
+    .toc { display: flex; flex-wrap: wrap; gap: 7px 15px; margin: 25px 0 0; padding-top: 22px; border-top: 1px solid var(--border); }
+    .toc a { color: #c6d8d7; text-decoration: none; font-size: .86rem; }
+    .toc a:hover { color: var(--accent); }
+    .section { padding-top: 35px; margin-top: 36px; border-top: 1px solid var(--border); scroll-margin-top: 20px; }
+    .section p, .section ul { color: #cedbd9; }
+    strong { color: #eef7ef; }
+    .callout { padding: 19px 22px; margin: 25px 0; background: linear-gradient(100deg, rgba(34,105,70,.18), rgba(125,155,55,.07)); border-left: 4px solid var(--accent); border-radius: 0 13px 13px 0; color: #e2eee7; }
+    .callout p { margin: 0; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 24px 18px; margin: 20px 0 5px; }
+    .grid figure { min-width: 0; }
+    .fullshot { margin: 19px 0 6px; }
+    .features { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; margin: 21px 0; }
+    .feature { border: 1px solid var(--border); border-radius: 13px; padding: 16px 17px; background: rgba(255,255,255,.025); }
+    .feature strong { display: block; color: #ecf5e9; margin-bottom: 3px; }
+    .feature span { display: block; color: var(--muted); font-size: .91rem; line-height: 1.55; }
+    ul { margin: 14px 0 23px; padding-left: 22px; }
+    li { padding: 2px 0; }
+    li::marker { color: var(--accent); }
+    .download { margin: 40px 0 0; padding: 25px 25px 22px; background: linear-gradient(135deg, rgba(35,105,73,.22), rgba(125,155,55,.075)); border: 1px solid rgba(143,186,95,.38); border-radius: 19px; }
+    .download h2 { margin-top: 0; }
+    .download p { color: #d4e4db; }
+    .button { display: inline-block; padding: 12px 21px; background: var(--accent); border-radius: 11px; color: #101811; text-decoration: none; font-weight: 780; margin: 5px 0 11px; }
+    .button:hover { background: #c5ea7d; color: #101811; }
+    .filename { font-size: .87rem; color: var(--muted) !important; overflow-wrap: anywhere; }
+    .closing { margin-top: 34px; padding-top: 24px; border-top: 1px solid var(--border); color: #a6b8b3; text-align: center; font-size: .94rem; }
+    .closing strong { color: var(--accent); }
+    .note { color: var(--muted); font-size: .91rem; }
+    @media (max-width: 710px) {
+      .wrap { padding: 12px 10px 28px; }
+      article { border-radius: 17px; padding: 25px 17px 32px; }
+      .grid, .features { grid-template-columns: 1fr; }
+      .grid { gap: 22px; }
+      .section { padding-top: 28px; margin-top: 27px; }
+      .download { padding: 20px 17px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .shot img { transition: none; } }
+  </style>
+</head>
+<body>
+<div class="wrap">
+<article>
+  <header>
+    <p class="eyebrow">November 23, 2026 · Essora Linux</p>
+    <h1>Essora Eos <span>Fluxbox2 XLibre</span></h1>
+    <p class="lead">A new Fluxbox2 desktop, a consistent GTK3 look, and several updates across the Essora applications.</p>
+    <div class="meta" aria-label="Release details">
+      <span class="tag">Devuan Excalibur</span>
+      <span class="tag">64-bit</span>
+      <span class="tag">XLibre / X11</span>
+      <span class="tag">Fluxbox2 1.7.20</span>
+      <span class="tag">GTK3</span>
+      <span class="tag">Essora Eos</span>
+    </div>
+    <figure class="hero">
+      <a class="shot" href="/blog/screenshots/desktop_fluxbox2.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-sized Essora Eos desktop screenshot">
+        <img src="/blog/screenshots/desktop_fluxbox2.webp" alt="Essora Eos Fluxbox2 desktop with Welcome window, integrated panel and green forest wallpaper" width="1600" height="900" fetchpriority="high">
+      </a>
+      <figcaption>Essora Eos running the new Fluxbox2 desktop, with the Welcome window, integrated panel and Desklet.</figcaption>
+    </figure>
+    <nav class="toc" aria-label="In this article">
+      <a href="#fluxbox2">Fluxbox2</a>
+      <a href="#panel-menu">Panel and menu</a>
+      <a href="#desklet-picom">Desklet and Picom</a>
+      <a href="#applications">Essora applications</a>
+      <a href="#magdock">MagDock</a>
+      <a href="#download">Download</a>
+    </nav>
+  </header>
+
+  <section class="section" id="fluxbox2">
+    <h2>Fluxbox2 has changed quite a bit</h2>
+    <p>I've continued working on Fluxbox2 and the tools around it. This new Essora Eos ISO brings those changes together. The idea is still the same: keep the desktop lightweight, easy to use and under the user's control, without turning it into a large desktop environment.</p>
+    <p><strong>Fluxbox2 is not simply an old Fluxbox release with a different theme.</strong> It started from the Fluxbox codebase, but this is an actively developed Essora fork. The version included here is <strong>Fluxbox2-Essora 1.7.20</strong>, with major changes to appearance, the panel, menu and desktop integration.</p>
+    <div class="callout">
+      <p><strong>One of the biggest changes:</strong> Fluxbox2 no longer depends on classic Fluxbox style files for its appearance. Window decorations and native Fluxbox menus now follow the GTK3 theme chosen by the user.</p>
+    </div>
+    <p>That means the titlebars, window buttons and other decorations can match the rest of the GTK3 desktop. You can choose the theme, icons, cursor and fonts through <strong>Essora Appearance</strong> instead of looking for a separate Fluxbox theme.</p>
+    <figure class="fullshot">
+      <a class="shot" href="/blog/screenshots/essora-appearence_fluxbox2.webp" target="_blank" rel="noopener noreferrer">
+        <img src="/blog/screenshots/essora-appearence_fluxbox2.webp" alt="Essora Appearance selecting GTK3 theme, icon theme, cursor and font" width="1600" height="900" loading="lazy" decoding="async">
+      </a>
+      <figcaption>Essora Appearance: GTK3 themes, icons, fonts and mouse pointers in one place.</figcaption>
+    </figure>
+  </section>
+
+  <section class="section" id="panel-menu">
+    <h2>A new panel and a more flexible application menu</h2>
+    <p>Fluxbox2 now includes its own <strong>integrated panel</strong>. Its engine is based on tint2, but the panel runs inside Fluxbox2 rather than launching a separate tint2 process. It provides the taskbar, launchers, notification area and clock, and it can be configured from <strong>Fluxbox2 Settings</strong>.</p>
+    <p>The configuration tool can change panel placement, size, buttons, themes and shortcuts. It also includes a visual panel builder, so you don't need to edit configuration files just to move a launcher or change the panel layout.</p>
+    <figure class="fullshot">
+      <a class="shot" href="/blog/screenshots/fluxbox-config_fluxbox2.webp" target="_blank" rel="noopener noreferrer">
+        <img src="/blog/screenshots/fluxbox-config_fluxbox2.webp" alt="Fluxbox2 Settings overview with desktop, panel, menu, Desklet and compositor pages" width="1600" height="900" loading="lazy" decoding="async">
+      </a>
+      <figcaption>Fluxbox2 Settings 0.7.9 centralizes the window manager, panel, shortcuts, menu, Desklet and Picom options.</figcaption>
+    </figure>
+    <h3>A Windows 11-style menu by default — but not the only choice</h3>
+    <p>The default application menu now uses a <strong>Windows 11-inspired Start layout</strong>, with a search field, favorites, application categories and a small Recommended section. The recommended shortcuts give quick access to the browser, terminal, ROX-Filer2 and Fluxbox2 Settings.</p>
+    <p>Favorites, Desktop, System and other categories can be browsed without having to scroll through one huge list. The menu also includes an <strong>All apps</strong> view. And if you don't like the default design, there are several other menu templates to choose from, with options for layout, colors, fonts and favorites.</p>
+    <div class="grid">
+      <figure>
+        <a class="shot" href="/blog/screenshots/menu_fluxbox2.webp" target="_blank" rel="noopener noreferrer">
+          <img src="/blog/screenshots/menu_fluxbox2.webp" alt="New Fluxbox2 Start menu with search, Favorites, Recommended shortcuts and All apps" width="1600" height="900" loading="lazy" decoding="async">
+        </a>
+        <figcaption>The new default Start-style menu, with favorites and recommended programs.</figcaption>
+      </figure>
+      <figure>
+        <a class="shot" href="/blog/screenshots/fluxbox-config-menu_fluxbox2.webp" target="_blank" rel="noopener noreferrer">
+          <img src="/blog/screenshots/fluxbox-config-menu_fluxbox2.webp" alt="Fluxbox2 Settings showing a list of alternative application menu templates" width="1600" height="900" loading="lazy" decoding="async">
+        </a>
+        <figcaption>Menu templates: choose a different layout or customize your own.</figcaption>
+      </figure>
+    </div>
+    <p class="note">ROX-Filer2 continues to manage the desktop itself, including wallpaper, file icons, Trash and storage devices. Fluxbox2 handles the windows, panel, menu and session integration.</p>
+  </section>
+
+  <section class="section" id="desklet-picom">
+    <h2>Desklet and Picom are part of the Fluxbox2 setup</h2>
+    <p>Two other components are now managed directly through the Fluxbox2 configuration: <strong>Essora Desklet</strong> and the <strong>Picom compositor</strong>. They're enabled in the desktop setup shown in this ISO, but they are both optional. If either one causes trouble on your hardware, you can disable it from <strong>Fluxbox2 Settings</strong>.</p>
+    <div class="features">
+      <div class="feature"><strong>Essora Desklet</strong><span>Clock, date and other configurable desktop information. Presets and display settings can be changed from the same configuration window.</span></div>
+      <div class="feature"><strong>Picom</strong><span>Optional rounded corners, subtle transparency, shadows and VSync. Its settings are kept with the Fluxbox2 configuration.</span></div>
+    </div>
+    <p>Picom is controlled by the Fluxbox2 session, not by an unrelated desktop autostart entry. The aim is to keep the effects subtle while leaving users free to switch them off. The Desklet is also supervised by Fluxbox2, so a Desklet problem should not bring down the window manager.</p>
+    <div class="grid">
+      <figure>
+        <a class="shot" href="/blog/screenshots/fluxbox-config-desklet_20261123_023911.webp" target="_blank" rel="noopener noreferrer">
+          <img src="/blog/screenshots/fluxbox-config-desklet_20261123_023911.webp" alt="Essora Desklet settings with integration toggle and tabs for colors, layout, behavior, blocks and presets" width="1600" height="900" loading="lazy" decoding="async">
+        </a>
+        <figcaption>Desklet settings: presets, colors, typography, layout and content blocks.</figcaption>
+      </figure>
+      <figure>
+        <a class="shot" href="/blog/screenshots/fluxbox-config-picom_fluxbox2.webp" target="_blank" rel="noopener noreferrer">
+          <img src="/blog/screenshots/fluxbox-config-picom_fluxbox2.webp" alt="Fluxbox2 Settings Picom compositor controls for opacity, rounded corners, shadows and VSync" width="1600" height="900" loading="lazy" decoding="async">
+        </a>
+        <figcaption>Picom settings: adjust the effects or disable the compositor completely.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" id="applications">
+    <h2>Several Essora applications have been updated too</h2>
+    <p>This release isn't only about Fluxbox2. I've also been working on the applications that come with Essora, with changes to the browser, office tools, editor and software manager.</p>
+
+    <h3>Essora Browser 159.0</h3>
+    <p><strong>Essora Browser</strong> has been updated to <strong>159.0</strong>. It remains based on Mozilla's Firefox/Gecko source code, adapted for Essora, with its own branding and desktop integration.</p>
+    <figure class="fullshot">
+      <a class="shot" href="/blog/screenshots/essora-browser-159.0_fluxbox2.webp" target="_blank" rel="noopener noreferrer">
+        <img src="/blog/screenshots/essora-browser-159.0_fluxbox2.webp" alt="About Essora Browser window showing version 159.0" width="1600" height="900" loading="lazy" decoding="async">
+      </a>
+      <figcaption>Essora Browser 159.0 running on Fluxbox2.</figcaption>
+    </figure>
+
+    <h3>Essora Office — improvements to Writer and PDF</h3>
+    <p><strong>Essora Office</strong> continues to improve, especially in <strong>Writer</strong> and <strong>PDF</strong>, two areas I've spent time working on. The suite brings document, spreadsheet, presentation, drawing and PDF tools together in one interface.</p>
+    <figure class="fullshot">
+      <a class="shot" href="/blog/screenshots/essora-office_fluxbox2.webp" target="_blank" rel="noopener noreferrer">
+        <img src="/blog/screenshots/essora-office_fluxbox2.webp" alt="Essora Office home window showing Writer, Sheet, Slides, Draw and PDF tools" width="1600" height="900" loading="lazy" decoding="async">
+      </a>
+      <figcaption>Essora Office, with Writer, Sheet, Slides, Draw and PDF.</figcaption>
+    </figure>
+
+    <h3>Essora Editor — rewritten as a GUI for Neovim</h3>
+    <p><strong>Essora Editor</strong> has been rewritten. It is <strong>no longer a Geany fork</strong>; this is a new graphical interface built for <strong>Neovim</strong>. The goal is to keep editing code and text straightforward while using Neovim as the editor underneath.</p>
+    <figure class="fullshot">
+      <a class="shot" href="/blog/screenshots/essora-editor_fluxbox2.webp" target="_blank" rel="noopener noreferrer">
+        <img src="/blog/screenshots/essora-editor_fluxbox2.webp" alt="Essora Editor 0.0.22 and its About window describing it as a GUI for Neovim" width="1600" height="900" loading="lazy" decoding="async">
+      </a>
+      <figcaption>Essora Editor: a new GTK3-oriented interface for Neovim, shown here as version 0.0.22.</figcaption>
+    </figure>
+
+    <h3>Essora Store — DEB, Flatpak and AppImage together</h3>
+    <p>The software manager has also grown. What previously focused on Debian packages now offers three formats in the same application: <strong>DEB through APT/dpkg, Flatpak and AppImage</strong>. Each one has its own tab, with package listings and actions appropriate to that format.</p>
+    <p>This lets users browse traditional system packages alongside Flatpak applications and an AppImage catalog without moving between several unrelated interfaces.</p>
+    <div class="grid">
+      <figure>
+        <a class="shot" href="/blog/screenshots/essora-store-deb_fluxbox2.webp" target="_blank" rel="noopener noreferrer">
+          <img src="/blog/screenshots/essora-store-deb_fluxbox2.webp" alt="Essora Store DEB tab with APT/dpkg packages, updates and repository tools" width="1001" height="728" loading="lazy" decoding="async">
+        </a>
+        <figcaption>DEB: APT/dpkg packages, updates and repository tools.</figcaption>
+      </figure>
+      <figure>
+        <a class="shot" href="/blog/screenshots/essora-store-flatpak_fluxbox2.webp" target="_blank" rel="noopener noreferrer">
+          <img src="/blog/screenshots/essora-store-flatpak_fluxbox2.webp" alt="Essora Store Flatpak tab listing applications" width="1003" height="727" loading="lazy" decoding="async">
+        </a>
+        <figcaption>Flatpak: applications available through the Flatpak catalog.</figcaption>
+      </figure>
+    </div>
+    <figure class="fullshot">
+      <a class="shot" href="/blog/screenshots/essora-store-appimage_fluxbox2.webp" target="_blank" rel="noopener noreferrer">
+        <img src="/blog/screenshots/essora-store-appimage_fluxbox2.webp" alt="Essora Store AppImage tab showing the AppImage software catalog" width="1005" height="722" loading="lazy" decoding="async">
+      </a>
+      <figcaption>AppImage: a separate catalog for portable applications, integrated into the same store.</figcaption>
+    </figure>
+
+    <h3>Essora VM — a graphical frontend for QEMU</h3>
+    <p><strong>Essora VM</strong> provides a graphical frontend for <strong>QEMU</strong>. It is intended to make creating and managing virtual machines more approachable, including keeping multiple virtual machines in one place. It's useful for testing other systems without installing them directly on your computer.</p>
+    <figure class="fullshot">
+      <a class="shot" href="/blog/screenshots/essora-VM_fluxbox2.webp" target="_blank" rel="noopener noreferrer">
+        <img src="/blog/screenshots/essora-VM_fluxbox2.webp" alt="Essora VM QEMU frontend with a virtual machine list and New VM button" width="1600" height="900" loading="lazy" decoding="async">
+      </a>
+      <figcaption>Essora VM: create and manage QEMU virtual machines from a graphical interface.</figcaption>
+    </figure>
+  </section>
+
+  <section class="section" id="magdock">
+    <h2>MagDock — a helpful screen magnifier</h2>
+    <p>I've also included <strong>MagDock</strong> for users who find small text or interface elements difficult to read. It provides screen magnification without requiring a particular desktop environment or window manager.</p>
+    <p>MagDock was created by <strong>JakeSFR</strong> from the Puppy Linux community, inspired by the magnifier included with Windows XP. Credit for the original tool belongs to JakeSFR. You can read more about it in the <a href="https://forum.puppylinux.com/viewtopic.php?p=148991&amp;hilit=magdock#p148991" target="_blank" rel="noopener noreferrer">Puppy Linux forum discussion</a> and the <a href="https://forum.puppylinux.com/viewtopic.php?p=46947#p46947" target="_blank" rel="noopener noreferrer">original MagDock 1.3 post</a>.</p>
+    <figure class="fullshot">
+      <a class="shot" href="/blog/screenshots/magdock_fluxbox2.webp" target="_blank" rel="noopener noreferrer">
+        <img src="/blog/screenshots/magdock_fluxbox2.webp" alt="MagDock magnifying the Fluxbox2 panel and notification area" width="1600" height="900" loading="lazy" decoding="async">
+      </a>
+      <figcaption>MagDock magnifying part of the Essora desktop, including panel icons and tooltips.</figcaption>
+    </figure>
+  </section>
+
+  <section class="section" id="download">
+    <h2>Still lightweight, with more of the desktop working together</h2>
+    <p>Fluxbox2 continues to be about a small and manageable desktop. The difference in this release is how much more of it now works together: GTK3 appearance, an integrated panel, a configurable menu, optional visual effects, the Desklet and the applications around them.</p>
+    <p>There is still work to do, and not every feature will be useful on every computer. That's why keeping the configuration accessible — including the option to turn things off — matters just as much as adding new features.</p>
+    <div class="download">
+      <h2>Download Essora Eos Fluxbox2 XLibre</h2>
+      <p>The new 64-bit ISO is available on SourceForge.</p>
+      <a class="button" href="https://sourceforge.net/projects/essora/files/Excalibur/Essora_Eos_Fluxbox2-20261122_2248.iso" target="_blank" rel="noopener noreferrer">Download the ISO from SourceForge</a>
+      <p class="filename">Essora_Eos_Fluxbox2-20261122_2248.iso</p>
+    </div>
+  </section>
+
+  <footer class="closing">
+    <p><strong>Essora</strong> · Freedom to Create. Freedom to Explore.</p>
+    <p>Want to follow the distribution? Visit <a href="https://essora.org/" target="_blank" rel="noopener noreferrer">essora.org</a> or the <a href="https://distrowatch.com/table.php?distribution=essora" target="_blank" rel="noopener noreferrer">Essora page on DistroWatch</a>.</p>
+  </footer>
+</article>
+</div>
+</body>
+</html>
